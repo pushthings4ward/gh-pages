@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>IsisOne - Personal or Agency Portfolio</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="assets/plugins/lt-ie9/html5.js"></script>
+			<script type="text/javascript" src="assets/plugins/lt-ie9/respond.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/lt-ie9/excanvas.compiled.js"></script>
+		<![endif]--> 
+
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Dosis:300,400" rel="stylesheet" type="text/css" />
+
+
+		<!-- CORE CSS FRAMEWORK -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+		<!-- PLUGINS -->
+		<link href="assets/css/superslides.css" rel="stylesheet" type="text/css" />
+
+		<!-- CSS TEMPLATE -->
+		<link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/framework.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/typography.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<link href="assets/css/countdown.css" rel="stylesheet" type="text/css" />
+
+		<!-- default color : green-->
+		<link href="assets/css/color/green.css" rel="stylesheet" type="text/css" />
+
+		<!-- ICONS -->
+		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+	</head>
+	<body>
+
+		<div class="countdown-logo">
+			<img src="assets/images/logo/100x100/white.png" height="50" alt="" />
+		</div>
+
+		<!-- COUNTDOWN -->
+		<section id="home" class="full-screen countDownSection">
+			<!-- video audio icon -->
+			<a href="#" id="video-volume"><i class="fa fa-volume-down"></i></a>
+
+			<!-- Video Background - replace videoURL with your youtube video URL -->
+			<a id="YTPlayer" class="player" data-property="{videoURL:'http://www.youtube.com/watch?v=A3PDXmYoF5U',containment:'body',autoPlay:true, mute:true, startAt:4, opacity:1}">youtube</a>
+			<!--/Video Background -->
+
+			<span class="raster"><!-- video raster --></span>
+
+			<div id="slider">
+
+				<ul class="slides-container">
+					<li>
+						<div class="image-caption">
+
+							<!-- Countdown -->
+							<div id="countdown">
+								<div class="countdown-widget" id="countdown-widget" data-time=""><!-- USAGE: data-time="31 December 2015 12:00:00 GMT" --></div>
+							</div><!-- /Countdown -->
+
+							<!-- social icons -->
+							<div class="countdown-content">
+								<hr /><hr />
+
+								<a href="#" class="social fa fa-facebook"></a>
+								<a href="#" class="social fa fa-twitter"></a>
+								<a href="#" class="social fa fa-google-plus"></a>
+							</div><!-- /social icons -->
+
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</section>
+		<!-- /COUNTDOWN -->
+
+
+
+		<!-- 
+			NEWSLETTER SUBSCRIBE 
+			
+			NOTE:
+				You need a PHP running webserver.
+				All emails are saved on php folder - see text file.
+		-->
+		<section class="countdown-newsletter util-row">
+			<div class="container">
+
+				<div class="row">
+
+					<!-- left -->
+					<div class="hidden-xs col-md-7 nopadding-left">
+						<h3>NOTIFY</h3>
+						<p>Subscribe to our newsletter and get notified when website is launched.</p>
+					</div>
+
+
+					<!-- right -->
+					<div class="col-md-5 text-right separator newsletter-subscribe nopadding-right">
+
+						<!-- form -->
+						<form id="newsletterForm" method="post" action="php/newsletter.php">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="input-group bordered input-group-lg">
+										<!-- input field -->
+										<input required type="email" name="newsletter_email" id="newsletter_email" class="form-control" placeholder="johndoe@domain.com" />
+
+										<!-- action button -->
+										<span class="input-group-btn">
+											<input type="hidden" name="newsletter_captcha" id="newsletter_captcha" value="" /><!-- hidden field - humans should not see it, only spam bots will see it -->
+											<button id="newsletter-subscribe" class="nomargin btn btn-primary">SUBSCRIBE</button>
+										</span>
+									</div>
+								</div>
+							</div>
+						</form>
+						<!-- /form -->
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- /NEWSLETTER SUBSCRIBE -->
+
+		<!-- NEWSLETTER MODAL -->
+		<div class="modal fade contactModal" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="myNewsletterLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myNewsletterLabel"><i class="fa fa-envelope-o"></i> <span class="font600">Subscribed</span></h4>
+					</div>
+
+						<div class="modal-body">
+
+							<p>
+								Thank you for your subscription!
+							</p>
+
+						</div>
+
+						<div class="modal-footer">
+							<button class="btn btn-default btn-sm fullwidth" data-dismiss="modal">OK, CLOSE</button>
+						</div>
+
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- /NEWSLETTER MODAL -->
+
+
+
+		<!-- CORE FILES -->
+		<script type="text/javascript" src="assets/plugins/jquery/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- PLUGINS -->
+		<script type="text/javascript" src="assets/plugins/superslides/dist/jquery.superslides.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/jquery.mb.YTPlayer.js"></script><!-- Youtube video background -->
+
+		<!-- js scripts -->
+		<script async type="text/javascript" src="assets/js/scripts.js"></script>
+
+		<!-- COUNTDOWN -->
+		<script type="text/javascript" src="assets/plugins/jquery-countdown/jquery.countdown.js"></script>
+		<script async type="text/javascript" src="assets/js/countdown.js"></script>
+
+
+		<!-- Change UA-XXXXX-X with your site ID -->
+		<!--<script>
+			window._gaq = [['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
+			Modernizr.load({load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'});
+		</script>  -->
+
+	</body>
+</html>
