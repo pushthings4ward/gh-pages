@@ -10,11 +10,12 @@ body {
 
 .footer {
 
-	height: 20px;
+	height: 70px;
 	padding-top: 10px;
 	background-position: bottom;
 	text-align: center;
 	font-size: 12px;
+	line-height: 18px;
 	font-family: 'Open Sans', sans-serif;
   	font-weight: 600;
 
