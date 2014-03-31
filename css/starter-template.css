@@ -10,8 +10,9 @@ body {
 
 .footer {
 
-	height: 70px;
+	height: 90px;
 	padding-top: 10px;
+	padding-bottom: 5px;
 	background-position: bottom;
 	text-align: center;
 	font-size: 12px;
