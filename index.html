@@ -46,8 +46,8 @@
 
 
 <div class="row">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-10">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
    
    <div class="panel-group" id="accordion">
   <div class="panel panel-default">
@@ -64,8 +64,8 @@
         
 <p>Ein strukturierter Datensatz, der den eigenen Bedürfnissen entspricht, ist recht selten anzutreffen. Daher ist die Transformation der Daten in die gewünschte Form unvermeidbar. Mit OpenRefine lassen sich die Daten dennoch bändigen. Die Herangehensweise erkläre ich wie immer anhand meines manipulierten Datensatzes, der <a href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz">hier heruntergeladen</a> werden kann. Ich werde den Datensatz, der Informationen über die Mitglieder des Bundestages (MdB) enthält, etwas umgestalten.</p>
 <p>So sieht mein Plan aus – ich will die Informationen aus der Spalte <code>Name, Vorname</code> zergliedern. Genau genommen beabsichtige ich den <code>Namen, Vornamen</code> und <code>Partei</code> jedes Abgeordneten in eine separate Spalte überführen.</p>
-<p>Nachdem ich die Daten importiert habe, wähle ich das Dropdown Menü der spalte <code>Name, Vorname</code> aus. Dabei fahre ich mit der Maus über den Menüpunkt <code>edit column</code> und wähle im rechten Seitenmenü die Option <code>Split into several columns</code> aus.</p>
-<p>Ein neues Menüfenster öffnet sich. Hier muss ich definieren wie OpenRefine die Datenzeile zergliedern soll. Ich kann hier zwischen zwei Optionen wählen – <code>by separater</code> und <code>by field lenghts</code>. Wer sich den Datensatz und insbesondere die Spalte <code>Name, Vorname</code> angeguckt hat, dem ist vielleicht aufgefallen, dass die einzelnen Informationsbrocken <code>Name, Vorname</code> und <code>Partei</code> durch ein Komma getrennt sind. Dieses gemeinsame Merkmal, das über alle Datenzeilen hinweg existiert, will ich mir zunutze machen. Daher wähle ich die Option <code>by separater</code> aus. Wenn ein ein anderes Zeichen die Informationen trennt, muss man in der Zeile unterhalb das entsprechende Zeichen anpassen. Da ich die spalte <code>Name, Vorname</code> nach der Transformation nicht löschen will, entferne ich auf der rechten Seite das Häkchen <code>remove this column</code>. <code>OK</code> klicken.</p>
+<p>Nachdem ich die Daten importiert habe, wähle ich das Dropdown Menü der spalte <code>Name, Vorname</code> aus. Dabei fahre ich mit der Maus über den Menüpunkt <code>Edit column</code> und wähle im rechten Seitenmenü die Option <code>Split into several columns</code> aus.</p>
+<p>Ein neues Menüfenster öffnet sich. Hier muss ich definieren wie OpenRefine die Datenzeile zergliedern soll. Ich kann hier zwischen zwei Optionen wählen – <code>by separater</code> und <code>by field lenghts</code>. Wer sich den Datensatz und insbesondere die Spalte <code>Name, Vorname</code> angeguckt hat, dem ist vielleicht aufgefallen, dass die einzelnen Informationsbrocken <code>Name, Vorname</code> und <code>Partei</code> durch ein Komma getrennt sind. Dieses gemeinsame Merkmal, das über alle Datenzeilen hinweg existiert, will ich mir zunutze machen. Daher wähle ich die Option <code>by separater</code> aus. Wenn ein ein anderes Zeichen die Informationen trennt, muss man in der Zeile unterhalb das entsprechende Zeichen anpassen. Da ich die spalte <code>Name, Vorname</code> nach der Transformation nicht löschen will, entferne ich auf der rechten Seite das Häkchen <code>Remove this column</code>. <code>OK</code> klicken.</p>
 <p><img class="img-responsive" src="http://www.databeast.org/databeast/wp-content/uploads/2012/03/Bildschirmfoto-2012-03-19-um-19.39.49.png" /></p>
 <p>Drei neue Spalten sind das Ergebnis der Transformation. Jetzt passe ich noch den Namen der Spalte an. Dazu fahre ich mit der Maus über das Dropdown Menü <code>Name, Vorname</code> zum Menüpunkt <code>edit column</code> und wähle dort die Option <code>rename this column</code> aus.</p>
 <p><img class="img-responsive" src="http://www.databeast.org/databeast/wp-content/uploads/2012/03/Bildschirmfoto-2012-03-19-um-19.37.54-e1332185226175.png" /></p>
@@ -80,13 +80,17 @@
     <div class="panel-heading">
       <h4 class="panel-title" >
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          Just another ...
+          Tutorial: Suchen und Ersetzen mit OpenRefine
         </a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body" >
-        
+       <p>Im Rahmen der Datenbereinigung kommt man um die <code>Suchen und Ersetzen</code> Funktion nicht herum. Die Herangehensweise erkläre ich wie immer anhand meines manipulierten Datensatzes, der <a href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz">hier heruntergeladen</a>  werden kann. Dabei werde ich ein Element innerhalb des Datensatzes, der Informationen über die Mitglieder des Bundestages (MdB) enthält, modifizieren bzw. korrigieren. Dazu nutze ich wieder OpenRefine.</p>
+<p>In der Spalte <code>Name, Vorname</code> ist neben dem Namen und Vornamen auch die Parteizugehörigkeit aufgeführt. Hier habe ich einen kleinen Fehler eingebaut. Die Parteikennung <code>“DIE LINKE.”</code> ist durch einen Punkt am Ende verunreinigt. Diesen will ich entfernen bzw. durch die korrekte Ausprägung <code>“DIE LINKE”</code> ersetzen. Dazu wähle ich das <code>Drop Down</code> Menü der Spalte aus und bewege die Maus über den Menüpunkt <code>Edit cells</code> und wähle dann anschließend die Funktion <code>Transform</code> aus.</p>
+<p><img class="img-responsive" src="http://www.databeast.org/databeast/wp-content/uploads/2012/03/Bildschirmfoto-2012-03-23-um-10.44.36-e1332502380392.png" /></p>
+<p>Eine Eingabemaske öffnet sich. Folgende Syntax gebe ich jetzt in die Konsole ein <code>value.replace(“DIE LINKE.”, “DIE LINKE)</code>. Mit dem Befehl wird OpenRefine angewiesen die Spalte <code>“Name, Vorname”</code> nach der Ausprägung <code>“DIE LINKE.”</code> zu durchsuchen und diese durch die neue Bezeichnung <code>“DIE LINKE”</code> zu ersetzen. Im Preview Fenster ist die erfolgreiche Transformation in Zeile 7 bereits sichtbar. Ich bestätige die Eingabe durch <code>OK</code> und schließe damit die Transformation ab.</p>
+<p><img class="img-responsive" src="http://www.databeast.org/databeast/wp-content/uploads/2012/03/Bildschirmfoto-2012-03-23-um-10.44.43-e1332502830807.png"  /></p> 
 
       </div>
     </div>
@@ -133,7 +137,7 @@
 
 
   </div>
-  <div class="col-sm-1"></div>
+  <div class="col-sm-2"></div>
 </div>
 
 
@@ -153,9 +157,9 @@
     <div class="container footer">
     
 
-     <i class="fa fa-twitter fa-lg"></i> <a href="http://www.twitter.com/pushthings4ward" target="_blank">@pushthings4ward</a> &nbsp; |&nbsp; <i class="fa fa-github  fa-lg"></i> <a href="http://www.github.com/pushthings4ward" target="_blank">pushthings4ward</a> &nbsp; |&nbsp;<i class="fa fa-eye  fa-lg"></i> <a href="http://www.designzoo.de/databeast/wp-content/uploads/2012/06/impressum.pdf">impressum</a> &nbsp; |&nbsp; <i class="fa fa-envelope-o  fa-lg"></i> <a href="mailto:mail@pushthings4ward.com">mail@pushthings4ward.com</a><br><p><p>
+     <i class="fa fa-twitter fa-lg"></i> <a href="http://www.twitter.com/pushthings4ward" target="_blank">@pushthings4ward</a> &nbsp; |&nbsp; <i class="fa fa-github  fa-lg"></i> <a href="http://www.github.com/pushthings4ward" target="_blank">pushthings4ward</a> &nbsp; |&nbsp;<i class="fa fa-envelope-o  fa-lg"></i> <a href="mailto:mail@pushthings4ward.com">mail@pushthings4ward.com</a><br><p><p>
 
-    <span class="glyphicon glyphicon-copyright-mark"></span> 2014&nbsp; |&nbsp; CC BY-NC-SA 3.0  
+    <span class="glyphicon glyphicon-copyright-mark"></span> 2014&nbsp; |&nbsp; CC BY-NC-SA 3.0  &nbsp; |&nbsp;<i class="fa fa-eye  fa-lg"></i> <a href="http://www.designzoo.de/databeast/wp-content/uploads/2012/06/impressum.pdf">impressum</a> 
 
     </div>
     </nav>
