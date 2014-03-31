@@ -3,6 +3,7 @@ body {
 }
 .starter-template {
   padding: 40px 15px;
+  padding-bottom: 40px 15px;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -11,8 +12,7 @@ body {
 .footer {
 
 	height: 90px;
-	padding: 90px 15px;
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-bottom: 5px;
 	background-position: bottom;
 	text-align: center;
