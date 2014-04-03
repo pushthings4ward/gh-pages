@@ -65,11 +65,11 @@
 <p>So sieht mein Plan aus – ich will die Informationen aus der Spalte <code>Name, Vorname</code> zergliedern. Genau genommen beabsichtige ich den <code>Namen, Vornamen</code> und <code>Partei</code> jedes Abgeordneten in eine separate Spalte überführen.</p>
 <p>Nachdem ich die Daten importiert habe, wähle ich das Dropdown Menü der spalte <code>Name, Vorname</code> aus. Dabei fahre ich mit der Maus über den Menüpunkt <code>Edit column</code> und wähle im rechten Seitenmenü die Option <code>Split into several columns</code> aus.</p>
 <p>Ein neues Menüfenster öffnet sich. Hier muss ich definieren wie OpenRefine die Datenzeile zergliedern soll. Ich kann hier zwischen zwei Optionen wählen – <code>by separater</code> und <code>by field lenghts</code>. Wer sich den Datensatz und insbesondere die Spalte <code>Name, Vorname</code> angeguckt hat, dem ist vielleicht aufgefallen, dass die einzelnen Informationsbrocken <code>Name, Vorname</code> und <code>Partei</code> durch ein Komma getrennt sind. Dieses gemeinsame Merkmal, das über alle Datenzeilen hinweg existiert, will ich mir zunutze machen. Daher wähle ich die Option <code>by separater</code> aus. Wenn ein ein anderes Zeichen die Informationen trennt, muss man in der Zeile unterhalb das entsprechende Zeichen anpassen. Da ich die spalte <code>Name, Vorname</code> nach der Transformation nicht löschen will, entferne ich auf der rechten Seite das Häkchen <code>Remove this column</code>. <code>OK</code> klicken.</p>
-<p><img class="img-responsive" src="http://www.databeast.org/databeast/wp-content/uploads/2012/03/Bildschirmfoto-2012-03-19-um-19.39.49.png" /></p>
+<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.39.49.png" /></p>
 <p>Drei neue Spalten sind das Ergebnis der Transformation. Jetzt passe ich noch den Namen der Spalte an. Dazu fahre ich mit der Maus über das Dropdown Menü <code>Name, Vorname</code> zum Menüpunkt <code>edit column</code> und wähle dort die Option <code>rename this column</code> aus.</p>
-<p><img class="img-responsive" src="http://www.databeast.org/databeast/wp-content/uploads/2012/03/Bildschirmfoto-2012-03-19-um-19.37.54-e1332185226175.png" /></p>
+<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.37.54-e1332185226175.png" /></p>
 <p>Hier editiere ich den Namen und bestätige die Eingabe mit <code>OK</code>. Die anderen zwei spalten werden ebenso angepasst. </p>
-<p><img class="img-responsive" src="http://www.databeast.org/databeast/wp-content/uploads/2012/03/Bildschirmfoto-2012-03-19-um-19.37.18.png" /></p>
+<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.37.18.png" /></p>
 
       </div>
     </div>
@@ -90,9 +90,9 @@
       <div class="panel-body" >
 <p>Im Rahmen der Datenbereinigung kommt man um die <code>Suchen und Ersetzen</code> Funktion nicht herum. Die Herangehensweise erkläre ich wie immer anhand meines manipulierten Datensatzes, der <a href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz">hier heruntergeladen</a>  werden kann. Dabei werde ich ein Element innerhalb des Datensatzes, der Informationen über die Mitglieder des Bundestages (MdB) enthält, modifizieren bzw. korrigieren. Dazu nutze ich wieder OpenRefine.</p>
 <p>In der Spalte <code>Name, Vorname</code> ist neben dem Namen und Vornamen auch die Parteizugehörigkeit aufgeführt. Hier habe ich einen kleinen Fehler eingebaut. Die Parteikennung <code>“DIE LINKE.”</code> ist durch einen Punkt am Ende verunreinigt. Diesen will ich entfernen bzw. durch die korrekte Ausprägung <code>“DIE LINKE”</code> ersetzen. Dazu wähle ich das <code>Drop Down</code> Menü der Spalte aus und bewege die Maus über den Menüpunkt <code>Edit cells</code> und wähle dann anschließend die Funktion <code>Transform</code> aus.</p>
-<p><img class="img-responsive" src="http://www.databeast.org/databeast/wp-content/uploads/2012/03/Bildschirmfoto-2012-03-23-um-10.44.36-e1332502380392.png" /></p>
+<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-23-um-10.44.36-e1332502380392.png" /></p>
 <p>Eine Eingabemaske öffnet sich. Folgende Syntax gebe ich jetzt in die Konsole ein <code>value.replace(“DIE LINKE.”, “DIE LINKE)</code>. Mit dem Befehl wird OpenRefine angewiesen die Spalte <code>“Name, Vorname”</code> nach der Ausprägung <code>“DIE LINKE.”</code> zu durchsuchen und diese durch die neue Bezeichnung <code>“DIE LINKE”</code> zu ersetzen. Im Preview Fenster ist die erfolgreiche Transformation in Zeile 7 bereits sichtbar. Ich bestätige die Eingabe durch <code>OK</code> und schließe damit die Transformation ab.</p>
-<p><img class="img-responsive" src="http://www.databeast.org/databeast/wp-content/uploads/2012/03/Bildschirmfoto-2012-03-23-um-10.44.43-e1332502830807.png"  /></p> 
+<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-23-um-10.44.43-e1332502830807.png"  /></p> 
 
       </div>
     </div>
@@ -113,27 +113,27 @@
       <div class="panel-body" >
         <p>Wo muss man viel Zeit, Geduld und Einfallsreichtum investieren? Jep, in die Datenbereinigung. Die meisten Datensätze bleiben in der Regel Rohdiamanten, obwohl mehr rauszuholen wäre. Das nachfolgende Tutorial dient als Motivationsgrundlage.</p>
 <p><b>Das Problem</b>: Wie lassen sich die Geldbeträge aus der Spalte <code>“Delikt”</code> in separate Spalten überführen? In OpenRefine lässt sich das wie folgt realisieren:</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_1.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_1.ong_.png" alt="Alternativer Text" /></p>
 <p><b>Die einzelnen Schritte</b>: Ich werde zunächst eine neue Spalte anlegen. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Delikt”</code> die Option <code>Edit column</code> und den Befehl <code>Add column based on this column</code> aus.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_2.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_2.ong_.png" alt="Alternativer Text" /></p>
 <p>Eine neue Eingabemaske öffnet sich. Dort definieren wir zuerst den neuen Spaltennamen <code>“Euro”</code>.  Anschließend wähle ich <code>“Clojure”</code> als Syntax Sprache aus. Danach geben wir folgende Syntax ein:</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_4.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_4.ong_.png" alt="Alternativer Text" /></p>
 <p>Was macht die Syntax? Der Code sucht in der Spalte <code>“Delikt”</code> nach Elementen, die das Sonderzeichen <code>“€”</code> tragen. Wenn ein passendes Element gefunden wird, kopiert OpenRefine dieses in die neue Spalte <code>“Euro”</code>.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_3.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_3.ong_.png" alt="Alternativer Text" /></p>
 <p>Das Ergebnis nach der ersten Transformation kann sich durchaus sehen lassen. Alle Elemente wurden erfolgreich identifiziert und isoliert.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_5.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_5.ong_.png" alt="Alternativer Text" /></p>
 <p>Der erste Schritt hat lediglich die Eurobeträge extrahiert. Nun sollen auch die Dollarbeträge isoliert werden. Dazu wiederholen wir die Schritte mit zwei kleinen Änderungen.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_6.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_6.ong_.png" alt="Alternativer Text" /></p>
 <p>Die erste Änderung betrifft den Spaltennamen. Die neue Spalte heißt nun <code>“US Dollar”</code>. Die zweite Änderung bezieht sich auf die Syntax. Wir tauschen das <code>“€”</code> Zeichen durch <code>“$”</code> aus.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_7.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_7.ong_.png" alt="Alternativer Text" /></p>
 <p>Nach der zweiten Datenextraktion hat der Datensatz an Wert gewonnen. Wir konnten Informationen, die vorher nur schwer zugänglich waren, gezielt isolieren und für weitere Analysen nutzbar machen.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_8.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_8.ong_.png" alt="Alternativer Text" /></p>
 <p>Der zweite Schritt soll nun die störenden Sonderzeichen <code>“$“</code>, <code>“€“</code>, <code>“.”</code> entfernen. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“US Dollar”</code> die Option <code>Edit cells</code> und den Befehl <code>Transform</code> aus.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_10.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_10.ong_.png" alt="Alternativer Text" /></p>
 <p>Was macht die syntax? Der Code durchsucht die Spalte <code>“US Dollar”</code> nach folgenden Elementen <code>“$“</code>, <code>“.”</code> und löscht diese. Die Funktion dürfte den meisten von uns unter den Namen <code>“Suchen und Ersetzen”</code> bekannt sein. In der Voransicht kann man das Ergebnis der Transformation betrachten. Die letzten Schritte wendet man auch auf die Spalte <code>“Euro”</code> an, um die Datenbereinigung vollständig abzuschließen.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_11.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_11.ong_.png" alt="Alternativer Text" /></p>
 <p>Zwei Transformationsschritte waren notwendig, um den Datensatz aufzuwerten. Mit den zwei Schritten konnten wir Daten nutzbar machen, die vorher nur schwer zugänglich waren.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_12.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_12.ong_.png" alt="Alternativer Text" /></p>
 
 
       </div>
@@ -155,35 +155,35 @@
       <div class="panel-body" >
       <p>Bevor man mit einer Datenanalyse beginnt, sollte man den Datensatz bereinigen. Eine unterschätzte Fehlerquelle beim Umgang mit großen Datensätzen ist das <code>"Doppelte Lottchen"</code> - Datenzeilen mit identischen Inhalt. Insbesondere bei quantitativen Analysen können sie das Ergebnis der Auswertung verzerren. Daher ist es ratsam diese vorher zu identifizieren und gegebenenfalls zu entfernen. In OpenRefine lässt sich das wie folgt realisieren.</p>
 <p><b>Das Beispiel</b>: Mein Datensatz enthält drei Doppler – die Doppler weisen dabei Unterschiede in der Schreibweise (Groß- / Kleinschreibung) auf. Inhaltlich sind die Doppler jedoch identisch. Diese will ich nun entfernen. Dazu geh ich wie folgt vor:</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_01.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_01.png" alt="Alternativer Text" /></p>
 <p><b>Die einzelnen schritte</b>: Ich werde zunächst die Daten sortieren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Sort</code> aus.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_02.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_02.png" alt="Alternativer Text" /></p>
 <p>Eine neue Eingabemaske erscheint. Hier definiere ich den Sortiermodus für den Inhalt. Da der Datensatz überwiegend Textbausteine enthält, wähle ich die Option <code>text</code> aus. Wenn der Datensatz nur Zahlen enthalten würde, wäre die Option <code>numbers</code> geeigneter. Abschließend wähle ich die Reihenfolge der Sortierung <code>a-z</code> und bestätige meine Auswahl mit <code>OK</code>.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_03.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_03.png" alt="Alternativer Text" /></p>
 <p>Nach der Transformation befinden sich die Doppler untereinander. Diese Reihenfolge übernehme ich und verwerfe somit die alte. Hierzu wähle ich aus dem <code>Dropdown Menü</code> die Option <code>Sort</code> und anschließend die Auswahl <code>Reorder rows permanently</code> aus.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_04.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_04.png" alt="Alternativer Text" /></p>
 <p>Im nächsten Schritt werde ich ich die Datenzeilen mit identischen Inhalt leeren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit cells</code> und dann die Funktion <code>Blank down</code> aus.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
 <p>Das Ergebnis ist mehr als unbefriedigend. Lediglich ein Doppler wurde erfolgreich entfernt. Offenbar genügt bereits eine Abweichung in der Schreibweise (Groß- / Kleinschreibung), um die Erkennung von Dopplern zunichte zu machen. Aus semiotischer Sicht mag das korrekt sein – aus semantischer Sicht allerdings unbrauchbar. Somit muss ich nun tricksen, um das gewünschte Ergebnis zu erhalten.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_06.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_06.png" alt="Alternativer Text" /></p>
 <p>Ich klicke in der Menüleiste auf <code>“Undo/Redo“</code>, um meine letzte Transformation rückgängig zu machen. Dafür wähle ich aus dem Log die Auswahl  <code>Reorder rows</code>.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_07.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_07.png" alt="Alternativer Text" /></p>
 <p>Danach wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit  cells</code>, <code>Common transforms</code> und anschließend die Option <code>To uppercase</code> aus. Der Befehl transformiert den gesamten Inhalt aller Zellen in Großbuchstaben. Inhaltlich gehen dabei keine Informationen verloren.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_08.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_08.png" alt="Alternativer Text" /></p>
 <p>Das Ergebnis der Transformation sieht nun so aus.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_09.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_09.png" alt="Alternativer Text" /></p>
 <p>Nun werde ich erneut die Zeilen mit den identischen Einträgen leeren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit cells</code> und anschließend den Befehl <code>Blank down</code> aus.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
 <p>Das Ergebnis der neuen Transformation kann sich sehen lassen. Die Doppler wurden entfernt. Dafür verunreinigen nun mehrere leere Datenzeilen meinen Datensatz.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_10.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_10.png" alt="Alternativer Text" /></p>
 <p>Diese werde ich im nächsten Schritt gezielt entfernen. Hierfür wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Facet</code>, <code>Customized facets</code> und dann den Befehl <code>Facet by blank</code> aus.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_11.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_11.png" alt="Alternativer Text" /></p>
 <p>In der linken Menüleiste sehe ich das Ergebnis der Prozedur. Es wurden fünf leere Datenzeilen gefunden. Durch klicken auf <code>true</code> aktiviere ich diese Auswahl, die ich jetzt gezielt in der Datenansicht betrachten kann.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_12.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_12.png" alt="Alternativer Text" /></p>
 <p>Und so löscht man die leeren Datenzeilen – hierzu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“All”</code> die Option <code>Edit rows</code> und dann die Funktion <code>Remove all matching rows</code> aus. Somit werden die aktiven Datenzeilen gezielt aus dem Datensatz entfernt.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_13.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_13.png" alt="Alternativer Text" /></p>
 <p>Das finale Ergebnis der Datenbereinigung sieht nun so aus. Keine Doppler oder leere Datenzeilen.</p>
-<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_14.png" alt="Alternativer Text" /></p>  
+<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_14.png" alt="Alternativer Text" /></p>  
 
       </div>
     </div>
@@ -268,7 +268,7 @@
 
      <i class="fa fa-twitter fa-lg"></i> <a href="http://www.twitter.com/pushthings4ward" target="_blank">@pushthings4ward</a> &nbsp; |&nbsp; <i class="fa fa-github  fa-lg"></i> <a href="http://www.github.com/pushthings4ward" target="_blank">pushthings4ward</a> &nbsp; |&nbsp;<i class="fa fa-envelope-o  fa-lg"></i> <a href="mailto:mail@pushthings4ward.com">mail@pushthings4ward.com</a><br><p><p>
 
-    <span class="glyphicon glyphicon-copyright-mark"></span> 2014&nbsp; |&nbsp; CC BY-NC-SA 3.0  &nbsp; |&nbsp;<i class="fa fa-eye  fa-lg"></i> <a href="http://www.designzoo.de/databeast/wp-content/uploads/2012/06/impressum.pdf">impressum</a> 
+    <span class="glyphicon glyphicon-copyright-mark"></span> 2014&nbsp; |&nbsp; CC BY-NC-SA 3.0  &nbsp; |&nbsp;<i class="fa fa-eye  fa-lg"></i> <a href="img/impressum.pdf">impressum</a> 
 
     </div>
     </nav>
