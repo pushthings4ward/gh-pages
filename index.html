@@ -30,18 +30,14 @@
 
   <body>
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
-        <div class="navbar-header">
-
-        </div>
-        
+        <div class="navbar-header"></div>
       </div>
-    </div>
+  </div>
 
     <div class="container">
-
-      <div class="starter-template">
+    <div class="starter-template">
         
 
 
@@ -50,12 +46,14 @@
   <div class="col-sm-8">
    
    <div class="panel-group" id="accordion">
+  
+<!-- start-->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span> 
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          Tutorial:  Datenzeilen zergliedern mit OpenRefine
+          OpenRefine Tutorial:  Datenzeilen zergliedern
         </a>
       </h4>
     </div>
@@ -76,13 +74,15 @@
       </div>
     </div>
   </div>
-  
+<!-- end-->
+
+<!--start -->  
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span> 
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          Tutorial: Suchen und Ersetzen mit OpenRefine
+          OpenRefine Tutorial: Suchen und Ersetzen
         </a>
       </h4>
     </div>
@@ -97,13 +97,15 @@
       </div>
     </div>
   </div>
- 
+<!-- end -->
+
+<!-- start --> 
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Tutorial: Datamining mit OpenRefine
+          OpenRefine Tutorial: Datamining
         </a>
       </h4>
     </div>
@@ -137,23 +139,113 @@
       </div>
     </div>
   </div>
+<!-- end -->
 
+<!-- start -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title" >
+      <span class="glyphicon glyphicon-list-alt"></span>
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-          Just another ...
+          OpenRefine Tutorial: Doppelte Zeileneinträge in Spalten löschen
         </a>
       </h4>
     </div>
     <div id="collapseFour" class="panel-collapse collapse">
+      <div class="panel-body" >
+      <p>Bevor man mit einer Datenanalyse beginnt, sollte man den Datensatz bereinigen. Eine unterschätzte Fehlerquelle beim Umgang mit großen Datensätzen ist das <code>"Doppelte Lottchen"</code> - Datenzeilen mit identischen Inhalt. Insbesondere bei quantitativen Analysen können sie das Ergebnis der Auswertung verzerren. Daher ist es ratsam diese vorher zu identifizieren und gegebenenfalls zu entfernen. In OpenRefine lässt sich das wie folgt realisieren.</p>
+<p><b>Das Beispiel</b>: Mein Datensatz enthält drei Doppler – die Doppler weisen dabei Unterschiede in der Schreibweise (Groß- / Kleinschreibung) auf. Inhaltlich sind die Doppler jedoch identisch. Diese will ich nun entfernen. Dazu geh ich wie folgt vor:</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_01.png" alt="Alternativer Text" /></p>
+<p><b>Die einzelnen schritte</b>: Ich werde zunächst die Daten sortieren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Sort</code> aus.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_02.png" alt="Alternativer Text" /></p>
+<p>Eine neue Eingabemaske erscheint. Hier definiere ich den Sortiermodus für den Inhalt. Da der Datensatz überwiegend Textbausteine enthält, wähle ich die Option <code>text</code> aus. Wenn der Datensatz nur Zahlen enthalten würde, wäre die Option <code>numbers</code> geeigneter. Abschließend wähle ich die Reihenfolge der Sortierung <code>a-z</code> und bestätige meine Auswahl mit <code>OK</code>.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_03.png" alt="Alternativer Text" /></p>
+<p>Nach der Transformation befinden sich die Doppler untereinander. Diese Reihenfolge übernehme ich und verwerfe somit die alte. Hierzu wähle ich aus dem <code>Dropdown Menü</code> die Option <code>Sort</code> und anschließend die Auswahl <code>Reorder rows permanently</code> aus.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_04.png" alt="Alternativer Text" /></p>
+<p>Im nächsten Schritt werde ich ich die Datenzeilen mit identischen Inhalt leeren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit cells</code> und dann die Funktion <code>Blank down</code> aus.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
+<p>Das Ergebnis ist mehr als unbefriedigend. Lediglich ein Doppler wurde erfolgreich entfernt. Offenbar genügt bereits eine Abweichung in der Schreibweise (Groß- / Kleinschreibung), um die Erkennung von Dopplern zunichte zu machen. Aus semiotischer Sicht mag das korrekt sein – aus semantischer Sicht allerdings unbrauchbar. Somit muss ich nun tricksen, um das gewünschte Ergebnis zu erhalten.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_06.png" alt="Alternativer Text" /></p>
+<p>Ich klicke in der Menüleiste auf <code>“Undo/Redo“</code>, um meine letzte Transformation rückgängig zu machen. Dafür wähle ich aus dem Log die Auswahl  <code>Reorder rows</code>.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_07.png" alt="Alternativer Text" /></p>
+<p>Danach wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit  cells</code>, <code>Common transforms</code> und anschließend die Option <code>To uppercase</code> aus. Der Befehl transformiert den gesamten Inhalt aller Zellen in Großbuchstaben. Inhaltlich gehen dabei keine Informationen verloren.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_08.png" alt="Alternativer Text" /></p>
+<p>Das Ergebnis der Transformation sieht nun so aus.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_09.png" alt="Alternativer Text" /></p>
+<p>Nun werde ich erneut die Zeilen mit den identischen Einträgen leeren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit cells</code> und anschließend den Befehl <code>Blank down</code> aus.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
+<p>Das Ergebnis der neuen Transformation kann sich sehen lassen. Die Doppler wurden entfernt. Dafür verunreinigen nun mehrere leere Datenzeilen meinen Datensatz.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_10.png" alt="Alternativer Text" /></p>
+<p>Diese werde ich im nächsten Schritt gezielt entfernen. Hierfür wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Facet</code>, <code>Customized facets</code> und dann den Befehl <code>Facet by blank</code> aus.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_11.png" alt="Alternativer Text" /></p>
+<p>In der linken Menüleiste sehe ich das Ergebnis der Prozedur. Es wurden fünf leere Datenzeilen gefunden. Durch klicken auf <code>true</code> aktiviere ich diese Auswahl, die ich jetzt gezielt in der Datenansicht betrachten kann.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_12.png" alt="Alternativer Text" /></p>
+<p>Und so löscht man die leeren Datenzeilen – hierzu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“All”</code> die Option <code>Edit rows</code> und dann die Funktion <code>Remove all matching rows</code> aus. Somit werden die aktiven Datenzeilen gezielt aus dem Datensatz entfernt.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_13.png" alt="Alternativer Text" /></p>
+<p>Das finale Ergebnis der Datenbereinigung sieht nun so aus. Keine Doppler oder leere Datenzeilen.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/02/google_refine_doppelte_zeilen_loeschen_14.png" alt="Alternativer Text" /></p>  
+
+      </div>
+    </div>
+  </div>
+<!-- end -->
+
+<!-- start -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <span class="glyphicon glyphicon-list-alt"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+          Just another ...
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse">
       <div class="panel-body" >
         
 
       </div>
     </div>
   </div>
+<!-- end -->
 
+<!-- start -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <span class="glyphicon glyphicon-list-alt"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+          Just another ...
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse">
+      <div class="panel-body" >
+        
+
+      </div>
+    </div>
+  </div>
+<!-- end -->
+
+<!-- start -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <span class="glyphicon glyphicon-list-alt"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+          Just another ...
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse">
+      <div class="panel-body" >
+        
+
+      </div>
+    </div>
+  </div>
+<!-- end -->
 
 
 
@@ -166,15 +258,7 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-      </div>
+    </div>
 
     </div><!-- /.container -->
     
