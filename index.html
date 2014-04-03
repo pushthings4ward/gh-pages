@@ -101,14 +101,37 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title" >
+      <span class="glyphicon glyphicon-list-alt"></span>
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Just another ...
+          Tutorial: Datamining mit OpenRefine
         </a>
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body" >
-        
+        <p>Wo muss man viel Zeit, Geduld und Einfallsreichtum investieren? Jep, in die Datenbereinigung. Die meisten Datensätze bleiben in der Regel Rohdiamanten, obwohl mehr rauszuholen wäre. Das nachfolgende Tutorial dient als Motivationsgrundlage.</p>
+<p><b>Das Problem</b>: Wie lassen sich die Geldbeträge aus der Spalte <code>“Delikt”</code> in separate Spalten überführen? In OpenRefine lässt sich das wie folgt realisieren:</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_1.ong_.png" alt="Alternativer Text" /></p>
+<p><b>Die einzelnen Schritte</b>: Ich werde zunächst eine neue Spalte anlegen. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Delikt”</code> die Option <code>Edit column</code> und den Befehl <code>Add column based on this column</code> aus.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_2.ong_.png" alt="Alternativer Text" /></p>
+<p>Eine neue Eingabemaske öffnet sich. Dort definieren wir zuerst den neuen Spaltennamen <code>“Euro”</code>.  Anschließend wähle ich <code>“Clojure”</code> als Syntax Sprache aus. Danach geben wir folgende Syntax ein:</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_4.ong_.png" alt="Alternativer Text" /></p>
+<p>Was macht die Syntax? Der Code sucht in der Spalte <code>“Delikt”</code> nach Elementen, die das Sonderzeichen <code>“€”</code> tragen. Wenn ein passendes Element gefunden wird, kopiert OpenRefine dieses in die neue Spalte <code>“Euro”</code>.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_3.ong_.png" alt="Alternativer Text" /></p>
+<p>Das Ergebnis nach der ersten Transformation kann sich durchaus sehen lassen. Alle Elemente wurden erfolgreich identifiziert und isoliert.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_5.ong_.png" alt="Alternativer Text" /></p>
+<p>Der erste Schritt hat lediglich die Eurobeträge extrahiert. Nun sollen auch die Dollarbeträge isoliert werden. Dazu wiederholen wir die Schritte mit zwei kleinen Änderungen.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_6.ong_.png" alt="Alternativer Text" /></p>
+<p>Die erste Änderung betrifft den Spaltennamen. Die neue Spalte heißt nun <code>“US Dollar”</code>. Die zweite Änderung bezieht sich auf die Syntax. Wir tauschen das <code>“€”</code> Zeichen durch <code>“$”</code> aus.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_7.ong_.png" alt="Alternativer Text" /></p>
+<p>Nach der zweiten Datenextraktion hat der Datensatz an Wert gewonnen. Wir konnten Informationen, die vorher nur schwer zugänglich waren, gezielt isolieren und für weitere Analysen nutzbar machen.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_8.ong_.png" alt="Alternativer Text" /></p>
+<p>Der zweite Schritt soll nun die störenden Sonderzeichen <code>“$“</code>, <code>“€“</code>, <code>“.”</code> entfernen. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“US Dollar”</code> die Option <code>Edit cells</code> und den Befehl <code>Transform</code> aus.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_10.ong_.png" alt="Alternativer Text" /></p>
+<p>Was macht die syntax? Der Code durchsucht die Spalte <code>“US Dollar”</code> nach folgenden Elementen <code>“$“</code>, <code>“.”</code> und löscht diese. Die Funktion dürfte den meisten von uns unter den Namen <code>“Suchen und Ersetzen”</code> bekannt sein. In der Voransicht kann man das Ergebnis der Transformation betrachten. Die letzten Schritte wendet man auch auf die Spalte <code>“Euro”</code> an, um die Datenbereinigung vollständig abzuschließen.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_11.ong_.png" alt="Alternativer Text" /></p>
+<p>Zwei Transformationsschritte waren notwendig, um den Datensatz aufzuwerten. Mit den zwei Schritten konnten wir Daten nutzbar machen, die vorher nur schwer zugänglich waren.</p>
+<p><img src="http://www.databeast.org/databeast/wp-content/uploads/2013/05/open_refine_datamining_12.ong_.png" alt="Alternativer Text" /></p>
 
 
       </div>
