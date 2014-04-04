@@ -19,7 +19,7 @@ body {
 	font-size: 12px;
 	line-height: 18px;
 	font-family: 'Open Sans', sans-serif;
-  	font-weight: 600;
+  font-weight: 600;
 
 }
 
@@ -28,4 +28,8 @@ body {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+}
+
+.info_button {
+    padding-top: 5px;
 }
