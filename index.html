@@ -52,12 +52,12 @@
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span> 
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+        <a data-toggle="collapse" data-parent="#accordion" href="#1">
           OpenRefine Tutorial:  Datenzeilen zergliedern
         </a>
       </h4>
     </div>
-    <div id="collapseOne" class="panel-collapse collapse">
+    <div id="1" class="panel-collapse collapse">
       <div class="panel-body" >
 
         
@@ -81,12 +81,12 @@
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span> 
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+        <a data-toggle="collapse" data-parent="#accordion" href="#2">
           OpenRefine Tutorial: Suchen und Ersetzen
         </a>
       </h4>
     </div>
-    <div id="collapseTwo" class="panel-collapse collapse">
+    <div id="2" class="panel-collapse collapse">
       <div class="panel-body" >
 <p>Im Rahmen der Datenbereinigung kommt man um die <code>Suchen und Ersetzen</code> Funktion nicht herum. Die Herangehensweise erkläre ich wie immer anhand meines manipulierten Datensatzes, der <a href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz">hier heruntergeladen</a>  werden kann. Dabei werde ich ein Element innerhalb des Datensatzes, der Informationen über die Mitglieder des Bundestages (MdB) enthält, modifizieren bzw. korrigieren. Dazu nutze ich wieder OpenRefine.</p>
 <p>In der Spalte <code>Name, Vorname</code> ist neben dem Namen und Vornamen auch die Parteizugehörigkeit aufgeführt. Hier habe ich einen kleinen Fehler eingebaut. Die Parteikennung <code>“DIE LINKE.”</code> ist durch einen Punkt am Ende verunreinigt. Diesen will ich entfernen bzw. durch die korrekte Ausprägung <code>“DIE LINKE”</code> ersetzen. Dazu wähle ich das <code>Drop Down</code> Menü der Spalte aus und bewege die Maus über den Menüpunkt <code>Edit cells</code> und wähle dann anschließend die Funktion <code>Transform</code> aus.</p>
@@ -104,12 +104,12 @@
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+        <a data-toggle="collapse" data-parent="#accordion" href="#3">
           OpenRefine Tutorial: Datamining
         </a>
       </h4>
     </div>
-    <div id="collapseThree" class="panel-collapse collapse">
+    <div id="3" class="panel-collapse collapse">
       <div class="panel-body" >
         <p>Wo muss man viel Zeit, Geduld und Einfallsreichtum investieren? Jep, in die Datenbereinigung. Die meisten Datensätze bleiben in der Regel Rohdiamanten, obwohl mehr rauszuholen wäre. Das nachfolgende Tutorial dient als Motivationsgrundlage.</p>
 <p><b>Das Problem</b>: Wie lassen sich die Geldbeträge aus der Spalte <code>“Delikt”</code> in separate Spalten überführen? In OpenRefine lässt sich das wie folgt realisieren:</p>
@@ -146,44 +146,44 @@
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+        <a data-toggle="collapse" data-parent="#accordion" href="#4">
           OpenRefine Tutorial: Doppelte Zeileneinträge in Spalten löschen
         </a>
       </h4>
     </div>
-    <div id="collapseFour" class="panel-collapse collapse">
+    <div id="4" class="panel-collapse collapse">
       <div class="panel-body" >
       <p>Bevor man mit einer Datenanalyse beginnt, sollte man den Datensatz bereinigen. Eine unterschätzte Fehlerquelle beim Umgang mit großen Datensätzen ist das <code>"Doppelte Lottchen"</code> - Datenzeilen mit identischen Inhalt. Insbesondere bei quantitativen Analysen können sie das Ergebnis der Auswertung verzerren. Daher ist es ratsam diese vorher zu identifizieren und gegebenenfalls zu entfernen. In OpenRefine lässt sich das wie folgt realisieren.</p>
-<p><b>Das Beispiel</b>: Mein Datensatz enthält drei Doppler – die Doppler weisen dabei Unterschiede in der Schreibweise (Groß- / Kleinschreibung) auf. Inhaltlich sind die Doppler jedoch identisch. Diese will ich nun entfernen. Dazu geh ich wie folgt vor:</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_01.png" alt="Alternativer Text" /></p>
-<p><b>Die einzelnen schritte</b>: Ich werde zunächst die Daten sortieren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Sort</code> aus.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_02.png" alt="Alternativer Text" /></p>
-<p>Eine neue Eingabemaske erscheint. Hier definiere ich den Sortiermodus für den Inhalt. Da der Datensatz überwiegend Textbausteine enthält, wähle ich die Option <code>text</code> aus. Wenn der Datensatz nur Zahlen enthalten würde, wäre die Option <code>numbers</code> geeigneter. Abschließend wähle ich die Reihenfolge der Sortierung <code>a-z</code> und bestätige meine Auswahl mit <code>OK</code>.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_03.png" alt="Alternativer Text" /></p>
-<p>Nach der Transformation befinden sich die Doppler untereinander. Diese Reihenfolge übernehme ich und verwerfe somit die alte. Hierzu wähle ich aus dem <code>Dropdown Menü</code> die Option <code>Sort</code> und anschließend die Auswahl <code>Reorder rows permanently</code> aus.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_04.png" alt="Alternativer Text" /></p>
-<p>Im nächsten Schritt werde ich ich die Datenzeilen mit identischen Inhalt leeren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit cells</code> und dann die Funktion <code>Blank down</code> aus.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
-<p>Das Ergebnis ist mehr als unbefriedigend. Lediglich ein Doppler wurde erfolgreich entfernt. Offenbar genügt bereits eine Abweichung in der Schreibweise (Groß- / Kleinschreibung), um die Erkennung von Dopplern zunichte zu machen. Aus semiotischer Sicht mag das korrekt sein – aus semantischer Sicht allerdings unbrauchbar. Somit muss ich nun tricksen, um das gewünschte Ergebnis zu erhalten.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_06.png" alt="Alternativer Text" /></p>
-<p>Ich klicke in der Menüleiste auf <code>“Undo/Redo“</code>, um meine letzte Transformation rückgängig zu machen. Dafür wähle ich aus dem Log die Auswahl  <code>Reorder rows</code>.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_07.png" alt="Alternativer Text" /></p>
-<p>Danach wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit  cells</code>, <code>Common transforms</code> und anschließend die Option <code>To uppercase</code> aus. Der Befehl transformiert den gesamten Inhalt aller Zellen in Großbuchstaben. Inhaltlich gehen dabei keine Informationen verloren.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_08.png" alt="Alternativer Text" /></p>
-<p>Das Ergebnis der Transformation sieht nun so aus.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_09.png" alt="Alternativer Text" /></p>
-<p>Nun werde ich erneut die Zeilen mit den identischen Einträgen leeren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit cells</code> und anschließend den Befehl <code>Blank down</code> aus.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
-<p>Das Ergebnis der neuen Transformation kann sich sehen lassen. Die Doppler wurden entfernt. Dafür verunreinigen nun mehrere leere Datenzeilen meinen Datensatz.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_10.png" alt="Alternativer Text" /></p>
-<p>Diese werde ich im nächsten Schritt gezielt entfernen. Hierfür wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Facet</code>, <code>Customized facets</code> und dann den Befehl <code>Facet by blank</code> aus.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_11.png" alt="Alternativer Text" /></p>
-<p>In der linken Menüleiste sehe ich das Ergebnis der Prozedur. Es wurden fünf leere Datenzeilen gefunden. Durch klicken auf <code>true</code> aktiviere ich diese Auswahl, die ich jetzt gezielt in der Datenansicht betrachten kann.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_12.png" alt="Alternativer Text" /></p>
-<p>Und so löscht man die leeren Datenzeilen – hierzu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“All”</code> die Option <code>Edit rows</code> und dann die Funktion <code>Remove all matching rows</code> aus. Somit werden die aktiven Datenzeilen gezielt aus dem Datensatz entfernt.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_13.png" alt="Alternativer Text" /></p>
-<p>Das finale Ergebnis der Datenbereinigung sieht nun so aus. Keine Doppler oder leere Datenzeilen.</p>
-<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_14.png" alt="Alternativer Text" /></p>  
+	<p><b>Das Beispiel</b>: Mein Datensatz enthält drei Doppler – die Doppler weisen dabei Unterschiede in der Schreibweise (Groß- / Kleinschreibung) auf. Inhaltlich sind die Doppler jedoch identisch. Diese will ich nun entfernen. Dazu geh ich wie folgt vor:</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_01.png" alt="Alternativer Text" /></p>
+	<p><b>Die einzelnen schritte</b>: Ich werde zunächst die Daten sortieren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Sort</code> aus.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_02.png" alt="Alternativer Text" /></p>
+	<p>Eine neue Eingabemaske erscheint. Hier definiere ich den Sortiermodus für den Inhalt. Da der Datensatz überwiegend Textbausteine enthält, wähle ich die Option <code>text</code> aus. Wenn der Datensatz nur Zahlen enthalten würde, wäre die Option <code>numbers</code> geeigneter. Abschließend wähle ich die Reihenfolge der Sortierung <code>a-z</code> und bestätige meine Auswahl mit <code>OK</code>.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_03.png" alt="Alternativer Text" /></p>
+	<p>Nach der Transformation befinden sich die Doppler untereinander. Diese Reihenfolge übernehme ich und verwerfe somit die alte. Hierzu wähle ich aus dem <code>Dropdown Menü</code> die Option <code>Sort</code> und anschließend die Auswahl <code>Reorder rows permanently</code> aus.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_04.png" alt="Alternativer Text" /></p>
+	<p>Im nächsten Schritt werde ich ich die Datenzeilen mit identischen Inhalt leeren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit cells</code> und dann die Funktion <code>Blank down</code> aus.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
+	<p>Das Ergebnis ist mehr als unbefriedigend. Lediglich ein Doppler wurde erfolgreich entfernt. Offenbar genügt bereits eine Abweichung in der Schreibweise (Groß- / Kleinschreibung), um die Erkennung von Dopplern zunichte zu machen. Aus semiotischer Sicht mag das korrekt sein – aus semantischer Sicht allerdings unbrauchbar. Somit muss ich nun tricksen, um das gewünschte Ergebnis zu erhalten.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_06.png" alt="Alternativer Text" /></p>
+	<p>Ich klicke in der Menüleiste auf <code>“Undo/Redo“</code>, um meine letzte Transformation rückgängig zu machen. Dafür wähle ich aus dem Log die Auswahl  <code>Reorder rows</code>.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_07.png" alt="Alternativer Text" /></p>
+	<p>Danach wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit  cells</code>, <code>Common transforms</code> und anschließend die Option <code>To uppercase</code> aus. Der Befehl transformiert den gesamten Inhalt aller Zellen in Großbuchstaben. Inhaltlich gehen dabei keine Informationen verloren.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_08.png" alt="Alternativer Text" /></p>
+	<p>Das Ergebnis der Transformation sieht nun so aus.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_09.png" alt="Alternativer Text" /></p>
+	<p>Nun werde ich erneut die Zeilen mit den identischen Einträgen leeren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit cells</code> und anschließend den Befehl <code>Blank down</code> aus.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
+	<p>Das Ergebnis der neuen Transformation kann sich sehen lassen. Die Doppler wurden entfernt. Dafür verunreinigen nun mehrere leere Datenzeilen meinen Datensatz.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_10.png" alt="Alternativer Text" /></p>
+	<p>Diese werde ich im nächsten Schritt gezielt entfernen. Hierfür wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Facet</code>, <code>Customized facets</code> und dann den Befehl <code>Facet by blank</code> aus.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_11.png" alt="Alternativer Text" /></p>
+	<p>In der linken Menüleiste sehe ich das Ergebnis der Prozedur. Es wurden fünf leere Datenzeilen gefunden. Durch klicken auf <code>true</code> aktiviere ich diese Auswahl, die ich jetzt gezielt in der Datenansicht betrachten kann.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_12.png" alt="Alternativer Text" /></p>
+	<p>Und so löscht man die leeren Datenzeilen – hierzu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“All”</code> die Option <code>Edit rows</code> und dann die Funktion <code>Remove all matching rows</code> aus. Somit werden die aktiven Datenzeilen gezielt aus dem Datensatz entfernt.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_13.png" alt="Alternativer Text" /></p>
+	<p>Das finale Ergebnis der Datenbereinigung sieht nun so aus. Keine Doppler oder leere Datenzeilen.</p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_14.png" alt="Alternativer Text" /></p>  
 
       </div>
     </div>
@@ -195,12 +195,12 @@
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+        <a data-toggle="collapse" data-parent="#accordion" href="#5">
           OpenRefine Tutorial: ZEIT Online API anzapfen
         </a>
       </h4>
     </div>
-    <div id="collapseFive" class="panel-collapse collapse">
+    <div id="5" class="panel-collapse collapse">
       <div class="panel-body" >
       <p>Vergangene Woche hat Zeit Online die <a href="http://developer.zeit.de/index/" target="<em>blank">Content API (beta)</a> von der Datenleine gelassen. Um in den Datenpalast zu gelangen, muss man sich zunächst einen <a href="http://developer.zeit.de/quickstart/" target="</em>blank">API-Key besorgen</a>. Mit dem API-Key kann man entweder direkt über den <a href="http://developer.zeit.de/explorer/" target="_blank">API-Explorer</a> die Daten durchforsten oder man greift auf OpenRefine zurück.</p>
 	<p>Nachdem man OpenRefine gestartet hat, legt man ein neues Projekt an. Dabei wählt man die Option <code>“Web Addresses (URLs)”</code> aus. Anschließend muss man die <code>URL</code> bzw. den sog. <code>HTTP Request</code> definieren. Aus der nachfolgenden Illustration lässt sich die Zusammensetzung der Suchanfrage ableiten.</p>
@@ -217,12 +217,12 @@
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+        <a data-toggle="collapse" data-parent="#accordion" href="#6">
           OpenRefine Tutorial: Spalte duplizieren
         </a>
       </h4>
     </div>
-    <div id="collapseSix" class="panel-collapse collapse">
+    <div id="6" class="panel-collapse collapse">
       <div class="panel-body" >
       <p>Um eine Datenspalte in OpenRefine zu duplizieren, gehe ich wie folgt vor. Ich importiere zunächst einen beliebigen Datensatz in OpenRefine. Ich entscheide mich für einen zweispaltigen Datensatz mit sechs Datenzeilen rund um das Thema Obst und Gemüse.</p>
 	<p><img class="img-responsive" src="img/2012/07/google-refine_spalte-duplizieren-1.png" alt="Alternativer Text" /></p>
@@ -243,12 +243,50 @@
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+        <a data-toggle="collapse" data-parent="#accordion" href="#7">
           Just another ...
         </a>
       </h4>
     </div>
-    <div id="collapseSeven" class="panel-collapse collapse">
+    <div id="7" class="panel-collapse collapse">
+      <div class="panel-body" >
+        
+
+      </div>
+    </div>
+  </div>
+<!-- end -->
+
+<!-- start -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <span class="glyphicon glyphicon-list-alt"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#8">
+          Just another ...
+        </a>
+      </h4>
+    </div>
+    <div id="8" class="panel-collapse collapse">
+      <div class="panel-body" >
+        
+
+      </div>
+    </div>
+  </div>
+<!-- end -->
+
+<!-- start -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <span class="glyphicon glyphicon-list-alt"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#9">
+          Just another ...
+        </a>
+      </h4>
+    </div>
+    <div id="9" class="panel-collapse collapse">
       <div class="panel-body" >
         
 
