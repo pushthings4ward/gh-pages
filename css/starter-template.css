@@ -22,3 +22,9 @@ body {
   	font-weight: 600;
 
 }
+
+.panel-title {
+    color: inherit;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
