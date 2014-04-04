@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="my plvyground">
+    <meta name="author" content="cosmin cabulea">
     <!--<link rel="shortcut icon" href="img/favicon.ico">-->
 
     <title>my plvyground</title>
@@ -196,13 +196,16 @@
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-          Just another ...
+          OpenRefine Tutorial: ZEIT Online API anzapfen
         </a>
       </h4>
     </div>
     <div id="collapseFive" class="panel-collapse collapse">
       <div class="panel-body" >
-        
+      <p>Vergangene Woche hat Zeit Online die <a href="http://developer.zeit.de/index/" target="<em>blank">Content API (beta)</a> von der Datenleine gelassen. Um in den Datenpalast zu gelangen, muss man sich zunächst einen <a href="http://developer.zeit.de/quickstart/" target="</em>blank">API-Key besorgen</a>. Mit dem API-Key kann man entweder direkt über den <a href="http://developer.zeit.de/explorer/" target="_blank">API-Explorer</a> die Daten durchforsten oder man greift auf OpenRefine zurück.</p>
+	<p>Nachdem man OpenRefine gestartet hat, legt man ein neues Projekt an. Dabei wählt man die Option <code>“Web Addresses (URLs)”</code> aus. Anschließend muss man die <code>URL</code> bzw. den sog. <code>HTTP Request</code> definieren. Aus der nachfolgenden Illustration lässt sich die Zusammensetzung der Suchanfrage ableiten.</p>
+	<p><img src="img/2012/11/google_refine_zonapi.png" alt="Alternativer Text" /></p>
+	<p>Die ZEIT Online API <a href="http://developer.zeit.de/docs/content/" target="_blank">Dokumentation</a> beschreibt kurz und bündig die Möglichkeiten der API. Das Resultat der Abfrage wird im JSON Format ausgeliefert. In der Preview Ansicht kann man entweder alle Informationen übernehmen oder nur Teilfragmente <code>(Title, URI, Supertitle … etc.)</code>.</p>  
 
       </div>
     </div>
@@ -215,13 +218,20 @@
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-          Just another ...
+          OpenRefine Tutorial: Spalte duplizieren
         </a>
       </h4>
     </div>
     <div id="collapseSix" class="panel-collapse collapse">
       <div class="panel-body" >
-        
+      <p>Um eine Datenspalte in OpenRefine zu duplizieren, gehe ich wie folgt vor. Ich importiere zunächst einen beliebigen Datensatz in OpenRefine. Ich entscheide mich für einen zweispaltigen Datensatz mit sechs Datenzeilen rund um das Thema Obst und Gemüse.</p>
+	<p><img src="img/2012/07/google-refine_spalte-duplizieren-1.png" alt="Alternativer Text" /></p>
+	<p>Die Spalte <code>“Gemüse”</code> werde ich jetzt klonen. Warum? Ich will beim Herumdoktern mit dem Datensatz keinen Datenverlust oder eine Verunreinigung der Originalspalte riskieren. Dazu wähle ich im <code>Dropdown Menü</code> der Spalte <code>“Gemüse”</code> zunächst die Option <code>Edit column</code> und anschließend die Auswahl <code>Add column based on this column</code> aus.</p>
+	<p><img src="img/2012/07/google-refine_spalte-duplizieren-2.png" alt="Alternativer Text" /></p>
+	<p>Ein neues Eingabefenster öffnet sich. Hier definiere ich nun den Namen der neuen Spalte <code>“Neue Gemüse Spalte“</code>. Anschließend nutze ich den GREL-Befehl <code>cells["Gemüse"].value</code>.</p>
+	<p>Um die Spalte <code>“Gemüse”</code> zu klonen. Im Vorschaufenster kann man das Ergebnis überprüfen.</p>
+	<p><img src="img/2012/07/google-refine_spalte-duplizieren-3.png" alt="Alternativer Text" /></p>
+	<p>Alternativ kann man auch den Befehl <code>value</code> verwenden, um die Spalte zu klonen.</p>  
 
       </div>
     </div>
