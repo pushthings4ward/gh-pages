@@ -299,14 +299,21 @@
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
         <a data-toggle="collapse" data-parent="#accordion" href="#8">
-          Just another ...
+          XPath Tutorial: Mehrere Datentabellen mit XPath exportieren
         </a>
       </h4>
     </div>
     <div id="8" class="panel-collapse collapse">
       <div class="panel-body" >
-        
-
+      <p><b>Mehrere Datentabellen mit XPath exportieren</b></p>
+      <p>Vor einiger Zeit habe ich die <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd" target="_blank">Google Chrome Extension Scraper</a> vorgestellt. Damit lassen sich Datentabellen aus HTML Webseiten direkt in ein Google Spreadsheet exportieren. Heute zeige ich wie man direkt mehrere Datentabellen aus einer Webseite mit Scraper exportiert. Für die Übung habe ich mir <a href="https://dev.twitter.com/docs/api/1.1" target="_blank">Twitters Entwicklerseite</a> ausgesucht, da man dort direkt mehrere Datentabellen (hier rot umrahmt) hintereinander findet. Ich markiere die ersten drei Zeilen der ersten Tabelle und klicke auf die rechte Maustaste. Dort wähle ich aus dem Menü die Option <code>Scrape similar</code> aus. Scraper selektiert nun automatisch alle nachfolgenden Zeilen, die zur Tabelle gehören.</p>
+      <p><img src="img/2012/04/Bildschirmfoto-2012-04-09-um-15.42.22-e1333979002698.png" alt="Alternativer Text" /></p>
+      <p>Und so sieht das Ergebnis aus. Sollte das Ausgabefenster leer sein, genügt ein Klick auf die rechte Maustaste und die Auswahl der Option <code>Neu laden</code>, um das Ergebnis sichtbar zu machen.</p>
+      <p><img src="img/2012/04/Bildschirmfoto-2012-04-09-um-15.57.40-e1333979901694.png" alt="Alternativer Text" /></p>
+      <p>Auf der rechten Seite sieht man jetzt alle abgetragenen Datenzeilen der ersten Tabelle. Da wir aber alle Tabellen auf der Webseite abtragen wollen, wenden wir unseren Blick nach Links auf die Eingabemaske <code>“XPath“</code>, die folgende Befehlszeile enthält: <code>//table[1]/tbody/tr[td]</code></p>
+      <p>Aka.: Scrape alle Datenzeilen, die zu der ersten Tabelle gehören. Ich ersetze die <code>1</code>, die hier für die erste Tabelle steht, durch ein <code>*</code> und klicke anschließend auf <code>Scrape</code>. Das <code>*</code> hebt die Selektion auf die erste Tabelle auf und greift nun beim Scrapen auf alle Tabellen zu. Auf der rechten Seite füllt sich nun die Voransicht mit allen verfügbaren Datenzeilen. Sollte das Ausgabefenster leer sein, genügt ein Klick auf die rechte Maustaste und die Auswahl der Option <code>Neu laden</code>, um das Ergebnis sichtbar zu machen.</p>  
+      <br>  
+      <b>Published: 09 April, 2012</b>
       </div>
     </div>
   </div>
