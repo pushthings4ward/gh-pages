@@ -277,50 +277,46 @@
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
-        <a data-toggle="collapse" data-parent="#accordion" href="#9">
-          OpenRefine Tutorial: Externe Datenspalten importieren
+        <a data-toggle="collapse" data-parent="#accordion" href="#10">
+         OpenRefine Tutorial: Externe Datenspalten importieren 
         </a>
       </h4>
     </div>
-    <div id="9" class="panel-collapse collapse">
+    <div id="10" class="panel-collapse collapse">
       <div class="panel-body" >
       
       In Rahmen der Datenrecherche wird man nur selten alle notwendigen Information in einem Datensatz finden. Die Datenlage kann schnell unübersichtlich werden, wenn man die Kontrolle über seine Datensätze verliert. Um das Risiko zu reduzieren, empfiehlt es sich die benötigten Information in einem Datensatz zusammenzuführen.
 
-<br><br><b>Das Szenario</b>: Zu Beginn meiner Recherche liegt <code>Datensatz 1</code> vor. Dieser setzt sich aus vier Spalten <code>("Vorname", "Name", "Alter", "Geschlecht")</code> zusammen. Ergänzende Information <code>("Wohnort", "Beruf")</code> finde ich in <code>Datensatz 2</code>. Um bei der Analyse nicht ständig zwischen den zwei Datensätzen springen zu müssen, sollen die Information <code>("Wohnort", "Beruf")</code> aus dem zweiten Datensatz dem ersten hinzugefügt werden.
+      <br><br><b>Das Szenario</b>: Zu Beginn meiner Recherche liegt <code>Datensatz 1</code> vor. Dieser setzt sich aus vier Spalten <code>("Vorname", "Name", "Alter", "Geschlecht")</code> zusammen. Ergänzende Information <code>("Wohnort", "Beruf")</code> finde ich in <code>Datensatz 2</code>. Um bei der Analyse nicht ständig zwischen den zwei Datensätzen springen zu müssen, sollen die Information <code>("Wohnort", "Beruf")</code> aus dem zweiten Datensatz dem ersten hinzugefügt werden.<br>
 
-<img  class="img-responsive" src="img/2012/09/google_refine_how_to_1.png" alt="Alternativer Text" />
+      <img  class="img-responsive" src="img/2012/09/google_refine_how_to_1.png" alt="Alternativer Text" />
 
+       <b>Wichtiger Hinweis</b>: Die erfolgreiche Datenfusion ist an eine wichtige Bedingung geknüpft. Beide Datensätze müssen über eine Datenspalte verfügen, die identisch ist. Sie bildet die Orientierungsgrundlage für die korrekte Zuordnung der einzelnen Datenzeilen. Für das gewählte Beispiel wäre das die Spalte <code>"Vorname"</code>. Anhand dieser Spalte wird OpenRefine die Datenfusion vornehmen. 
 
-<b>Wichtiger Hinweis</b>: Die erfolgreiche Datenfusion ist an eine wichtige Bedingung geknüpft. Beide Datensätze müssen über eine Datenspalte verfügen, die identisch ist. Sie bildet die Orientierungsgrundlage für die korrekte Zuordnung der einzelnen Datenzeilen. Für das gewählte Beispiel wäre das die Spalte <code>"Vorname"</code>. Anhand dieser Spalte wird OpenRefine die Datenfusion vornehmen. 
+       <img  class="img-responsive" src="img/2012/09/google_refine_how_to_2.png" alt="Alternativer Text" />
 
-<img  class="img-responsive" src="img/2012/09/google_refine_how_to_2.png" alt="Alternativer Text" />
+		<b>Die einzelnen Schritte</b>: Ich öffne in OpenRefine den <code>Datensatz 1</code>, der in den folgenden Ausführungen als <code>D1</code> bezeichnet wird. Dort wähle ich zunächst aus dem <code>Dropdown Menü</code> der Spalte <code>“Vorname”</code> die Option <code>Edit column</code> aus und klicke anschließend auf die Option <code>Add column based on this column</code>.
 
-<b>Die einzelnen Schritte</b>: Ich öffne in OpenRefine den <code>Datensatz 1</code>, der in den folgenden Ausführungen als <code>D1</code> bezeichnet wird. Dort wähle ich zunächst aus dem <code>Dropdown Menü</code> der Spalte <code>“Vorname”</code> die Option <code>Edit column</code> aus und klicke anschließend auf die Option <code>Add column based on this column</code>.
+		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_3.png" alt="Alternativer Text" />
 
-<img  class="img-responsive" src="img/2012/09/google_refine_how_to_3.png" alt="Alternativer Text" />
+		Eine neue Eingabemaske öffnet sich. Aus dem <code>Datensatz 2</code> aka. <code>D2</code> soll die Datenspalte <code>“Beruf”</code> nach <code>D1</code> kopiert werden. Als erstes definiere ich den Spaltnamen <code>“Beruf“</code>. Dann nutze ich die GREL Syntax, um den Datenfusionsprozess zu definieren.
 
-Eine neue Eingabemaske öffnet sich. Aus dem <code>Datensatz 2</code> aka. <code>D2</code> soll die Datenspalte <code>“Beruf”</code> nach <code>D1</code> kopiert werden. Als erstes definiere ich den Spaltnamen <code>“Beruf“</code>. Dann nutze ich die GREL Syntax, um den Datenfusionsprozess zu definieren.
+		<br><br><b>GREL syntax:</b>  <code>cell.cross(“D2“,”Vorname“).cells[„Beruf“].value[0]</code><br><br>
 
-<br><br><b>GREL syntax:</b>  <code>cell.cross(“D2“,”Vorname“).cells[„Beruf“].value[0]</code><br><br>
+		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_4.png" alt="Alternativer Text" />
+		<br>In der Voransicht lässt sich das Ergebnis der Datenfusion begutachten. Wenn das Ergebnis korrekt ist, genügt ein abschließender Klick auf <code>OK</code>, um die Transformation abzuschließen. Was genau habe ich mit der GREL Syntax gemacht? Ich öffne zuerst den Datensatz <code>D2</code>. Dann definiere ich die Orientierungsgrundlage für die Datenfusion – die Spalte <code>“Vorname“</code>. Abschließend lege ich die zu kopierende Spalte fest – <code>“Beruf“</code>.
 
-<img  class="img-responsive" src="img/2012/09/google_refine_how_to_4.png" alt="Alternativer Text" />
+		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_5.png" alt="Alternativer Text" />
 
-<br>In der Voransicht lässt sich das Ergebnis der Datenfusion begutachten. Wenn das Ergebnis korrekt ist, genügt ein abschließender Klick auf <code>OK</code>, um die Transformation abzuschließen. Was genau habe ich mit der GREL Syntax gemacht? Ich öffne zuerst den Datensatz <code>D2</code>. Dann definiere ich die Orientierungsgrundlage für die Datenfusion – die Spalte <code>“Vorname“</code>. Abschließend lege ich die zu kopierende Spalte fest – <code>“Beruf“</code>.
+		In der Gegenüberstellung sieht man das Ergebnis der erfolgreichen Datenfusion. Die noch fehlende Datenspalte <code>“Wohnort”</code> würde man gemäß der Anleitung ergänzen.
 
-<img  class="img-responsive" src="img/2012/09/google_refine_how_to_5.png" alt="Alternativer Text" />
-
-In der Gegenüberstellung sieht man das Ergebnis der erfolgreichen Datenfusion. Die noch fehlende Datenspalte <code>“Wohnort”</code> würde man gemäß der Anleitung ergänzen.
-
-<img  class="img-responsive" src="img/2012/09/google_refine_how_to_6.png" alt="Alternativer Text" />
-
-
-<b>Published: 1. September, 2012<b> 
-
+		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_6.png" alt="Alternativer Text" />	
+		<b>Published: 1. September, 2012</b>
       </div>
     </div>
   </div>
 <!-- end -->
+
 
 <!-- start -->
   <div class="panel panel-default">
