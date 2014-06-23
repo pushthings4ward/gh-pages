@@ -317,6 +317,64 @@
   </div>
 <!-- end -->
 
+<!-- start -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <span class="glyphicon glyphicon-list-alt"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#13">
+         OpenRefine Tutorial: Informationen in Datenzellen ergänzen 
+        </a>
+      </h4>
+    </div>
+    <div id="13" class="panel-collapse collapse">
+      <div class="panel-body" >
+      Ab und zu fehlen in Datensätzen einzelne Elemente (Buchstaben, Ziffern, Satzzeichen), die nachträglich ergänzt werden müssen. In der folgenden Darstellung fehlt beispielsweise der Buchstabe <code>w</code>, der den Link vervollständigen würde. Mit OpenRefine lässt sich die Transformation unkompliziert umsetzen.
+<br>
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_1.png" alt="Alternativer Text" />
+<br>
+Und so gehts – ich wähle zunächst aus dem Dropdown Menü der Spalte <code>“URL”</code> die Option <code>Edit cells</code> aus und klicke anschließend auf die Option <code>Transform</code>.
+<br>
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_2.png" alt="Alternativer Text" />
+<br>
+Eine neue Eingabemaske öffnet sich. Hier nutze ich die GREL Syntax, um das fehlende <code>w</code> zu ergänzen.
+<br><br>
+<b>GREL Syntax:</b>  <code>“w” + value</code>
+<br><br>
+Im der Voransicht ist das Ergebnis der Transformation bereits sichtbar. Wenn das Ergebnis korrekt ist, genügt ein Klick auf <code>OK</code>, um die Transformation abzuschließen.
+<br><br>
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_3.png" alt="Alternativer Text" />
+<br>
+Im nächsten Anwendungsbeispiel kombiniere ich Daten über mehrere Spalten hinweg. In der nachfolgenden Darstellung sieht man eine zerstückelte URL. Die einzelnen Fragmente sollen nun wieder zusammengefügt werden.
+<br>
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_4.png" alt="Alternativer Text" />
+<br>
+Und so gehts – ich wähle zunächst aus dem Dropdown Menü der Spalte <code>“NAME”</code> die Option <code>Edit column</code> aus und klicke anschließend auf die Option <code>Add column based on this column</code>.
+<br><br>
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_5.png" alt="Alternativer Text" />
+<br>
+Die GREL Eingabemaske öffnet sich. Hier vergebe ich zunächst den Namen für die neue Spalte <code>“FULL URL“</code>. Danach nutze ich erneut die GREL Syntax, um die einzelnen URL Elemente zusammenzuführen.
+<br><br>
+<b>GREL Syntax:</b>  <code>cells["HTTP"].value + “://” + cells["WWW"].value + “.” + cells["NAME"].value</code>
+<br><br>
+Im der Voransicht lässt sich das Ergebnis der Transformation begutachten. Wenn das Ergebnis korrekt ist, genügt ein abschließender Klick auf <code>OK</code>, um die Transformation zu finalisieren.
+<br>
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_6.png" alt="Alternativer Text" />
+<br>
+Was genau habe ich mit der GREL Syntax gemacht? Ich nutze die Syntax, um aus jeder Spalte das entsprechende Element zu kopieren und anschließend in die neue Spalte <code>“FULL URL”</code> zu überführen. Diese Abschnitte der Syntax sind Rot hervorgehoben. Obendrein ergänze ich noch fehlende Satzzeichen, die sich nicht im Datensatz befinden. Diese Elemente habe ich Blau hervorgehoben.
+<br>
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_7.png" alt="Alternativer Text" />
+<br>
+Das finale Ergebnis ist die Spalte <code>“FULL URL”</code> mit der vollständigen URL.
+<br>
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_8.png" alt="Alternativer Text" />
+<br>
+<b>Published: 26. August, 2012</b>  
+
+      </div>
+    </div>
+  </div>
+<!-- end -->
 
 <!-- start -->
   <div class="panel panel-default">
