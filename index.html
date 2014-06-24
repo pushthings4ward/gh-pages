@@ -381,6 +381,56 @@ Das finale Ergebnis ist die Spalte <code>“FULL URL”</code> mit der vollstän
     <div class="panel-heading">
       <h4 class="panel-title" >
       <span class="glyphicon glyphicon-list-alt"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#14">
+         OpenRefine Tutorial: Transponieren
+        </a>
+      </h4>
+    </div>
+    <div id="14" class="panel-collapse collapse">
+      <div class="panel-body" >
+      
+Datenbereinigung ohne die <code>Transponier Funktion</code> – ausgeschlossen. Die Vorzüge dieser Funktion will ich an einem Beispiel illustrieren. Hierfür benutze ich einen manipulierten Datensatz mit zwei Spalten. Während die Spalte mit der Bezeichnung <code>“Name”</code> nur ein Element enthält, weist die Spalte mit dem Namen <code>“Sportabzeichen”</code> mindestens zwei Elemente auf.
+<br><br>
+<b>Zielsetzung:</b> Ich will zunächst die Elemente aus der Spalte <code>“Sportabzeichen”</code> auf mehrere Spalten aufsplitten und anschließend wieder auf die zwei Ausgangsspalten reduzieren. Somit kann ich dann anhand der Spalte <code>“Sportabzeichen”</code> saubere Cluster bilden. Nachdem clustern kann ich beispielsweise nur die Personen betrachten, die das Sportabzeichen Seepferdchen besitzen (Nina, Max, Anna, Elisa, August).
+<br><br>
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine.png" />
+<br><br>
+Und so gehts – ich wähle aus dem Dropdown Menü der Spalte <code>“Sportabzeichen”</code> die Option <code>Edit column</code> und anschließend die Auswahl <code>Split into several columns</code> aus.
+<br><br>
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-2.png" />
+<br><br>
+Ein neues Menüfenster öffnet sich. OpenRefine soll jetzt alle Elemente (Sportabzeichen) aus den Zellen der Spalte <code>“Sportabzeichen”</code> auf mehrere Spalten aufteilen. Jedes Sportabzeichen ist durch ein Komma getrennt. Dieses Detail mache ich mir zunutze, indem ich das Komma als Trennungsmerkmal definieren <code>by seperator</code>. Um den Datensatz möglichst übersichtlich und sauber zu halten, setze ich noch zwei Häckchen. Was wird passieren? Mit <code>Guess cell type</code> erkennt OpenRefine, ob der neue Zelleninhalt beispielsweise numerischer Art ist. <code>Remove this column</code> entfernt die Ausgangsspalte. Klick auf <code>OK</code>.
+<br><br>
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-3.png" />
+<br><br>
+Und so sieht das Zwischenergebnis der Transformation aus.
+<br><br>
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-4.png" />
+<br><br>
+Nachdem die Details aus der Spalte <code>“Sportabzeichen”</code> auf mehrere Spalten aufgeteilt wurden, kommt nun die <code>Transponier Funktion</code> zum Einsatz. Ich wähle aus dem Dropdown Menü der Spalte <code>“Name”</code> die Option <code>Transponse</code> und anschließend die Auswahl <code>Transponse cells across columns into rows</code> aus.
+<br><br>
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-5.png" />
+<br><br>
+Eine neue Eingabemaske öffnet sich. Um alle vier Spalten (Sportabzeichen) zusammenzuführen, gehe ich folgt vor: Ich wähle zunächst die Spalte <code>“Sportabzeichen 1”</code> und dann die Spalte <code>“Sportabzeichen 4”</code> aus. Dann markiere ich den Menüpukt <code>One column</code> und definiere den Namen für die neue/alte Spalte <code>“Sportabzeichen“</code>. Zu guter Letzt setzte ich noch zwei Häckchen, um leere Zellen bei der Transformation zu ignorieren <code>Ignore blank cells</code> und die vier Spalten zu einer zusammenzufassen <code>Fill down in other columns</code>. Klick auf <code>OK</code>.
+<br><br>
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-6.png" />
+<br><br>
+Und so sieht das Ergebnis aus. Nun kann ich über die <code>Facet Funktion</code> meine Clusterung vornehmen.
+<br><br>
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-7.png" />
+<br><br>
+<b>Published: 16. Juli, 2012</b>  
+
+      </div>
+    </div>
+  </div>
+<!-- end -->
+
+<!-- start -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <span class="glyphicon glyphicon-list-alt"></span>
         <a data-toggle="collapse" data-parent="#accordion" href="#7">
           Scraper Tutorial: Datentabellen aus Webseiten exportieren
         </a>
