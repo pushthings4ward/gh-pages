@@ -426,6 +426,67 @@ Und so sieht das Ergebnis aus. Nun kann ich über die <code>Facet Funktion</code
   </div>
 <!-- end -->
 
+
+<!-- start -->
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <span class="glyphicon glyphicon-list-alt"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#15">
+         OpenRefine Tutorial: Rechnen
+        </a>
+      </h4>
+    </div>
+    <div id="15" class="panel-collapse collapse">
+      <div class="panel-body" >
+        Rechnen mit OpenRefine? Ja, auch das ist möglich. Vor dem Start sollte man aber einige Dinge berücksichtigen. Wenn man neue Daten in OpenRefine importiert, empfehle ich das Häckchen <code>Parse cell text into numbers, dates … </code>zu entfernen. Warum? Bei der Division und Multiplikation kann es zu unerwünschten Ergebnissen kommen, wenn OpenRefine den Zelleninhalt nicht richtig identifiziert. Um dies zu vermeiden, lasse ich das Häckchen weg.
+<br><br>
+<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-1.png" />
+<br><br>
+Für die Demo habe ich ein absolut unspektakulären Datensatz gewählt – drei Spalten mit sieben Datenzeilen.
+<br><br>
+<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-5.png" />
+<br><br>
+Als erstes muss ich OpenRefine sagen, dass es sich beim Inhalt der Zellen um numerische Werte handelt. Ich wähle aus dem Dropdown Menü der Spalte <code>“A”</code> die Option <code>Edit cells</code> anschließend das Submenü <code>Common transform</code> und schließlich die Funktion <code>To number</code> aus. Dieser Schritt muss für alle Spalten wiederholt werden, die numerische Werte enthalten.
+<br><br>
+<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-2.png" />
+<br><br>
+Wenn die Transformation für alle Spalten abgeschlossen ist, kann die Rechnerrei beginnen. Ich wähle aus dem Dropdown Menü der Spalte <code>“C”</code> die Option <code>Edit column</code> und anschließend die Funktion <code>Add column based on this column</code> aus. Ohne Bedenken hätte ich auch die Spalte <code>“A”</code> oder <code>“B”</code> auswählen können, um eine neue Spalte anzulegen.
+<br><br>
+<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-3.png" />
+<br><br>
+Ein neues Fenster öffnet sich. Hier definiere ich zunächst den Namen der neuen Spalte <code>“Ergebnis Division“</code>, in der das Ergebnis meiner Division abgelegt werden soll. Danach weise ich OpenRefine mit dem GREL Befehl<br><br><code>cells["A"].value / cells["C"].value</code> <br><br>die Zellen der Spalte <code>“A”</code> durch die entsprechenden Zellen der Spalte <code>“C”</code> zu dividieren. In der Voransicht lässt sich das Ergebnis überprüfen. Wenn das Ergebnis korrekt ist, genügt ein Klick auf <code>OK</code>, um die Transformation abzuschließen.
+<br><br>
+<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-4.png" />
+<br><br>
+Natürlich lassen sich auch andere Rechenaufgaben meistern.
+<br><br>
+<b>Addition:</b> <code>cells["A"].value + cells["C"].value</code>
+<br><br>
+<b>Subtraktion:</b> <code>cells["A"].value - cells["C"].value</code>
+<br><br>
+<b>Division:</b> <code>cells["A"].value / cells["C"].value</code>
+<br><br>
+<b>Multiplikation:</b> <code>cells["A"].value * cells["C"].value</code>
+<br><br>
+Durch die Hinzunahme der Klammer wird zunächst die Addition durchgeführt, bevor das vorläufige Ergebnis der spalte <code>“A+C”</code> mit der Spalte <code>“B”</code> multipliziert bzw. im Beispiel darunter dividiert wird.<br><br>
+<code>(cells["A"].value + cells["C"].value) * cells["B"].value</code>
+<br><br>
+<code>(cells["A"].value - cells["C"].value) / cells["B"].value</code>
+<br><br>
+<b>Published: 9. Juli, 2012</b>
+
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- end -->
+
+
 <!-- start -->
   <div class="panel panel-default">
     <div class="panel-heading">
