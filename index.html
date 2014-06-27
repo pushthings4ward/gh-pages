@@ -488,6 +488,41 @@ Durch die Hinzunahme der Klammer wird zunächst die Addition durchgeführt, bevo
 
 
 <!-- start -->
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <i class="fa fa-code fa-lg"></i>
+        <a data-toggle="collapse" data-parent="#accordion" href="#99">
+         OpenRefine Tutorial: Benutzerdefinierter Datenexport 
+        </a>
+      </h4>
+    </div>
+    <div id="99" class="panel-collapse collapse">
+      <div class="panel-body" >
+       OpenRefine bietet mit der benutzerdefinierten Datenexport Funktion <code>Templating</code> eine simple Möglichkeit Daten in die gewünschte Endform zu überführen. Die Templating Funktion befindet sich rechts oben im Menü unter der Auswahl <code>Export</code>.
+	<br><br>
+	<img class="img-responsive" src="img/2012/06/google-refine-templating.png" alt="OpenRefine" />
+	<br><br>
+	Dort finden sich mit TSV, CSV, HTML, Excel etc. bereits vordefinierte Exporteinstellungen wieder. Nach der Auswahl der Templating Funktion öffnet sich eine Eingabemaske. Während man auf der linken Seite der Eingabemaske die Datenstruktur der Daten definiert, sieht man in der rechten Spalte eine Vorschau der Datenstruktur. Wenn man die Templating Funktion zum ersten Mal nutzt, bietet OpenRefine eine eigene Definition für den Datenexport an. Diese verwerfe ich, da ich an dieser Stelle nur das Grundkonzept erklären will, d.h. ich entferne den Inhalt aus den folgenden Masken <code>Prefix</code>, <code>Row Template</code>, <code>Row Seperator</code>, <code>Suffix</code>.
+	Um auf die einzelnen Spalten, zuzugreifen wähle ich folgende Befehlszeile: <br><br><code>{{jsonize(cells["Geschlecht"].value)}}</code> <br><br>dieser Befehl trägt für jede vordefinierte Spalte (hier <code>Geschlecht</code>) den Inhalt jeder Zeile ab. Somit kann ich flexibel nur jene Spalten exportieren, die relevant sind. Für das Beispiel habe ich die Spalten <code>Geschlecht</code> und <code>Name</code> gewählt: <br><br><code>{{jsonize(cells["Geschlecht"].value)}},{{jsonize(cells["Name"].value)}}</code><br><br> den Code um die einzelnen Spalten anzusprechen trennt ein Komma.
+	<br><br>
+	<img class="img-responsive" src="img/2012/06/google-refine-export-templating.png" alt="OpenRefine" />
+	<br><br>
+	Wenn die finale Datenstruktur bereits im Vorfeld bekannt (xml oder json) ist, sollte man die erforderlichen Strukturdefinitionen in der  <code>Prefix</code>, <code>Row Template</code>, <code>Row Seperator</code> und <code>Suffix</code> Maske mitdefinieren.
+ 	<br><br>
+	<b>Published: 7. Juni, 2012</b>
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- end -->
+
+
+<!-- start -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title" >
