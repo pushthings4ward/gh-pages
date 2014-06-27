@@ -92,11 +92,11 @@
 <p>So sieht mein Plan aus – ich will die Informationen aus der Spalte <code>"Name, Vorname"</code> zergliedern. Genau genommen beabsichtige ich den <code>Namen, Vornamen</code> und <code>Partei</code> jedes Abgeordneten in eine separate Spalte überführen.</p>
 <p>Nachdem ich die Daten importiert habe, wähle ich das Dropdown Menü der Spalte <code>"Name, Vorname"</code> aus. Dabei fahre ich mit der Maus über den Menüpunkt <code>Edit column</code> und wähle im rechten Seitenmenü die Option <code>Split into several columns</code> aus.</p>
 <p>Ein neues Menüfenster öffnet sich. Hier muss ich definieren wie OpenRefine die Datenzeile zergliedern soll. Ich kann hier zwischen zwei Optionen wählen – <code>by separater</code> und <code>by field lenghts</code>. Wer sich den Datensatz und insbesondere die Spalte <code>"Name, Vorname"</code> angeguckt hat, dem ist vielleicht aufgefallen, dass die einzelnen Informationsbrocken <code>Name, Vorname</code> und <code>Partei</code> durch ein Komma getrennt sind. Dieses gemeinsame Merkmal, das über alle Datenzeilen hinweg existiert, will ich mir zunutze machen. Daher wähle ich die Option <code>by separater</code> aus. Wenn ein anderes Zeichen die Informationen trennt, muss man in der Zeile unterhalb das entsprechende Zeichen anpassen. Da ich die Spalte <code>"Name, Vorname"</code> nach der Transformation nicht löschen will, entferne ich auf der rechten Seite das Häkchen <code>Remove this column</code>. <code>OK</code> klicken.</p>
-<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.39.49.png" /></p>
+<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.39.49.png" alt="OpenRefine" /></p>
 <p>Drei neue Spalten sind das Ergebnis der Transformation. Jetzt passe ich noch den Namen der Spalte an. Dazu fahre ich mit der Maus über das Dropdown Menü der Spalte <code>"Name, Vorname"</code> zum Menüpunkt <code>edit column</code> und wähle dort die Option <code>rename this column</code> aus.</p>
-<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.37.54-e1332185226175.png" /></p>
+<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.37.54-e1332185226175.png" alt="OpenRefine" /></p>
 <p>Hier editiere ich den Namen und bestätige die Eingabe mit <code>OK</code>. Die anderen zwei Spalten werden ebenso angepasst. </p>
-<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.37.18.png" /></p>
+<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.37.18.png" alt="OpenRefine" /></p>
 
 <b>Published: 19. März, 2012</b>
       </div>
@@ -118,9 +118,9 @@
       <div class="panel-body" >
 <p>Im Rahmen der Datenbereinigung kommt man um die <code>Suchen und Ersetzen</code> Funktion nicht herum. Die Herangehensweise erkläre ich wie immer anhand meines manipulierten Datensatzes, der <a href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz">hier heruntergeladen</a>  werden kann. Dabei werde ich ein Element innerhalb des Datensatzes, der Informationen über die Mitglieder des Bundestages (MdB) enthält, modifizieren bzw. korrigieren. Dazu nutze ich wieder OpenRefine.</p>
 <p>In der Spalte <code>Name, Vorname</code> ist neben dem Namen und Vornamen auch die Parteizugehörigkeit aufgeführt. Hier habe ich einen kleinen Fehler eingebaut. Die Parteikennung <code>“DIE LINKE.”</code> ist durch einen Punkt am Ende verunreinigt. Diesen will ich entfernen bzw. durch die korrekte Ausprägung <code>“DIE LINKE”</code> ersetzen. Dazu wähle ich das <code>Drop Down</code> Menü der Spalte aus und bewege die Maus über den Menüpunkt <code>Edit cells</code> und wähle dann anschließend die Funktion <code>Transform</code> aus.</p>
-<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-23-um-10.44.36-e1332502380392.png" /></p>
+<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-23-um-10.44.36-e1332502380392.png" alt="OpenRefine" /></p>
 <p>Eine Eingabemaske öffnet sich. Folgende Syntax gebe ich jetzt in die Konsole ein <code>value.replace(“DIE LINKE.”, “DIE LINKE)</code>. Mit dem Befehl wird OpenRefine angewiesen die Spalte <code>“Name, Vorname”</code> nach der Ausprägung <code>“DIE LINKE.”</code> zu durchsuchen und diese durch die neue Bezeichnung <code>“DIE LINKE”</code> zu ersetzen. Im Preview Fenster ist die erfolgreiche Transformation in Zeile 7 bereits sichtbar. Ich bestätige die Eingabe durch <code>OK</code> und schließe damit die Transformation ab.</p>
-<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-23-um-10.44.43-e1332502830807.png"  /></p> 
+<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-23-um-10.44.43-e1332502830807.png" alt="OpenRefine" /></p> 
 <br>  
       <b>Published: 23 März, 2012</b>
 
@@ -143,27 +143,27 @@
       <div class="panel-body" >
         <p>Wo muss man viel Zeit, Geduld und Einfallsreichtum investieren? Jep, in die Datenbereinigung. Die meisten Datensätze bleiben in der Regel Rohdiamanten, obwohl mehr rauszuholen wäre. Das nachfolgende Tutorial dient als Motivationsgrundlage.</p>
 <p><b>Das Problem</b>: Wie lassen sich die Geldbeträge aus der Spalte <code>“Delikt”</code> in separate Spalten überführen? In OpenRefine lässt sich das wie folgt realisieren:</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_1.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_1.ong_.png" alt="OpenRefine" /></p>
 <p><b>Die einzelnen Schritte</b>: Ich werde zunächst eine neue Spalte anlegen. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Delikt”</code> die Option <code>Edit column</code> und den Befehl <code>Add column based on this column</code> aus.</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_2.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_2.ong_.png" alt="OpenRefine" /></p>
 <p>Eine neue Eingabemaske öffnet sich. Dort definieren wir zuerst den neuen Spaltennamen <code>“Euro”</code>.  Anschließend wähle ich <code>“Clojure”</code> als Syntax Sprache aus. Danach geben wir folgende Syntax ein:</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_4.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_4.ong_.png" alt="OpenRefine" /></p>
 <p>Was macht die Syntax? Der Code sucht in der Spalte <code>“Delikt”</code> nach Elementen, die das Sonderzeichen <code>“€”</code> tragen. Wenn ein passendes Element gefunden wird, kopiert OpenRefine dieses in die neue Spalte <code>“Euro”</code>.</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_3.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_3.ong_.png" alt="OpenRefine" /></p>
 <p>Das Ergebnis nach der ersten Transformation kann sich durchaus sehen lassen. Alle Elemente wurden erfolgreich identifiziert und isoliert.</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_5.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_5.ong_.png" alt="OpenRefine" /></p>
 <p>Der erste Schritt hat lediglich die Eurobeträge extrahiert. Nun sollen auch die Dollarbeträge isoliert werden. Dazu wiederholen wir die Schritte mit zwei kleinen Änderungen.</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_6.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_6.ong_.png" alt="OpenRefine" /></p>
 <p>Die erste Änderung betrifft den Spaltennamen. Die neue Spalte heißt nun <code>“US Dollar”</code>. Die zweite Änderung bezieht sich auf die Syntax. Wir tauschen das <code>“€”</code> Zeichen durch <code>“$”</code> aus.</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_7.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_7.ong_.png" alt="OpenRefine" /></p>
 <p>Nach der zweiten Datenextraktion hat der Datensatz an Wert gewonnen. Wir konnten Informationen, die vorher nur schwer zugänglich waren, gezielt isolieren und für weitere Analysen nutzbar machen.</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_8.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_8.ong_.png" alt="OpenRefine" /></p>
 <p>Der zweite Schritt soll nun die störenden Sonderzeichen <code>“$“</code>, <code>“€“</code>, <code>“.”</code> entfernen. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“US Dollar”</code> die Option <code>Edit cells</code> und den Befehl <code>Transform</code> aus.</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_10.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_10.ong_.png" alt="OpenRefine" /></p>
 <p>Was macht die syntax? Der Code durchsucht die Spalte <code>“US Dollar”</code> nach folgenden Elementen <code>“$“</code>, <code>“.”</code> und löscht diese. Die Funktion dürfte den meisten von uns unter den Namen <code>“Suchen und Ersetzen”</code> bekannt sein. In der Voransicht kann man das Ergebnis der Transformation betrachten. Die letzten Schritte wendet man auch auf die Spalte <code>“Euro”</code> an, um die Datenbereinigung vollständig abzuschließen.</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_11.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_11.ong_.png" alt="OpenRefine" /></p>
 <p>Zwei Transformationsschritte waren notwendig, um den Datensatz aufzuwerten. Mit den zwei Schritten konnten wir Daten nutzbar machen, die vorher nur schwer zugänglich waren.</p>
-<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_12.ong_.png" alt="Alternativer Text" /></p>
+<p><img class="img-responsive" src="img/2013/05/open_refine_datamining_12.ong_.png" alt="OpenRefine" /></p>
 <b>Published: 6. August, 2013</b>
 
       </div>
@@ -185,35 +185,35 @@
       <div class="panel-body" >
       <p>Bevor man mit einer Datenanalyse beginnt, sollte man den Datensatz bereinigen. Eine unterschätzte Fehlerquelle beim Umgang mit großen Datensätzen ist das <code>"Doppelte Lottchen"</code> - Datenzeilen mit identischen Inhalt. Insbesondere bei quantitativen Analysen können sie das Ergebnis der Auswertung verzerren. Daher ist es ratsam diese vorher zu identifizieren und gegebenenfalls zu entfernen. In OpenRefine lässt sich das wie folgt realisieren.</p>
 	<p><b>Das Beispiel</b>: Mein Datensatz enthält drei Doppler – die Doppler weisen dabei Unterschiede in der Schreibweise (Groß- / Kleinschreibung) auf. Inhaltlich sind die Doppler jedoch identisch. Diese will ich nun entfernen. Dazu geh ich wie folgt vor:</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_01.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_01.png" alt="OpenRefine" /></p>
 	<p><b>Die einzelnen schritte</b>: Ich werde zunächst die Daten sortieren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Sort</code> aus.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_02.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_02.png" alt="OpenRefine" /></p>
 	<p>Eine neue Eingabemaske erscheint. Hier definiere ich den Sortiermodus für den Inhalt. Da der Datensatz überwiegend Textbausteine enthält, wähle ich die Option <code>text</code> aus. Wenn der Datensatz nur Zahlen enthalten würde, wäre die Option <code>numbers</code> geeigneter. Abschließend wähle ich die Reihenfolge der Sortierung <code>a-z</code> und bestätige meine Auswahl mit <code>OK</code>.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_03.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_03.png" alt="OpenRefine" /></p>
 	<p>Nach der Transformation befinden sich die Doppler untereinander. Diese Reihenfolge übernehme ich und verwerfe somit die alte. Hierzu wähle ich aus dem <code>Dropdown Menü</code> die Option <code>Sort</code> und anschließend die Auswahl <code>Reorder rows permanently</code> aus.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_04.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_04.png" alt="OpenRefine" /></p>
 	<p>Im nächsten Schritt werde ich ich die Datenzeilen mit identischen Inhalt leeren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit cells</code> und dann die Funktion <code>Blank down</code> aus.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="OpenRefine" /></p>
 	<p>Das Ergebnis ist mehr als unbefriedigend. Lediglich ein Doppler wurde erfolgreich entfernt. Offenbar genügt bereits eine Abweichung in der Schreibweise (Groß- / Kleinschreibung), um die Erkennung von Dopplern zunichte zu machen. Aus semiotischer Sicht mag das korrekt sein – aus semantischer Sicht allerdings unbrauchbar. Somit muss ich nun tricksen, um das gewünschte Ergebnis zu erhalten.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_06.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_06.png" alt="OpenRefine" /></p>
 	<p>Ich klicke in der Menüleiste auf <code>“Undo/Redo“</code>, um meine letzte Transformation rückgängig zu machen. Dafür wähle ich aus dem Log die Auswahl  <code>Reorder rows</code>.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_07.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_07.png" alt="OpenRefine" /></p>
 	<p>Danach wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit  cells</code>, <code>Common transforms</code> und anschließend die Option <code>To uppercase</code> aus. Der Befehl transformiert den gesamten Inhalt aller Zellen in Großbuchstaben. Inhaltlich gehen dabei keine Informationen verloren.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_08.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_08.png" alt="OpenRefine" /></p>
 	<p>Das Ergebnis der Transformation sieht nun so aus.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_09.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_09.png" alt="OpenRefine"/></p>
 	<p>Nun werde ich erneut die Zeilen mit den identischen Einträgen leeren. Dazu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Edit cells</code> und anschließend den Befehl <code>Blank down</code> aus.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_05.png" alt="OpenRefine" /></p>
 	<p>Das Ergebnis der neuen Transformation kann sich sehen lassen. Die Doppler wurden entfernt. Dafür verunreinigen nun mehrere leere Datenzeilen meinen Datensatz.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_10.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_10.png" alt="OpenRefine" /></p>
 	<p>Diese werde ich im nächsten Schritt gezielt entfernen. Hierfür wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“Daten”</code> die Option <code>Facet</code>, <code>Customized facets</code> und dann den Befehl <code>Facet by blank</code> aus.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_11.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_11.png" alt="OpenRefine" /></p>
 	<p>In der linken Menüleiste sehe ich das Ergebnis der Prozedur. Es wurden fünf leere Datenzeilen gefunden. Durch klicken auf <code>true</code> aktiviere ich diese Auswahl, die ich jetzt gezielt in der Datenansicht betrachten kann.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_12.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_12.png" alt="OpenRefine" /></p>
 	<p>Und so löscht man die leeren Datenzeilen – hierzu wähle ich aus dem <code>Dropdown Menü</code> der Spalte <code>“All”</code> die Option <code>Edit rows</code> und dann die Funktion <code>Remove all matching rows</code> aus. Somit werden die aktiven Datenzeilen gezielt aus dem Datensatz entfernt.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_13.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_13.png" alt="OpenRefine" /></p>
 	<p>Das finale Ergebnis der Datenbereinigung sieht nun so aus. Keine Doppler oder leere Datenzeilen.</p>
-	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_14.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2013/02/google_refine_doppelte_zeilen_loeschen_14.png" alt="OpenRefine" /></p>
   <br>  
       <b>Published: 2. Februar, 2013</b>  
 
@@ -236,7 +236,7 @@
       <div class="panel-body" >
       <p>Vergangene Woche hat Zeit Online die <a href="http://developer.zeit.de/index/" target="<em>blank">Content API (beta)</a> von der Datenleine gelassen. Um in den Datenpalast zu gelangen, muss man sich zunächst einen <a href="http://developer.zeit.de/quickstart/" target="</em>blank">API-Key besorgen</a>. Mit dem API-Key kann man entweder direkt über den <a href="http://developer.zeit.de/explorer/" target="_blank">API-Explorer</a> die Daten durchforsten oder man greift auf OpenRefine zurück.</p>
 	<p>Nachdem man OpenRefine gestartet hat, legt man ein neues Projekt an. Dabei wählt man die Option <code>“Web Addresses (URLs)”</code> aus. Anschließend muss man die <code>URL</code> bzw. den sog. <code>HTTP Request</code> definieren. Aus der nachfolgenden Illustration lässt sich die Zusammensetzung der Suchanfrage ableiten.</p>
-	<p><img class="img-responsive" src="img/2012/11/google_refine_zonapi.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2012/11/google_refine_zonapi.png" alt="OpenRefine" /></p>
 	<p>Die ZEIT Online API <a href="http://developer.zeit.de/docs/content/" target="_blank">Dokumentation</a> beschreibt kurz und bündig die Möglichkeiten der API. Das Resultat der Abfrage wird im JSON Format ausgeliefert. In der Preview Ansicht kann man entweder alle Informationen übernehmen oder nur Teilfragmente <code>(Title, URI, Supertitle … etc.)</code>.</p>  <br>  
       <b>Published: 25. November, 2012</b>
 
@@ -258,12 +258,12 @@
     <div id="6" class="panel-collapse collapse">
       <div class="panel-body" >
       <p>Um eine Datenspalte in OpenRefine zu duplizieren, gehe ich wie folgt vor. Ich importiere zunächst einen beliebigen Datensatz in OpenRefine. Ich entscheide mich für einen zweispaltigen Datensatz mit sechs Datenzeilen rund um das Thema Obst und Gemüse.</p>
-	<p><img class="img-responsive" src="img/2012/07/google-refine_spalte-duplizieren-1.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2012/07/google-refine_spalte-duplizieren-1.png" alt="OpenRefine" /></p>
 	<p>Die Spalte <code>“Gemüse”</code> werde ich jetzt klonen. Warum? Ich will beim Herumdoktern mit dem Datensatz keinen Datenverlust oder eine Verunreinigung der Originalspalte riskieren. Dazu wähle ich im <code>Dropdown Menü</code> der Spalte <code>“Gemüse”</code> zunächst die Option <code>Edit column</code> und anschließend die Auswahl <code>Add column based on this column</code> aus.</p>
-	<p><img class="img-responsive" src="img/2012/07/google-refine_spalte-duplizieren-2.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2012/07/google-refine_spalte-duplizieren-2.png" alt="OpenRefine" /></p>
 	<p>Ein neues Eingabefenster öffnet sich. Hier definiere ich nun den Namen der neuen Spalte <code>“Neue Gemüse Spalte“</code>. Anschließend nutze ich den GREL-Befehl <code>cells["Gemüse"].value</code>.</p>
 	<p>Um die Spalte <code>“Gemüse”</code> zu klonen. Im Vorschaufenster kann man das Ergebnis überprüfen.</p>
-	<p><img class="img-responsive" src="img/2012/07/google-refine_spalte-duplizieren-3.png" alt="Alternativer Text" /></p>
+	<p><img class="img-responsive" src="img/2012/07/google-refine_spalte-duplizieren-3.png" alt="OpenRefine" /></p>
 	<p>Alternativ kann man auch den Befehl <code>value</code> verwenden, um die Spalte zu klonen.</p>  
 
 	<b>Published: 15. Juli, 2012</b>
@@ -289,28 +289,28 @@
 
       <br><br><b>Das Szenario</b>: Zu Beginn meiner Recherche liegt <code>Datensatz 1</code> vor. Dieser setzt sich aus vier Spalten <code>("Vorname", "Name", "Alter", "Geschlecht")</code> zusammen. Ergänzende Information <code>("Wohnort", "Beruf")</code> finde ich in <code>Datensatz 2</code>. Um bei der Analyse nicht ständig zwischen den zwei Datensätzen springen zu müssen, sollen die Information <code>("Wohnort", "Beruf")</code> aus dem zweiten Datensatz dem ersten hinzugefügt werden.<br>
 
-      <img  class="img-responsive" src="img/2012/09/google_refine_how_to_1.png" alt="Alternativer Text" />
+      <img  class="img-responsive" src="img/2012/09/google_refine_how_to_1.png" alt="OpenRefine" />
 
        <b>Wichtiger Hinweis</b>: Die erfolgreiche Datenfusion ist an eine wichtige Bedingung geknüpft. Beide Datensätze müssen über eine Datenspalte verfügen, die identisch ist. Sie bildet die Orientierungsgrundlage für die korrekte Zuordnung der einzelnen Datenzeilen. Für das gewählte Beispiel wäre das die Spalte <code>"Vorname"</code>. Anhand dieser Spalte wird OpenRefine die Datenfusion vornehmen. 
 
-       <img  class="img-responsive" src="img/2012/09/google_refine_how_to_2.png" alt="Alternativer Text" />
+       <img  class="img-responsive" src="img/2012/09/google_refine_how_to_2.png" alt="OpenRefine" />
 
 		<b>Die einzelnen Schritte</b>: Ich öffne in OpenRefine den <code>Datensatz 1</code>, der in den folgenden Ausführungen als <code>D1</code> bezeichnet wird. Dort wähle ich zunächst aus dem <code>Dropdown Menü</code> der Spalte <code>“Vorname”</code> die Option <code>Edit column</code> aus und klicke anschließend auf die Option <code>Add column based on this column</code>.
 
-		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_3.png" alt="Alternativer Text" />
+		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_3.png" alt="OpenRefine" />
 
 		Eine neue Eingabemaske öffnet sich. Aus dem <code>Datensatz 2</code> aka. <code>D2</code> soll die Datenspalte <code>“Beruf”</code> nach <code>D1</code> kopiert werden. Als erstes definiere ich den Spaltnamen <code>“Beruf“</code>. Dann nutze ich die GREL Syntax, um den Datenfusionsprozess zu definieren.
 
 		<br><br><b>GREL syntax:</b>  <code>cell.cross(“D2“,”Vorname“).cells[„Beruf“].value[0]</code><br><br>
 
-		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_4.png" alt="Alternativer Text" />
+		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_4.png" alt="OpenRefine" />
 		<br>In der Voransicht lässt sich das Ergebnis der Datenfusion begutachten. Wenn das Ergebnis korrekt ist, genügt ein abschließender Klick auf <code>OK</code>, um die Transformation abzuschließen. Was genau habe ich mit der GREL Syntax gemacht? Ich öffne zuerst den Datensatz <code>D2</code>. Dann definiere ich die Orientierungsgrundlage für die Datenfusion – die Spalte <code>“Vorname“</code>. Abschließend lege ich die zu kopierende Spalte fest – <code>“Beruf“</code>.
 
-		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_5.png" alt="Alternativer Text" />
+		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_5.png" alt="OpenRefine" />
 
 		In der Gegenüberstellung sieht man das Ergebnis der erfolgreichen Datenfusion. Die noch fehlende Datenspalte <code>“Wohnort”</code> würde man gemäß der Anleitung ergänzen.
 
-		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_6.png" alt="Alternativer Text" />	
+		<img  class="img-responsive" src="img/2012/09/google_refine_how_to_6.png" alt="OpenRefine" />	
 		<b>Published: 1. September, 2012</b>
       </div>
     </div>
@@ -331,11 +331,11 @@
       <div class="panel-body" >
       Ab und zu fehlen in Datensätzen einzelne Elemente (Buchstaben, Ziffern, Satzzeichen), die nachträglich ergänzt werden müssen. In der folgenden Darstellung fehlt beispielsweise der Buchstabe <code>w</code>, der den Link vervollständigen würde. Mit OpenRefine lässt sich die Transformation unkompliziert umsetzen.
 <br>
-<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_1.png" alt="Alternativer Text" />
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_1.png" alt="OpenRefine" />
 <br>
 Und so gehts – ich wähle zunächst aus dem Dropdown Menü der Spalte <code>“URL”</code> die Option <code>Edit cells</code> aus und klicke anschließend auf die Option <code>Transform</code>.
 <br>
-<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_2.png" alt="Alternativer Text" />
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_2.png" alt="OpenRefine" />
 <br>
 Eine neue Eingabemaske öffnet sich. Hier nutze ich die GREL Syntax, um das fehlende <code>w</code> zu ergänzen.
 <br><br>
@@ -343,15 +343,15 @@ Eine neue Eingabemaske öffnet sich. Hier nutze ich die GREL Syntax, um das fehl
 <br><br>
 Im der Voransicht ist das Ergebnis der Transformation bereits sichtbar. Wenn das Ergebnis korrekt ist, genügt ein Klick auf <code>OK</code>, um die Transformation abzuschließen.
 <br><br>
-<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_3.png" alt="Alternativer Text" />
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_3.png" alt="OpenRefine" />
 <br>
 Im nächsten Anwendungsbeispiel kombiniere ich Daten über mehrere Spalten hinweg. In der nachfolgenden Darstellung sieht man eine zerstückelte URL. Die einzelnen Fragmente sollen nun wieder zusammengefügt werden.
 <br>
-<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_4.png" alt="Alternativer Text" />
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_4.png" alt="OpenRefine" />
 <br>
 Und so gehts – ich wähle zunächst aus dem Dropdown Menü der Spalte <code>“NAME”</code> die Option <code>Edit column</code> aus und klicke anschließend auf die Option <code>Add column based on this column</code>.
 <br><br>
-<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_5.png" alt="Alternativer Text" />
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_5.png" alt="OpenRefine" />
 <br>
 Die GREL Eingabemaske öffnet sich. Hier vergebe ich zunächst den Namen für die neue Spalte <code>“FULL URL“</code>. Danach nutze ich erneut die GREL Syntax, um die einzelnen URL Elemente zusammenzuführen.
 <br><br>
@@ -359,15 +359,15 @@ Die GREL Eingabemaske öffnet sich. Hier vergebe ich zunächst den Namen für di
 <br><br>
 Im der Voransicht lässt sich das Ergebnis der Transformation begutachten. Wenn das Ergebnis korrekt ist, genügt ein abschließender Klick auf <code>OK</code>, um die Transformation zu finalisieren.
 <br>
-<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_6.png" alt="Alternativer Text" />
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_6.png" alt="OpenRefine" />
 <br>
 Was genau habe ich mit der GREL Syntax gemacht? Ich nutze die Syntax, um aus jeder Spalte das entsprechende Element zu kopieren und anschließend in die neue Spalte <code>“FULL URL”</code> zu überführen. Diese Abschnitte der Syntax sind Rot hervorgehoben. Obendrein ergänze ich noch fehlende Satzzeichen, die sich nicht im Datensatz befinden. Diese Elemente habe ich Blau hervorgehoben.
 <br>
-<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_7.png" alt="Alternativer Text" />
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_7.png" alt="OpenRefine" />
 <br>
 Das finale Ergebnis ist die Spalte <code>“FULL URL”</code> mit der vollständigen URL.
 <br>
-<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_8.png" alt="Alternativer Text" />
+<img  class="img-responsive" src="img/2012/08/googlerefine_how_to_8.png" alt="OpenRefine" />
 <br>
 <b>Published: 26. August, 2012</b>  
 
@@ -393,31 +393,31 @@ Datenbereinigung ohne die <code>Transponier Funktion</code> – ausgeschlossen. 
 <br><br>
 <b>Zielsetzung:</b> Ich will zunächst die Elemente aus der Spalte <code>“Sportabzeichen”</code> auf mehrere Spalten aufsplitten und anschließend wieder auf die zwei Ausgangsspalten reduzieren. Somit kann ich dann anhand der Spalte <code>“Sportabzeichen”</code> saubere Cluster bilden. Nachdem clustern kann ich beispielsweise nur die Personen betrachten, die das Sportabzeichen Seepferdchen besitzen (Nina, Max, Anna, Elisa, August).
 <br><br>
-<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine.png" />
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine.png" alt="OpenRefine" />
 <br><br>
 Und so gehts – ich wähle aus dem Dropdown Menü der Spalte <code>“Sportabzeichen”</code> die Option <code>Edit column</code> und anschließend die Auswahl <code>Split into several columns</code> aus.
 <br><br>
-<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-2.png" />
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-2.png" alt="OpenRefine" />
 <br><br>
 Ein neues Menüfenster öffnet sich. OpenRefine soll jetzt alle Elemente (Sportabzeichen) aus den Zellen der Spalte <code>“Sportabzeichen”</code> auf mehrere Spalten aufteilen. Jedes Sportabzeichen ist durch ein Komma getrennt. Dieses Detail mache ich mir zunutze, indem ich das Komma als Trennungsmerkmal definieren <code>by seperator</code>. Um den Datensatz möglichst übersichtlich und sauber zu halten, setze ich noch zwei Häckchen. Was wird passieren? Mit <code>Guess cell type</code> erkennt OpenRefine, ob der neue Zelleninhalt beispielsweise numerischer Art ist. <code>Remove this column</code> entfernt die Ausgangsspalte. Klick auf <code>OK</code>.
 <br><br>
-<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-3.png" />
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-3.png" alt="OpenRefine" />
 <br><br>
 Und so sieht das Zwischenergebnis der Transformation aus.
 <br><br>
-<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-4.png" />
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-4.png" alt="OpenRefine" />
 <br><br>
 Nachdem die Details aus der Spalte <code>“Sportabzeichen”</code> auf mehrere Spalten aufgeteilt wurden, kommt nun die <code>Transponier Funktion</code> zum Einsatz. Ich wähle aus dem Dropdown Menü der Spalte <code>“Name”</code> die Option <code>Transponse</code> und anschließend die Auswahl <code>Transponse cells across columns into rows</code> aus.
 <br><br>
-<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-5.png" />
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-5.png" alt="OpenRefine" />
 <br><br>
 Eine neue Eingabemaske öffnet sich. Um alle vier Spalten (Sportabzeichen) zusammenzuführen, gehe ich folgt vor: Ich wähle zunächst die Spalte <code>“Sportabzeichen 1”</code> und dann die Spalte <code>“Sportabzeichen 4”</code> aus. Dann markiere ich den Menüpukt <code>One column</code> und definiere den Namen für die neue/alte Spalte <code>“Sportabzeichen“</code>. Zu guter Letzt setzte ich noch zwei Häckchen, um leere Zellen bei der Transformation zu ignorieren <code>Ignore blank cells</code> und die vier Spalten zu einer zusammenzufassen <code>Fill down in other columns</code>. Klick auf <code>OK</code>.
 <br><br>
-<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-6.png" />
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-6.png" alt="OpenRefine" />
 <br><br>
 Und so sieht das Ergebnis aus. Nun kann ich über die <code>Facet Funktion</code> meine Clusterung vornehmen.
 <br><br>
-<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-7.png" />
+<img class="img-responsive" src="img/2012/07/transponieren-mit-google-refine-7.png" alt="OpenRefine" />
 <br><br>
 <b>Published: 16. Juli, 2012</b>  
 
@@ -443,23 +443,23 @@ Und so sieht das Ergebnis aus. Nun kann ich über die <code>Facet Funktion</code
       <div class="panel-body" >
         Rechnen mit OpenRefine? Ja, auch das ist möglich. Vor dem Start sollte man aber einige Dinge berücksichtigen. Wenn man neue Daten in OpenRefine importiert, empfehle ich das Häckchen <code>Parse cell text into numbers, dates … </code>zu entfernen. Warum? Bei der Division und Multiplikation kann es zu unerwünschten Ergebnissen kommen, wenn OpenRefine den Zelleninhalt nicht richtig identifiziert. Um dies zu vermeiden, lasse ich das Häckchen weg.
 <br><br>
-<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-1.png" />
+<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-1.png" alt="OpenRefine" />
 <br><br>
 Für die Demo habe ich ein absolut unspektakulären Datensatz gewählt – drei Spalten mit sieben Datenzeilen.
 <br><br>
-<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-5.png" />
+<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-5.png" alt="OpenRefine" />
 <br><br>
 Als erstes muss ich OpenRefine sagen, dass es sich beim Inhalt der Zellen um numerische Werte handelt. Ich wähle aus dem Dropdown Menü der Spalte <code>“A”</code> die Option <code>Edit cells</code> anschließend das Submenü <code>Common transform</code> und schließlich die Funktion <code>To number</code> aus. Dieser Schritt muss für alle Spalten wiederholt werden, die numerische Werte enthalten.
 <br><br>
-<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-2.png" />
+<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-2.png" alt="OpenRefine" />
 <br><br>
 Wenn die Transformation für alle Spalten abgeschlossen ist, kann die Rechnerrei beginnen. Ich wähle aus dem Dropdown Menü der Spalte <code>“C”</code> die Option <code>Edit column</code> und anschließend die Funktion <code>Add column based on this column</code> aus. Ohne Bedenken hätte ich auch die Spalte <code>“A”</code> oder <code>“B”</code> auswählen können, um eine neue Spalte anzulegen.
 <br><br>
-<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-3.png" />
+<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-3.png" alt="OpenRefine" />
 <br><br>
 Ein neues Fenster öffnet sich. Hier definiere ich zunächst den Namen der neuen Spalte <code>“Ergebnis Division“</code>, in der das Ergebnis meiner Division abgelegt werden soll. Danach weise ich OpenRefine mit dem GREL Befehl<br><br><code>cells["A"].value / cells["C"].value</code> <br><br>die Zellen der Spalte <code>“A”</code> durch die entsprechenden Zellen der Spalte <code>“C”</code> zu dividieren. In der Voransicht lässt sich das Ergebnis überprüfen. Wenn das Ergebnis korrekt ist, genügt ein Klick auf <code>OK</code>, um die Transformation abzuschließen.
 <br><br>
-<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-4.png" />
+<img class="img-responsive" src="img/2012/07/rechnen-mit-google-refine-4.png" alt="OpenRefine" />
 <br><br>
 Natürlich lassen sich auch andere Rechenaufgaben meistern.
 <br><br>
@@ -501,9 +501,9 @@ Durch die Hinzunahme der Klammer wird zunächst die Addition durchgeführt, bevo
       <div class="panel-body" >
       <p>Datentabellen, die in <code>HTML</code> auf Webseiten eingebunden sind, lassen sich nicht immer problemlos durch <code>Copy &amp; Paste</code> in ein neues Dokument überführen. Oft werden <code>HTML</code> Fragmente übernommen, die die Tabellenstruktur zerstören. Bis vor wenigen Monaten konnte man den mächtigen Service von Needlebase für diese Aufgabe in Anspruch nehmen. Derzeit wird Needlebase in die Google Produktfamilie integriert – hoffentlich in OpenRefine. Bis dahin setze ich momentan auf <code><a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd" target="_blank">Scraper</a> – eine Google Chrome Extension</code>, die brauchbare Ergebnisse liefert. Prima an der Extension ist die direkte Exportfunktion in ein Google Spreadsheet, d.h. man benötigt ein Google Account.</p>
       <p>Und so einfach kommt man an die Datentabelle: Zunächst muss die Google Chrome Extension Scraper installiert werden. Für die Demonstration habe ich mir die aktuelle Übersicht der bisherigen <a href="https://de.wikipedia.org/wiki/Bundespr%C3%A4sident_%28Deutschland%29" target="_blank">Bundespräsidenten der Bundesrepublik Deutschland auf Wikipedia</a> ausgesucht. Ich markiere die ersten vier Zeilen der Tabelle und klicke auf die rechte Maustaste. Dort wähle ich aus dem Menü die Option <code>Scrape similar</code> aus. Scraper selektiert nun automatisch alle nachfolgenden Zeilen, die zur Tabelle gehören.</p>
-      <p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-30-um-20.15.31-e1333131229707.png" alt="Alternativer Text" /></p>
+      <p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-30-um-20.15.31-e1333131229707.png" alt="OpenRefine" /></p>
       <p>Und so sieht das Ergebnis aus. Sollte das Ausgabefenster leer sein, genügt ein Klick auf die rechte Maustaste und die Auswahl der Option <code>Neu laden</code>, um das Ergebnis sichtbar zu machen. Ein abschließender Klick auf <code>Export to Google Docs</code> leitet uns auf die Webseite von Google weiter, falls wir nicht schon eingeloggt waren. Dort erscheint nun die Tabelle in einem Google Spreadsheet.</p>
-      <p><img  class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-30-um-20.27.52-e1333131971225.png" alt="Alternativer Text" /></p><br>  
+      <p><img  class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-30-um-20.27.52-e1333131971225.png" alt="OpenRefine" /></p><br>  
       <b>Published: 30. März, 2012</b>
       </div>
     </div>
@@ -524,9 +524,9 @@ Durch die Hinzunahme der Klammer wird zunächst die Addition durchgeführt, bevo
       <div class="panel-body" >
       <p><b>Mehrere Datentabellen mit XPath exportieren</b></p>
       <p>Vor einiger Zeit habe ich die <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd" target="_blank">Google Chrome Extension Scraper</a> vorgestellt. Damit lassen sich Datentabellen aus HTML Webseiten direkt in ein Google Spreadsheet exportieren. Heute zeige ich wie man direkt mehrere Datentabellen aus einer Webseite mit Scraper exportiert. Für die Übung habe ich mir <a href="https://dev.twitter.com/docs/api/1.1" target="_blank">Twitters Entwicklerseite</a> ausgesucht, da man dort direkt mehrere Datentabellen (hier rot umrahmt) hintereinander findet. Ich markiere die ersten drei Zeilen der ersten Tabelle und klicke auf die rechte Maustaste. Dort wähle ich aus dem Menü die Option <code>Scrape similar</code> aus. Scraper selektiert nun automatisch alle nachfolgenden Zeilen, die zur Tabelle gehören.</p>
-      <p><img  class="img-responsive" src="img/2012/04/Bildschirmfoto-2012-04-09-um-15.42.22-e1333979002698.png" alt="Alternativer Text" /></p>
+      <p><img  class="img-responsive" src="img/2012/04/Bildschirmfoto-2012-04-09-um-15.42.22-e1333979002698.png" alt="OpenRefine" /></p>
       <p>Und so sieht das Ergebnis aus. Sollte das Ausgabefenster leer sein, genügt ein Klick auf die rechte Maustaste und die Auswahl der Option <code>Neu laden</code>, um das Ergebnis sichtbar zu machen.</p>
-      <p><img  class="img-responsive" src="img/2012/04/Bildschirmfoto-2012-04-09-um-15.57.40-e1333979901694.png" alt="Alternativer Text" /></p>
+      <p><img  class="img-responsive" src="img/2012/04/Bildschirmfoto-2012-04-09-um-15.57.40-e1333979901694.png" alt="OpenRefine" /></p>
       <p>Auf der rechten Seite sieht man jetzt alle abgetragenen Datenzeilen der ersten Tabelle. Da wir aber alle Tabellen auf der Webseite abtragen wollen, wenden wir unseren Blick nach Links auf die Eingabemaske <code>“XPath“</code>, die folgende Befehlszeile enthält: <code>//table[1]/tbody/tr[td]</code></p>
       <p>Aka.: Scrape alle Datenzeilen, die zu der ersten Tabelle gehören. Ich ersetze die <code>1</code>, die hier für die erste Tabelle steht, durch ein <code>*</code> und klicke anschließend auf <code>Scrape</code>. Das <code>*</code> hebt die Selektion auf die erste Tabelle auf und greift nun beim Scrapen auf alle Tabellen zu. Auf der rechten Seite füllt sich nun die Voransicht mit allen verfügbaren Datenzeilen. Sollte das Ausgabefenster leer sein, genügt ein Klick auf die rechte Maustaste und die Auswahl der Option <code>Neu laden</code>, um das Ergebnis sichtbar zu machen.</p>  
       <br>  
