@@ -11,8 +11,8 @@
     <meta property="og:url" content="http://www.pushthings4ward.com" />
     <meta property="og:description" content="OpenRefine Tutorials, Datenjournalismus, Visualisierungen, Datenanalyse" />
     <meta property="og:locale" content="de_DE" />
-    <meta property="article:published_time" content="2014-07-05T07:13:22+00:00" />
-    <meta property="article:modified_time" content="2014-07-05T07:13:22+00:00" />
+    <meta property="article:published_time" content="2014-07-05T07:15:29+00:00" />
+    <meta property="article:modified_time" content="2014-07-05T07:15:29+00:00" />
     <meta property="article:author" content="cosmin cabulea" />
     <meta property="article:publisher" content="http://www.pushthings4ward.com" />
 
@@ -450,6 +450,41 @@ Und so sieht das Ergebnis aus. Nun kann ich über die <code>Facet Funktion</code
   </div>
 <!-- end -->
 
+<!-- start -->
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <i class="fa fa-code fa-lg"></i>
+        <a data-toggle="collapse" data-parent="#accordion" href="#18">
+         OpenRefine Tutorial: Die Text Facet Funktion 
+        </a>
+      </h4>
+    </div>
+    <div id="18" class="panel-collapse collapse">
+      <div class="panel-body" >
+Um die <code>Text Facet Funktion</code> von OpenRefine zu demonstrieren, werde ich für diese Übung einen von meinen manipulierten Datensätzen verwenden. Der Datensatz, der Informationen über die Mitglieder des Bundestages (MdB) enthält, kann für diese und weitere Übungen <a title="mdb datensatz" href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz" target="_blank">hier heruntergeladen</a> werden. Nachdem ich die Daten importiert habe, wähle ich das <code>Dropdown Menü</code> der Spalte <code>"Bundesland"</code> aus. Dort wähle ich die Auswahloption <code>Facet</code> und anschließend <code>Text Facet</code> aus.
+<br><br>
+<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-13-um-13.13.24.png" alt="OpenRefine" />
+<br><br>
+Auf der linken Seite öffnet sich nun ein Menü. Mit der <code>Text Facet Funktion</code> hat OpenRefine alle Elemente aus der Spalte <code>"Bundesland"</code> zu homogenen Clustern zusammengeführt. Da diese Funktion <code>case-sensitive</code> ist, fasst sie die Cluster <code>"Bayern"</code> und <code>"BAYERN"</code> nicht direkt zusammen. Diese werde ich nun händisch zusammenführen. Wenn man die Maus über die einzelnen Clusternamen bewegt, erscheint am Rand der die Menüauswahl <code>edit</code> und <code>include</code>. Ich wähle die Option <code>edit</code> aus.
+<br><br>
+<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-13-um-13.33.06.png" alt="OpenRefine" />
+<br><br>
+Ein Popup Fenster mit freier Texteingabe öffnet sich. Ich ersetze nun den Begriff <code>"BAYERN"</code> durch den Ausdruck <code>"Bayern"</code> und klicke anschließend auf <code>Apply</code>.
+<br><br>
+<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-13-um-13.42.49.png" alt="OpenRefine" />
+<br><br>
+OpenRefine führt nun automatisch die zwei gleichnamigen Cluster zusammen. Das Ergebnis der erfolgreichen Fusion lässt sich anhand der Anzahl der finalen Zeilen hinter dem Cluster überprüfen. Gehörten vor der Transformation des Clusters <code>"Bayern"</code> 81 Zeilen zum Cluster, sind es nach der Fusion 90 Datenzeilen, da die Datenzeilen des <code>"BAYERN"</code> Clusters hinzugekommen sind.
+  <br><br><b>Published: 13. März, 2012</b>
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- end -->
 
 <!-- start -->
 
