@@ -11,8 +11,8 @@
     <meta property="og:url" content="http://www.pushthings4ward.com" />
     <meta property="og:description" content="OpenRefine Tutorials, Datenjournalismus, Visualisierungen, Datenanalyse" />
     <meta property="og:locale" content="de_DE" />
-    <meta property="article:published_time" content="2014-07-05T07:15:29+00:00" />
-    <meta property="article:modified_time" content="2014-07-05T07:15:29+00:00" />
+    <meta property="article:published_time" content="2014-07-05T07:16:06+00:00" />
+    <meta property="article:modified_time" content="2014-07-05T07:16:06+00:00" />
     <meta property="article:author" content="cosmin cabulea" />
     <meta property="article:publisher" content="http://www.pushthings4ward.com" />
 
@@ -464,11 +464,11 @@ Und so sieht das Ergebnis aus. Nun kann ich über die <code>Facet Funktion</code
     </div>
     <div id="18" class="panel-collapse collapse">
       <div class="panel-body" >
-Um die <code>Text Facet Funktion</code> von OpenRefine zu demonstrieren, werde ich für diese Übung einen von meinen manipulierten Datensätzen verwenden. Der Datensatz, der Informationen über die Mitglieder des Bundestages (MdB) enthält, kann für diese und weitere Übungen <a title="mdb datensatz" href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz" target="_blank">hier heruntergeladen</a> werden. Nachdem ich die Daten importiert habe, wähle ich das <code>Dropdown Menü</code> der Spalte <code>"Bundesland"</code> aus. Dort wähle ich die Auswahloption <code>Facet</code> und anschließend <code>Text Facet</code> aus.
+Um die <code>Text Facet</code> Funktion von OpenRefine zu demonstrieren, werde ich für diese Übung einen von meinen manipulierten Datensätzen verwenden. Der Datensatz, der Informationen über die Mitglieder des Bundestages (MdB) enthält, kann für diese und weitere Übungen <a title="mdb datensatz" href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz" target="_blank">hier heruntergeladen</a> werden. Nachdem ich die Daten importiert habe, wähle ich das <code>Dropdown Menü</code> der Spalte <code>"Bundesland"</code> aus. Dort wähle ich die Auswahloption <code>Facet</code> und anschließend <code>Text Facet</code> aus.
 <br><br>
 <img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-13-um-13.13.24.png" alt="OpenRefine" />
 <br><br>
-Auf der linken Seite öffnet sich nun ein Menü. Mit der <code>Text Facet Funktion</code> hat OpenRefine alle Elemente aus der Spalte <code>"Bundesland"</code> zu homogenen Clustern zusammengeführt. Da diese Funktion <code>case-sensitive</code> ist, fasst sie die Cluster <code>"Bayern"</code> und <code>"BAYERN"</code> nicht direkt zusammen. Diese werde ich nun händisch zusammenführen. Wenn man die Maus über die einzelnen Clusternamen bewegt, erscheint am Rand der die Menüauswahl <code>edit</code> und <code>include</code>. Ich wähle die Option <code>edit</code> aus.
+Auf der linken Seite öffnet sich nun ein Menü. Mit der <code>Text Facet</code> Funktion hat OpenRefine alle Elemente aus der Spalte <code>"Bundesland"</code> zu homogenen Clustern zusammengeführt. Da diese Funktion <code>case-sensitive</code> ist, fasst sie die Cluster <code>"Bayern"</code> und <code>"BAYERN"</code> nicht direkt zusammen. Diese werde ich nun händisch zusammenführen. Wenn man die Maus über die einzelnen Clusternamen bewegt, erscheint am Rand der die Menüauswahl <code>edit</code> und <code>include</code>. Ich wähle die Option <code>edit</code> aus.
 <br><br>
 <img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-13-um-13.33.06.png" alt="OpenRefine" />
 <br><br>
@@ -572,6 +572,78 @@ Durch die Hinzunahme der Klammer wird zunächst die Addition durchgeführt, bevo
 	Wenn die finale Datenstruktur bereits im Vorfeld bekannt (xml oder json) ist, sollte man die erforderlichen Strukturdefinitionen in der  <code>Prefix</code>, <code>Row Template</code>, <code>Row Seperator</code> und <code>Suffix</code> Maske mitdefinieren.
  	<br><br>
 	<b>Published: 7. Juni, 2012</b>
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- end -->
+
+<!-- start -->
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <i class="fa fa-code fa-lg"></i>
+        <a data-toggle="collapse" data-parent="#accordion" href="#19">
+         OpenRefine Tutorial: Hintergrundrauschen ausblenden 
+        </a>
+      </h4>
+    </div>
+    <div id="19" class="panel-collapse collapse">
+      <div class="panel-body" >
+       Wenn ich mit großen Datensätzen arbeite, ist es unumgänglich das Hintergrundrauschen (Noise) auszublenden, um sich auf das zu untersuchende Detail zu konzentrieren. Mit <a title="OpenRefine" href="http://openrefine.org/download.html" target="_blank">OpenRefine</a> lässt sich das sehr elegant lösen. Das Prinzip erkläre ich wieder anhand meines manipulierten Datensatzes, der <a title="Datensatz" href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz" target="_blank">hier heruntergeladen</a> werden kann. Aus dem Datensatz, der Informationen über die Mitglieder des Bundestages (MdB) enthält, will ich lediglich jene Abgeordnete betrachten, die der <code>CDU/CSU</code> angehören. Alle anderen Abgeordneten sollen für die Analyse ausgeblendet werden.
+<br><br>
+Wie gehe ich vor - ich werde eine neue Spalte mit dem Namen <code>"CDU/CSU"</code> anlegen, die mit zwei Merkmalen bestückt sein wird - <code>true</code> und <code>false</code>. Dann lasse ich OpenRefine die Spalte <code>"Name, Vorname"</code> nach dem Merkmal <code>CDU/CSU</code> durchsuchen und das Ergebnis in die neue Spalte <code>"CDU/CSU"</code> übertragen. Anschließend werde ich über die <code>Text Facet</code> Funktion alle Merkmale ausblenden, die nicht meiner definierten Suche entsprechen.
+<br><br>
+Nachdem ich die Daten importiert habe, wähle ich das <code>Dropdown Menü</code> der Spalte <code>"Name, Vorname"</code> aus. Dort fahre ich mit der Maus über den Menüpunkt <code>Edit column</code> und wähle aus dem sich öffnenden Fenster die Option <code>Add column based on this column</code> aus.
+<br><br>
+<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-14-um-13.13.48.png" alt="OpenRefine" />
+<br><br>
+Eine neue Eingabemaske öffnet sich. Hier definiere ich den Namen <code>"CDU/CSU"</code> der neuen Spalte, in der die Merkmale <code>true</code> und <code>false</code> abgelegt werden sollen. Danach weise ich OpenRefine mit dem Befehl <code>value.contains("CDU/CSU")</strong></code> an die Spalte nach dem Merkmal <code>"CDU/CSU"</code> zu durchsuchen und das Ergebnis in die Spalte <code>"CDU/CSU"</code> einzutragen. Im Preview Fenster wird das Ergebnis präsentiert. Ich beende die Eingaben mit einem Klick auf <code>OK</code> und kehre automatisch zum Dashboard zurück.
+<br><br>
+<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-14-um-13.14.00.png" alt="OpenRefine" />
+<br><br>
+Rechts neben der Spalte <code>"Name, Vorname"</code> sieht man jetzt die Spalte <code>"CDU/CSU"</code>. Als nächstes werde ich die zwei Ausprägungen <code>true</code> und <code>false</code> mit der <code>Text Facet</code> Funktion clustern.
+<br><br>
+<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-14-um-13.14.11.png" alt="OpenRefine" />
+<br><br>
+Das Ergebnis der Fusion wird auf der linken Seite des Dashboards präsentiert. Ich habe 237 Zeilen die das Merkmal <code>CDU/CSU</code> tragen sowie 383 Zeilen, auf die das nicht zutrifft. Wenn ich jetzt auf den Ausdruck <code>true</code> klicke, werden mir nur noch jene Zeilen angezeigt, die das definierte Merkmal tragen.
+<br><br>
+<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-14-um-13.14.18.png" alt="OpenRefine" />
+<br><br>
+<b>Published: 14. März, 2012</b> 
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- end -->
+
+<!-- start -->
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" >
+      <i class="fa fa-code fa-lg"></i>
+        <a data-toggle="collapse" data-parent="#accordion" href="#20">
+         OpenRefine Tutorial: Die Replace Funktion
+        </a>
+      </h4>
+    </div>
+    <div id="20" class="panel-collapse collapse">
+      <div class="panel-body" >
+       OpenRefines <code>Replace</code> Funktion ist eine alternative Syntax (GREL=Google Refine Expression Language) für <code>Suchen und Ersetzen</code>. Wenn man beide Befehlszeilen näher betrachtet, werden die Gemeinsamkeiten schnell deutlich.
+		<code>value.replace(“Apfel”, “Birne)</code> und <code> replace(value, "Apfel", "Birne")</code>
+		somit bietet die Syntax mehrere Wege an, um ans Ziel zu kommen.
+		<br><br>
+		<img class="img-responsive" src="img/2012/05/Bildschirmfoto-2012-05-06-um-14.14.33.png" alt="OpenRefine" />
+		<br><br>
+		<b>Published: 6. Mai, 2012</b> 
 
       </div>
     </div>
