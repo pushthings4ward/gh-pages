@@ -119,11 +119,11 @@
 <p>So sieht mein Plan aus – ich will die Informationen aus der Spalte <code>"Name, Vorname"</code> zergliedern. Genau genommen beabsichtige ich den <code>Namen, Vornamen</code> und <code>Partei</code> jedes Abgeordneten in eine separate Spalte überführen.</p>
 <p>Nachdem ich die Daten importiert habe, wähle ich das Dropdown Menü der Spalte <code>"Name, Vorname"</code> aus. Dabei fahre ich mit der Maus über den Menüpunkt <code>Edit column</code> und wähle im rechten Seitenmenü die Option <code>Split into several columns</code> aus.</p>
 <p>Ein neues Menüfenster öffnet sich. Hier muss ich definieren wie OpenRefine die Datenzeile zergliedern soll. Ich kann hier zwischen zwei Optionen wählen – <code>by separater</code> und <code>by field lenghts</code>. Wer sich den Datensatz und insbesondere die Spalte <code>"Name, Vorname"</code> angeguckt hat, dem ist vielleicht aufgefallen, dass die einzelnen Informationsbrocken <code>Name, Vorname</code> und <code>Partei</code> durch ein Komma getrennt sind. Dieses gemeinsame Merkmal, das über alle Datenzeilen hinweg existiert, will ich mir zunutze machen. Daher wähle ich die Option <code>by separater</code> aus. Wenn ein anderes Zeichen die Informationen trennt, muss man in der Zeile unterhalb das entsprechende Zeichen anpassen. Da ich die Spalte <code>"Name, Vorname"</code> nach der Transformation nicht löschen will, entferne ich auf der rechten Seite das Häkchen <code>Remove this column</code>. <code>OK</code> klicken.</p>
-<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.39.49.png" alt="OpenRefine" /></p>
+<p><img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_001.png" alt="OpenRefine" /></p>
 <p>Drei neue Spalten sind das Ergebnis der Transformation. Jetzt passe ich noch den Namen der Spalte an. Dazu fahre ich mit der Maus über das Dropdown Menü der Spalte <code>"Name, Vorname"</code> zum Menüpunkt <code>edit column</code> und wähle dort die Option <code>rename this column</code> aus.</p>
-<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.37.54-e1332185226175.png" alt="OpenRefine" /></p>
+<p><img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_002.png" alt="OpenRefine" /></p>
 <p>Hier editiere ich den Namen und bestätige die Eingabe mit <code>OK</code>. Die anderen zwei Spalten werden ebenso angepasst. </p>
-<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-19-um-19.37.18.png" alt="OpenRefine" /></p>
+<p><img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_003.png" alt="OpenRefine" /></p>
 
 <b>Published: 19. März, 2012</b>
       </div>
@@ -145,9 +145,9 @@
       <div class="panel-body" >
 <p>Im Rahmen der Datenbereinigung kommt man um die <code>Suchen und Ersetzen</code> Funktion nicht herum. Die Herangehensweise erkläre ich wie immer anhand meines manipulierten Datensatzes, der <a href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz">hier heruntergeladen</a>  werden kann. Dabei werde ich ein Element innerhalb des Datensatzes, der Informationen über die Mitglieder des Bundestages (MdB) enthält, modifizieren bzw. korrigieren. Dazu nutze ich wieder OpenRefine.</p>
 <p>In der Spalte <code>Name, Vorname</code> ist neben dem Namen und Vornamen auch die Parteizugehörigkeit aufgeführt. Hier habe ich einen kleinen Fehler eingebaut. Die Parteikennung <code>“DIE LINKE.”</code> ist durch einen Punkt am Ende verunreinigt. Diesen will ich entfernen bzw. durch die korrekte Ausprägung <code>“DIE LINKE”</code> ersetzen. Dazu wähle ich das <code>Drop Down</code> Menü der Spalte aus und bewege die Maus über den Menüpunkt <code>Edit cells</code> und wähle dann anschließend die Funktion <code>Transform</code> aus.</p>
-<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-23-um-10.44.36-e1332502380392.png" alt="OpenRefine" /></p>
+<p><img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_004.png" alt="OpenRefine" /></p>
 <p>Eine Eingabemaske öffnet sich. Folgende Syntax gebe ich jetzt in die Konsole ein <code>value.replace(“DIE LINKE.”, “DIE LINKE)</code>. Mit dem Befehl wird OpenRefine angewiesen die Spalte <code>“Name, Vorname”</code> nach der Ausprägung <code>“DIE LINKE.”</code> zu durchsuchen und diese durch die neue Bezeichnung <code>“DIE LINKE”</code> zu ersetzen. Im Preview Fenster ist die erfolgreiche Transformation in Zeile 7 bereits sichtbar. Ich bestätige die Eingabe durch <code>OK</code> und schließe damit die Transformation ab.</p>
-<p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-23-um-10.44.43-e1332502830807.png" alt="OpenRefine" /></p> 
+<p><img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_005.png" alt="OpenRefine" /></p> 
 <br>  
       <b>Published: 23 März, 2012</b>
 
@@ -469,15 +469,15 @@ Und so sieht das Ergebnis aus. Nun kann ich über die <code>Facet Funktion</code
       <div class="panel-body" >
 Um die <code>Text Facet</code> Funktion von OpenRefine zu demonstrieren, werde ich für diese Übung einen von meinen manipulierten Datensätzen verwenden. Der Datensatz, der Informationen über die Mitglieder des Bundestages (MdB) enthält, kann für diese und weitere Übungen <a title="mdb datensatz" href="http://www.box.com/s/287h2mh2n7zlrlo6h4iz" target="_blank">hier heruntergeladen</a> werden. Nachdem ich die Daten importiert habe, wähle ich das <code>Dropdown Menü</code> der Spalte <code>"Bundesland"</code> aus. Dort wähle ich die Auswahloption <code>Facet</code> und anschließend <code>Text Facet</code> aus.
 <br><br>
-<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-13-um-13.13.24.png" alt="OpenRefine" />
+<img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_006.png" alt="OpenRefine" />
 <br><br>
 Auf der linken Seite öffnet sich nun ein Menü. Mit der <code>Text Facet</code> Funktion hat OpenRefine alle Elemente aus der Spalte <code>"Bundesland"</code> zu homogenen Clustern zusammengeführt. Da diese Funktion <code>case-sensitive</code> ist, fasst sie die Cluster <code>"Bayern"</code> und <code>"BAYERN"</code> nicht direkt zusammen. Diese werde ich nun händisch zusammenführen. Wenn man die Maus über die einzelnen Clusternamen bewegt, erscheint am Rand der die Menüauswahl <code>edit</code> und <code>include</code>. Ich wähle die Option <code>edit</code> aus.
 <br><br>
-<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-13-um-13.33.06.png" alt="OpenRefine" />
+<img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_007.png" alt="OpenRefine" />
 <br><br>
 Ein Popup Fenster mit freier Texteingabe öffnet sich. Ich ersetze nun den Begriff <code>"BAYERN"</code> durch den Ausdruck <code>"Bayern"</code> und klicke anschließend auf <code>Apply</code>.
 <br><br>
-<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-13-um-13.42.49.png" alt="OpenRefine" />
+<img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_008.png" alt="OpenRefine" />
 <br><br>
 OpenRefine führt nun automatisch die zwei gleichnamigen Cluster zusammen. Das Ergebnis der erfolgreichen Fusion lässt sich anhand der Anzahl der finalen Zeilen hinter dem Cluster überprüfen. Gehörten vor der Transformation des Clusters <code>"Bayern"</code> 81 Zeilen zum Cluster, sind es nach der Fusion 90 Datenzeilen, da die Datenzeilen des <code>"BAYERN"</code> Clusters hinzugekommen sind.
   <br><br><b>Published: 13. März, 2012</b>
@@ -603,19 +603,19 @@ Wie gehe ich vor - ich werde eine neue Spalte mit dem Namen <code>"CDU/CSU"</cod
 <br><br>
 Nachdem ich die Daten importiert habe, wähle ich das <code>Dropdown Menü</code> der Spalte <code>"Name, Vorname"</code> aus. Dort fahre ich mit der Maus über den Menüpunkt <code>Edit column</code> und wähle aus dem sich öffnenden Fenster die Option <code>Add column based on this column</code> aus.
 <br><br>
-<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-14-um-13.13.48.png" alt="OpenRefine" />
+<img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_010.png" alt="OpenRefine" />
 <br><br>
 Eine neue Eingabemaske öffnet sich. Hier definiere ich den Namen <code>"CDU/CSU"</code> der neuen Spalte, in der die Merkmale <code>true</code> und <code>false</code> abgelegt werden sollen. Danach weise ich OpenRefine mit dem Befehl <code>value.contains("CDU/CSU")</strong></code> an die Spalte nach dem Merkmal <code>"CDU/CSU"</code> zu durchsuchen und das Ergebnis in die Spalte <code>"CDU/CSU"</code> einzutragen. Im Preview Fenster wird das Ergebnis präsentiert. Ich beende die Eingaben mit einem Klick auf <code>OK</code> und kehre automatisch zum Dashboard zurück.
 <br><br>
-<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-14-um-13.14.00.png" alt="OpenRefine" />
+<img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_011.png" alt="OpenRefine" />
 <br><br>
 Rechts neben der Spalte <code>"Name, Vorname"</code> sieht man jetzt die Spalte <code>"CDU/CSU"</code>. Als nächstes werde ich die zwei Ausprägungen <code>true</code> und <code>false</code> mit der <code>Text Facet</code> Funktion clustern.
 <br><br>
-<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-14-um-13.14.11.png" alt="OpenRefine" />
+<img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_012.png" alt="OpenRefine" />
 <br><br>
 Das Ergebnis der Fusion wird auf der linken Seite des Dashboards präsentiert. Ich habe 237 Zeilen die das Merkmal <code>CDU/CSU</code> tragen sowie 383 Zeilen, auf die das nicht zutrifft. Wenn ich jetzt auf den Ausdruck <code>true</code> klicke, werden mir nur noch jene Zeilen angezeigt, die das definierte Merkmal tragen.
 <br><br>
-<img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-14-um-13.14.18.png" alt="OpenRefine" />
+<img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_013.png" alt="OpenRefine" />
 <br><br>
 <b>Published: 14. März, 2012</b> 
 
@@ -644,7 +644,7 @@ Das Ergebnis der Fusion wird auf der linken Seite des Dashboards präsentiert. I
 		<code>value.replace(“Apfel”, “Birne)</code> und <code> replace(value, "Apfel", "Birne")</code>
 		somit bietet die Syntax mehrere Wege an, um ans Ziel zu kommen.
 		<br><br>
-		<img class="img-responsive" src="img/2012/05/Bildschirmfoto-2012-05-06-um-14.14.33.png" alt="OpenRefine" />
+		<img class="img-responsive" src="img/2012/05/OpenRefine_Tutorial_018.png" alt="OpenRefine" />
 		<br><br>
 		<b>Published: 6. Mai, 2012</b> 
 
@@ -670,9 +670,9 @@ Das Ergebnis der Fusion wird auf der linken Seite des Dashboards präsentiert. I
       <div class="panel-body" >
       <p>Datentabellen, die in <code>HTML</code> auf Webseiten eingebunden sind, lassen sich nicht immer problemlos durch <code>Copy &amp; Paste</code> in ein neues Dokument überführen. Oft werden <code>HTML</code> Fragmente übernommen, die die Tabellenstruktur zerstören. Bis vor wenigen Monaten konnte man den mächtigen Service von Needlebase für diese Aufgabe in Anspruch nehmen. Derzeit wird Needlebase in die Google Produktfamilie integriert – hoffentlich in OpenRefine. Bis dahin setze ich momentan auf <code><a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd" target="_blank">Scraper</a> – eine Google Chrome Extension</code>, die brauchbare Ergebnisse liefert. Prima an der Extension ist die direkte Exportfunktion in ein Google Spreadsheet, d.h. man benötigt ein Google Account.</p>
       <p>Und so einfach kommt man an die Datentabelle: Zunächst muss die Google Chrome Extension Scraper installiert werden. Für die Demonstration habe ich mir die aktuelle Übersicht der bisherigen <a href="https://de.wikipedia.org/wiki/Bundespr%C3%A4sident_%28Deutschland%29" target="_blank">Bundespräsidenten der Bundesrepublik Deutschland auf Wikipedia</a> ausgesucht. Ich markiere die ersten vier Zeilen der Tabelle und klicke auf die rechte Maustaste. Dort wähle ich aus dem Menü die Option <code>Scrape similar</code> aus. Scraper selektiert nun automatisch alle nachfolgenden Zeilen, die zur Tabelle gehören.</p>
-      <p><img class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-30-um-20.15.31-e1333131229707.png" alt="OpenRefine" /></p>
+      <p><img class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_014.png" alt="OpenRefine" /></p>
       <p>Und so sieht das Ergebnis aus. Sollte das Ausgabefenster leer sein, genügt ein Klick auf die rechte Maustaste und die Auswahl der Option <code>Neu laden</code>, um das Ergebnis sichtbar zu machen. Ein abschließender Klick auf <code>Export to Google Docs</code> leitet uns auf die Webseite von Google weiter, falls wir nicht schon eingeloggt waren. Dort erscheint nun die Tabelle in einem Google Spreadsheet.</p>
-      <p><img  class="img-responsive" src="img/2012/03/Bildschirmfoto-2012-03-30-um-20.27.52-e1333131971225.png" alt="OpenRefine" /></p><br>  
+      <p><img  class="img-responsive" src="img/2012/03/OpenRefine_Tutorial_015.png" alt="OpenRefine" /></p><br>  
       <b>Published: 30. März, 2012</b>
       </div>
     </div>
@@ -693,9 +693,9 @@ Das Ergebnis der Fusion wird auf der linken Seite des Dashboards präsentiert. I
       <div class="panel-body" >
       <p><b>Mehrere Datentabellen mit XPath exportieren</b></p>
       <p>Vor einiger Zeit habe ich die <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd" target="_blank">Google Chrome Extension Scraper</a> vorgestellt. Damit lassen sich Datentabellen aus HTML Webseiten direkt in ein Google Spreadsheet exportieren. Heute zeige ich wie man direkt mehrere Datentabellen aus einer Webseite mit Scraper exportiert. Für die Übung habe ich mir <a href="https://dev.twitter.com/docs/api/1.1" target="_blank">Twitters Entwicklerseite</a> ausgesucht, da man dort direkt mehrere Datentabellen (hier rot umrahmt) hintereinander findet. Ich markiere die ersten drei Zeilen der ersten Tabelle und klicke auf die rechte Maustaste. Dort wähle ich aus dem Menü die Option <code>Scrape similar</code> aus. Scraper selektiert nun automatisch alle nachfolgenden Zeilen, die zur Tabelle gehören.</p>
-      <p><img  class="img-responsive" src="img/2012/04/Bildschirmfoto-2012-04-09-um-15.42.22-e1333979002698.png" alt="OpenRefine" /></p>
+      <p><img  class="img-responsive" src="img/2012/04/OpenRefine_Tutorial_016.png" alt="OpenRefine" /></p>
       <p>Und so sieht das Ergebnis aus. Sollte das Ausgabefenster leer sein, genügt ein Klick auf die rechte Maustaste und die Auswahl der Option <code>Neu laden</code>, um das Ergebnis sichtbar zu machen.</p>
-      <p><img  class="img-responsive" src="img/2012/04/Bildschirmfoto-2012-04-09-um-15.57.40-e1333979901694.png" alt="OpenRefine" /></p>
+      <p><img  class="img-responsive" src="img/2012/04/OpenRefine_Tutorial_017.png" alt="OpenRefine" /></p>
       <p>Auf der rechten Seite sieht man jetzt alle abgetragenen Datenzeilen der ersten Tabelle. Da wir aber alle Tabellen auf der Webseite abtragen wollen, wenden wir unseren Blick nach Links auf die Eingabemaske <code>“XPath“</code>, die folgende Befehlszeile enthält: <code>//table[1]/tbody/tr[td]</code></p>
       <p>Aka.: Scrape alle Datenzeilen, die zu der ersten Tabelle gehören. Ich ersetze die <code>1</code>, die hier für die erste Tabelle steht, durch ein <code>*</code> und klicke anschließend auf <code>Scrape</code>. Das <code>*</code> hebt die Selektion auf die erste Tabelle auf und greift nun beim Scrapen auf alle Tabellen zu. Auf der rechten Seite füllt sich nun die Voransicht mit allen verfügbaren Datenzeilen. Sollte das Ausgabefenster leer sein, genügt ein Klick auf die rechte Maustaste und die Auswahl der Option <code>Neu laden</code>, um das Ergebnis sichtbar zu machen.</p>  
       <br>  
