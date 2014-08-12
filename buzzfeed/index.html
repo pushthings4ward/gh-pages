@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BuzzFeed in Zahlen: Ich sehe was, was du nicht siehst">
+    <meta name="author" content="@pushthings4ward">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Really Everything You Have To Know About BuzzFeed ... echt jetzt!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bubble_cloud.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <p class="navbar-text"> <img src="img/buzzfeed.png" height="12"> <b>in Zahlen | An OnGoing Investigation</b></p>
+        <div class="navbar-header navbar-right">
+          
+          <p class="navbar-text"> 
+
+          <a href="https://twitter.com/pushthings4ward" class="twitter-follow-button" data-show-count="true" data-size="small">@pushthings4ward</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.pushthings4ward.com/buzzfeed" data-text="Really Everything You Have To Know About BuzzFeed ... echt jetzt!">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+          </p>
+          
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+      <div class="col-xs-2 col-md-2"></div>
+      <div class="col-xs-8 col-md-8">
+      <h3>Really Everything You Have To Know About BuzzFeed ... echt jetzt!</h3>
+      <p><a href="http://www.buzzfeed.com" target="_blank" alt="Buzzfeed"><code>BuzzFeed</code></a> ist jetzt <a href="http://www.nytimes.com/2014/08/11/technology/a-move-to-go-beyond-lists-for-content-at-buzzfeed.html?_r=2" target="_blank" alt=""><code>850 Millionen Dollar</code></a> wert. Das berichten zumindest die Informanten der <a href="http://www.nytimes.com/" target="_blank" alt="New York Times"><code>New York Times</code></a>. Schön für BuzzFeed aber nicht wirklich interessant für die Contentproduzenten da draußen. Die interessieren sich viel mehr für die BuzzFeed Formel, die das Unternehmen dorthin gebracht hat, wo es nun steht. Daher habe ich beschlossen auch einen nicht unerheblichen Beitrag zur Entschlüssellung dieser Formel zu leisten. Um die geheimnisvolle Formel zu entschlüssel, habe ich ein RSS-Interview geführt. Einen Monat habe ich gewissenhaft den <a href="http://www.buzzfeed.com/index.xml" target="_blank" alt="BuzFeed RSS"><code>RSS-Feed</code></a> von BuzzFeed mit <a href="http://www.ifttt.com/" target="_blank" alt="If this then that"><code>IFTTT</code></a> und <a href="https://drive.google.com" target="_blank" alt="Google Drive"><code>Google Drive</code></a> aufgezeichnet, bevor ich die RSS-Daten mit <a href="http://www.openrefine.org/" target="_blank" alt="OpenRefine"><code>OpenRefine</code></a> befragen konnte. Im Messzeitraum (07.07 - 08.08.2014) wurden rund 4.000 Datenzeilen erfasst. Die Daten umfassen folgende Informationen: Artikeltitel, Publikationszeit (July 07, 2014 at 03:30PM), Artikel-URL und Bild-URL (falls ein Bild verwendet wurde).   
+      </p>
+      <img class="img-responsive" src="img/ifttt.png" height="150" alt="IFTTT"><br><br>
+      Einige dieser Fragen wollte ich gezielt nachgehen:
+      <ul>
+      <li>Wann werden BuzzFeed Artikel publiziert?</li>
+      <li>Wie häufig werden BuzzFeed Artikel publiziert?</li>
+      <li>Ist ein Muster erkennbar?</li>
+      <li>Kann ich mehr über die sogennante <a href="http://www.washingtonpost.com/posteverything/wp/2014/07/22/the-absolute-worst-cliche-online-today/" target="_blank" alt="Cliche Headlines"><code>Cliche Headlines</code></a> herausfinden?</li>
+      <li>Welche Rolle spielen <a href="https://de.wikipedia.org/wiki/Graphics_Interchange_Format" target="_blank" alt="GIF"><code>GIFs</code></a> in der ausgefuchsten BuzzFeed Strategie?</li>
+      </ul>
+      Da es sich um eine fortlaufende Recherche handelt, rechne ich mit weiteren Fragen und Antworten. 
+      </div>
+      <div class="col-xs-2 col-md-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-2 col-md-2"></div>
+      <div class="col-xs-8 col-md-8">
+      <h3>Ich sehe was, was du nicht siehst</h3>
+      <p>Erst kürzlich hat BuzzFeed eine neue Investionsrunde in Höhe von 850€ Mio bekommen. Und BuzzFeed eine neue Investionsrunde in Höhe von 850€ Mio bekommen.</p>
+      </div>
+      <div class="col-xs-2 col-md-2"></div>
+    </div>
+
+    
+
+    
+
+    <!-- highchart heatmap -->  
+    <div id="container" style="height: 650px; min-width: 310px; max-width: 650px; margin: 0 auto"></div>
+    <!-- /highchart heatmap -->
+
+
+    <div class="row">
+      <div class="col-xs-2 col-md-2"></div>
+      <div class="col-xs-8 col-md-8">
+      <h3>All You Need To Know About Cliche Headlines</h3>
+      <p>Erst kürzlich hat BuzzFeed eine neue Investionsrunde in Höhe von 850€ Mio bekommen. Und BuzzFeed eine neue Investionsrunde in Höhe von 850€ Mio bekommen.</p>
+      </div>
+      <div class="col-xs-2 col-md-2"></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-xs-2 col-md-2"></div>
+      <div class="col-xs-8 col-md-8">
+      
+        <!-- bubble vis --> 
+        <div class="bubble-cloud-visualization">
+    
+        <div id="g-chart">
+             <svg class="g-nodes" width="673" height="450"></svg>
+             <div class="g-labels"></div>
+        </div>
+        <div class="g-mentions left"></div>
+        <div class="g-mentions right"></div>
+        <br clear="all" />
+        <div id="trendline-tooltip" class="tip"></div>
+        <svg id="g-trendline" width="675" height="20"></svg>
+        <script src="d3.v2.js"></script>
+        <script src="bubble_cloud.js"></script>
+        </div>
+        <!-- bubble vis --> 
+
+      </div>
+      <div class="col-xs-2 col-md-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-2 col-md-2"></div>
+      <div class="col-xs-8 col-md-8">
+      <h3>Things You Probably Didn't Know About GIFs</h3>
+      <p>So sieht eine Woche GIF Porn auf BuzzFeed aus. Rund 20,5% (n=665) aller Artikel werden mit einem GIF beworben. 
+          Die nachfolgende Darstellung zeigt leider nicht den gesamten Monat sondern nur die erste Woche. Eine Darstellung aller Bilder würde zu erheblichen Wartezeiten beim Laden der GIFs führen. Die Visualisierung einer Woche umfasst aber immerhin noch 190 GIFs. Ich bitte an dieser Stelle um etwas Geduld beim Nachladen der Bilder ... es lohnt sich.</p>
+      </div>
+      <div class="col-xs-2 col-md-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-2 col-md-2"></div>
+      <div class="col-xs-8 col-md-8">
+      
+        <!-- gif area --> 
+        <!--
+        <img src="http://s3-ec.buzzfed.com/static/2014-07/7/13/enhanced/webdr09/anigif_enhanced-28130-1404754150-5.gif"} width="40" height="40">
+        <img src="http://s3-ec.buzzfed.com/static/2014-07/7/13/enhanced/webdr11/anigif_enhanced-32361-1404755864-24.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/6/16/enhanced/webdr11/anigif_enhanced-buzz-30359-1404677483-4.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/3/11/enhanced/webdr04/anigif_enhanced-21430-1404401201-5.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/6/21/enhanced/webdr11/anigif_enhanced-buzz-22606-1404697056-24.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/3/15/enhanced/webdr05/anigif_enhanced-10141-1404416124-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/5/12/enhanced/webdr11/anigif_enhanced-7044-1404577194-12.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/3/22/enhanced/webdr11/anigif_enhanced-buzz-7197-1404439590-27.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/18/enhanced/webdr10/anigif_enhanced-1932-1404771243-14.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/15/enhanced/webdr04/anigif_enhanced-13695-1404762463-6.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/20/enhanced/webdr02/anigif_enhanced-21412-1404778845-3.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/7/enhanced/webdr06/anigif_enhanced-27445-1404732021-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/3/23/enhanced/webdr10/anigif_enhanced-17637-1404444930-206.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/18/enhanced/webdr09/anigif_enhanced-6210-1404771606-26.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/16/enhanced/webdr06/anigif_enhanced-7390-1404764560-22.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/1/14/enhanced/webdr10/anigif_enhanced-9656-1404238159-33.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/17/enhanced/webdr11/anigif_enhanced-buzz-4087-1404767890-21.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/12/enhanced/webdr11/anigif_enhanced-1139-1404752310-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/3/13/enhanced/webdr06/anigif_enhanced-24973-1404408556-6.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/19/enhanced/webdr08/anigif_enhanced-7041-1404777026-7.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/11/enhanced/webdr05/anigif_enhanced-1204-1404832115-14.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/10/enhanced/webdr06/anigif_enhanced-buzz-24255-1404828577-4.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/3/15/enhanced/webdr11/anigif_enhanced-buzz-4129-1404417306-17.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/11/enhanced/webdr07/anigif_enhanced-20067-1404748281-31.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/12/enhanced/webdr08/anigif_enhanced-13968-1404836524-5.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/16/enhanced/webdr10/anigif_enhanced-20830-1404764280-51.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/21/enhanced/webdr05/anigif_enhanced-2675-1404784485-6.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/3/11/enhanced/webdr09/anigif_enhanced-31135-1404402517-7.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/3/17/enhanced/webdr05/anigif_enhanced-25291-1404423222-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/14/enhanced/webdr04/anigif_enhanced-buzz-12448-1404844463-42.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/9/enhanced/webdr10/anigif_enhanced-15139-1404826709-29.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/11/enhanced/webdr05/anigif_enhanced-buzz-18780-1404834309-4.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/14/enhanced/webdr02/anigif_enhanced-20027-1404844776-10.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/2/18/enhanced/webdr08/anigif_enhanced-13710-1404338892-33.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/14/enhanced/webdr02/anigif_enhanced-19766-1404843280-5.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/2/1/enhanced/webdr06/anigif_enhanced-3785-1404277603-87.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/15/enhanced/webdr11/anigif_enhanced-19591-1404846919-2.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-06/6/13/enhanced/webdr08/anigif_enhanced-buzz-4177-1402075277-12.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/17/enhanced/webdr11/anigif_enhanced-3377-1404853234-18.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/16/enhanced/webdr06/anigif_enhanced-20461-1404851616-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/8/enhanced/webdr09/anigif_enhanced-buzz-14222-1404821772-4.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/18/enhanced/webdr06/anigif_enhanced-29536-1404772074-9.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/20/enhanced/webdr02/anigif_enhanced-30445-1404865697-10.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/20/enhanced/webdr06/anigif_enhanced-18534-1404866062-3.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/14/enhanced/webdr10/anigif_enhanced-5693-1404842432-6.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/15/enhanced/webdr02/anigif_enhanced-2095-1404848581-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/11/enhanced/webdr05/anigif_enhanced-18544-1404747018-30.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/15/enhanced/webdr04/anigif_enhanced-18764-1404846527-2.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-06/19/1/enhanced/webdr08/anigif_enhanced-buzz-7480-1403154914-8.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/16/enhanced/webdr10/anigif_enhanced-buzz-26562-1404850357-9.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/2/enhanced/webdr06/anigif_enhanced-buzz-24211-1404886205-23.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/5/enhanced/webdr08/anigif_enhanced-buzz-6261-1404898439-17.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/11/enhanced/webdr06/anigif_enhanced-7920-1404919333-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/6/enhanced/webdr07/anigif_enhanced-8580-1404900415-20.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/10/enhanced/webdr04/anigif_enhanced-6120-1404917284-12.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-06/24/16/enhanced/webdr02/anigif_enhanced-31032-1403640082-9.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/13/enhanced/webdr04/anigif_enhanced-9349-1404927183-33.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/12/enhanced/webdr11/anigif_enhanced-20433-1404923831-6.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-05/30/16/enhanced/webdr02/anigif_enhanced-22150-1401480207-13.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/14/enhanced/webdr06/anigif_enhanced-20056-1404929225-26.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/11/enhanced/webdr07/anigif_enhanced-6311-1404920492-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/14/enhanced/webdr09/anigif_enhanced-26871-1404929438-23.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/14/enhanced/webdr09/anigif_enhanced-1769-1404932273-16.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/12/enhanced/webdr07/anigif_enhanced-18080-1404924339-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/15/enhanced/webdr08/anigif_enhanced-2840-1404849415-8.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/15/enhanced/webdr07/anigif_enhanced-9450-1404934361-11.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/16/enhanced/webdr07/anigif_enhanced-20121-1404937429-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/19/enhanced/webdr04/anigif_enhanced-31148-1404862820-8.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/10/enhanced/webdr06/anigif_enhanced-27114-1404916360-4.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/13/enhanced/webdr08/anigif_enhanced-12066-1404926114-8.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/19/enhanced/webdr07/anigif_enhanced-buzz-6696-1404862728-12.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/21/enhanced/webdr11/anigif_enhanced-buzz-3720-1404954658-4.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/21/enhanced/webdr11/anigif_enhanced-4503-1404955355-3.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/19/enhanced/webdr09/anigif_enhanced-16748-1404949672-11.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/21/enhanced/webdr07/anigif_enhanced-23351-1404956573-5.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/18/enhanced/webdr11/anigif_enhanced-9999-1404946495-30.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/7/enhanced/webdr02/anigif_enhanced-28407-1404904026-11.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/2/enhanced/webdr09/anigif_enhanced-4894-1404972858-2.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/16/enhanced/webdr11/anigif_enhanced-31552-1404937611-16.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/12/enhanced/webdr04/anigif_enhanced-5167-1405009385-17.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/10/enhanced/webdr10/anigif_enhanced-5010-1405002002-3.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/10/enhanced/webdr08/anigif_enhanced-buzz-19229-1405002940-17.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/11/enhanced/webdr02/anigif_enhanced-9624-1405006614-11.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/13/enhanced/webdr07/anigif_enhanced-13739-1405012124-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/13/enhanced/webdr05/anigif_enhanced-buzz-19708-1404927905-28.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/7/12/enhanced/webdr06/anigif_enhanced-1310-1404749066-18.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/17/enhanced/webdr10/anigif_enhanced-5757-1404942657-10.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/14/enhanced/webdr06/anigif_enhanced-3795-1405015362-2.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/14/enhanced/webdr06/anigif_enhanced-20625-1404929624-25.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/15/enhanced/webdr10/anigif_enhanced-15170-1405019038-13.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/15/enhanced/webdr08/anigif_enhanced-27192-1405021642-46.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/19/enhanced/webdr07/anigif_enhanced-buzz-8740-1404948384-16.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/11/enhanced/webdr02/anigif_enhanced-10886-1405004516-9.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/16/enhanced/webdr07/anigif_enhanced-11556-1405022876-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/16/enhanced/webdr06/anigif_enhanced-24125-1405024101-6.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/18/enhanced/webdr05/anigif_enhanced-28958-1405031140-4.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/22/enhanced/webdr11/anigif_enhanced-4390-1404959968-18.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/18/enhanced/webdr05/anigif_enhanced-25063-1405031158-23.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/16/enhanced/webdr10/anigif_enhanced-26389-1405022825-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/1/10/enhanced/webdr07/anigif_enhanced-26178-1404224247-31.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/18/enhanced/webdr07/anigif_enhanced-22599-1405031606-7.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/2/enhanced/webdr07/anigif_enhanced-30444-1404973046-4.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/20/enhanced/webdr02/anigif_enhanced-21177-1405037681-11.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/17/enhanced/webdr11/anigif_enhanced-9112-1405029407-25.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/16/enhanced/webdr02/anigif_enhanced-19428-1405023540-18.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/13/enhanced/webdr08/anigif_enhanced-19385-1405014809-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/5/enhanced/webdr09/anigif_enhanced-buzz-3474-1405070685-16.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/6/enhanced/webdr11/anigif_enhanced-4701-1404987741-11.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/12/enhanced/webdr02/anigif_enhanced-buzz-28117-1405010155-4.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/10/enhanced/webdr11/anigif_enhanced-buzz-9351-1405003658-13.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/20/enhanced/webdr10/anigif_enhanced-16641-1405037819-19.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/12/enhanced/webdr09/anigif_enhanced-18148-1405094941-2.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/10/enhanced/webdr10/anigif_enhanced-6766-1405090427-5.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/13/enhanced/webdr02/anigif_enhanced-13029-1405099068-2.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/10/enhanced/webdr04/anigif_enhanced-23559-1405089549-8.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/12/enhanced/webdr10/anigif_enhanced-buzz-21012-1405097239-4.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/20/enhanced/webdr08/anigif_enhanced-30147-1405040033-17.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/11/enhanced/webdr10/anigif_enhanced-buzz-6720-1405092325-32.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/15/enhanced/webdr09/anigif_enhanced-12387-1405107785-25.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/12/enhanced/webdr10/anigif_enhanced-20985-1405097137-22.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/17/enhanced/webdr09/anigif_enhanced-9979-1405114759-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/0/enhanced/webdr07/anigif_enhanced-buzz-7669-1404965712-26.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/9/15/enhanced/webdr08/anigif_enhanced-buzz-2332-1404934824-41.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/10/enhanced/webdr06/anigif_enhanced-4353-1405087580-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-03/enhanced/webdr07/23/12/anigif_enhanced-6903-1395590897-7.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/12/enhanced/webdr02/anigif_enhanced-buzz-25789-1405094842-24.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/17/enhanced/webdr05/anigif_enhanced-8473-1405112948-15.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/8/15/enhanced/webdr04/anigif_enhanced-18692-1404848479-26.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/13/enhanced/webdr10/anigif_enhanced-2001-1405100843-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/15/enhanced/webdr11/anigif_enhanced-20652-1405106400-7.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/16/enhanced/webdr05/anigif_enhanced-8512-1405111565-16.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/20/enhanced/webdr04/anigif_enhanced-24998-1405126060-10.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/18/enhanced/webdr06/anigif_enhanced-12994-1405117624-14.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/17/enhanced/webdr05/anigif_enhanced-26565-1405115239-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/18/enhanced/webdr07/anigif_enhanced-23536-1405116362-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/16/enhanced/webdr02/anigif_enhanced-buzz-4364-1405025403-5.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/17/enhanced/webdr10/anigif_enhanced-12823-1405114864-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/12/2/enhanced/webdr10/anigif_enhanced-6173-1405146109-6.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/22/enhanced/webdr09/anigif_enhanced-775-1405046117-7.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/17/enhanced/webdr02/anigif_enhanced-30665-1405114729-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/14/enhanced/webdr08/anigif_enhanced-21422-1405104694-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/13/10/enhanced/webdr05/anigif_enhanced-10585-1405262751-13.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/18/enhanced/webdr11/anigif_enhanced-9112-1405030412-30.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/13/20/enhanced/webdr04/anigif_enhanced-buzz-14111-1405298800-16.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/2/15/enhanced/webdr06/anigif_enhanced-buzz-28873-1404330958-23.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/2/enhanced/webdr11/anigif_enhanced-10132-1405319097-19.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/2/enhanced/webdr10/anigif_enhanced-3782-1405318868-9.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/8/enhanced/webdr06/anigif_enhanced-10775-1405341593-2.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/10/enhanced/webdr04/anigif_enhanced-24550-1405347954-2.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/6/18/enhanced/webdr10/anigif_enhanced-buzz-27581-1404684161-22.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/10/enhanced/webdr11/anigif_enhanced-21450-1405088041-36.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/12/enhanced/webdr07/anigif_enhanced-11706-1405356736-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/11/enhanced/webdr07/anigif_enhanced-32537-1405352788-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/13/enhanced/webdr10/anigif_enhanced-9993-1405358188-11.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/12/enhanced/webdr04/anigif_enhanced-27624-1405357060-10.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/14/enhanced/webdr10/anigif_enhanced-23698-1405362200-3.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/12/enhanced/webdr06/anigif_enhanced-buzz-31610-1405355905-8.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/13/enhanced/webdr04/anigif_enhanced-27715-1405359316-10.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/15/enhanced/webdr07/anigif_enhanced-24344-1405365617-20.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/10/17/enhanced/webdr04/anigif_enhanced-29186-1405026517-32.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/10/enhanced/webdr06/anigif_enhanced-1754-1405347804-5.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/16/enhanced/webdr04/anigif_enhanced-9601-1405371222-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/12/enhanced/webdr08/anigif_enhanced-29103-1405097955-33.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/11/enhanced/webdr07/anigif_enhanced-15810-1405352186-29.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/13/enhanced/webdr06/anigif_enhanced-31615-1405360523-30.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/18/enhanced/webdr11/anigif_enhanced-29783-1405376219-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/15/enhanced/webdr04/anigif_enhanced-31252-1405367608-10.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/19/enhanced/webdr02/anigif_enhanced-29980-1405381875-3.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/19/enhanced/webdr07/anigif_enhanced-26700-1405379496-7.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/13/18/enhanced/webdr11/anigif_enhanced-1185-1405291973-13.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/20/enhanced/webdr06/anigif_enhanced-20671-1405383108-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/20/enhanced/webdr07/anigif_enhanced-9641-1405385396-5.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-03/enhanced/webdr02/14/23/anigif_enhanced-5874-1394854927-1.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/5/enhanced/webdr09/anigif_enhanced-3938-1405416696-6.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/8/enhanced/webdr07/anigif_enhanced-618-1405339606-13.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/10/enhanced/webdr10/anigif_enhanced-20142-1405434407-3.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/11/enhanced/webdr05/anigif_enhanced-20930-1405351212-44.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/9/enhanced/webdr04/anigif_enhanced-buzz-21392-1405431506-16.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/14/enhanced/webdr10/anigif_enhanced-1255-1405102824-15.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/12/enhanced/webdr02/anigif_enhanced-1061-1405440681-34.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/12/enhanced/webdr04/anigif_enhanced-26264-1405440137-8.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/16/enhanced/webdr08/anigif_enhanced-30980-1405370392-21.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/13/enhanced/webdr05/anigif_enhanced-16714-1405446774-7.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/10/enhanced/webdr07/anigif_enhanced-12218-1405434145-12.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/11/enhanced/webdr02/anigif_enhanced-2493-1405437037-3.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/13/enhanced/webdr10/anigif_enhanced-12675-1405447158-2.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/13/enhanced/webdr02/anigif_enhanced-18624-1405443705-2.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/11/15/enhanced/webdr09/anigif_enhanced-12324-1405107963-46.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/14/16/enhanced/webdr11/anigif_enhanced-7427-1405370621-65.gif"} width="40" height="40">
+<img src="http://s3-ec.buzzfed.com/static/2014-07/15/14/enhanced/webdr04/anigif_enhanced-21733-1405450162-8.gif"} width="40" height="40">
+ 
+
+
+ -->
+
+        <!-- gif area --> 
+
+      </div>
+      <div class="col-xs-2 col-md-2"></div>
+    </div>
+
+    <p></p>
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/heatmap.js"></script>
+    <script src="js/exporting.js"></script>
+    <script src="vis/highchart_heatmap.js"></script>
+
+
+    <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.pushthings4ward.com/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://piwik.pushthings4ward.com/piwik/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+<!-- Piwik Image Tracker-->
+<img src="http://piwik.pushthings4ward.com/piwik/piwik.php?idsite=2&rec=1" style="border:0" alt="" />
+<!-- End Piwik -->
+
+  </body>
+</html>
