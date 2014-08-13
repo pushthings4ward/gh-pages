@@ -10,7 +10,7 @@ $(function () {
 
 
         title: {
-            text: 'Number and frequency of published articles (EST Timezone)'
+            text: 'Number and frequency of published articles on BuzzFeed (EST Timezone)'
         },
 
         xAxis: {
