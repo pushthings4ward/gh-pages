@@ -73,14 +73,26 @@
       <h3>Really Everything You Have To Know About BuzzFeed ... really now!</h3>
       <p><a href="http://www.buzzfeed.com" target="_blank" alt="Buzzfeed"><code>BuzzFeed</code></a> is now worth <a href="http://www.nytimes.com/2014/08/11/technology/a-move-to-go-beyond-lists-for-content-at-buzzfeed.html?_r=2" target="_blank" alt=""><code>$ 850 million</code></a> as reported by the <a href="http://www.nytimes.com/" target="_blank" alt="New York Times"><code>New York Times</code></a>. Good for BuzzFeed but not really interesting for the content producers out there. What’s interesting is the formula that has brought BuzzFeed to where it stands now. Therefore, I have decided to conduct a significant contribution to deciphering this money-making formula. To decipher the mysterious formula, I conducted an RSS interview. For a month, I have diligently recorded the <a href="http://www.buzzfeed.com/index.xml" target="_blank" alt="BuzFeed RSS"><code>RSS feed from BuzzFeed</code></a> with <a href="http://www.ifttt.com/" target="_blank" alt="If this then that"><code>IFTTT</code></a> and <a href="https://drive.google.com" target="_blank" alt="Google Drive"><code>Google Drive</code></a> before proceeding to query the RSS data using <a href="http://www.openrefine.org/" target="_blank" alt="OpenRefine"><code>OpenRefine</code></a>. During the measurement period (07:07 - 08/08/2014) 4,000 lines of data were recorded. The data included the following information: article title, publication date and time (July 07, 2014 at 3:30 PM), article URL and image URL (if an image was used).  
       </p>
-       
+      <img class="img-responsive" src="img/IFTTT.png" height="150" alt="IFTTT"><br><br>
+      Below are some of the questions I wanted to investigate:
+      <ul>
+      <li>When are BuzzFeed articles published?</li>
+      <li>How often are BuzzFeed articles published?</li>
+      <li>Is there a recognizable pattern?</li>
+      <li>Can I find out more about the so-called <a href="http://www.washingtonpost.com/posteverything/wp/2014/07/22/the-absolute-worst-cliche-online-today/" target="_blank" alt="Cliche Headlines"><code>cliche headlines</code></a>?</li>
+      <li>What role do <a href="https://de.wikipedia.org/wiki/Graphics_Interchange_Format" target="_blank" alt="GIF"><code>GIFs</code></a> play in the wily BuzzFeed strategy?</li>
+      </ul>
+      Since this is an ongoing investigation, I expect more questions and answers to come. 
       </div>
       <div class="col-xs-2 col-md-2"></div>
     </div>
 
     <div class="row">
       <div class="col-xs-2 col-md-2"></div>
-      <div class="col-xs-8 col-md-8"></div>
+      <div class="col-xs-8 col-md-8">
+      <h3>I spy with my little eyes</h3>
+      <p>	To communicate the results of the first two questions, a heatmap -- which seemed to be the most appropriate visualization -- was used. BuzzFeed publishes most items outside the normal core working hours. We -- the readers -- are supplied with content once we are off work and are enjoying our leisure time. Content distribution is particularly intense from 17:00 EST until late into the night. Especially noticeable is also the inclusion of lunch break (12:00 EST) as a targeted time  for content distribution.</p>
+      </div>
       <div class="col-xs-2 col-md-2"></div>
     </div>
 
@@ -95,14 +107,20 @@
 
     <div class="row">
       <div class="col-xs-2 col-md-2"></div>
-      <div class="col-xs-8 col-md-8"></div>
+      <div class="col-xs-8 col-md-8">
+      <h3>All You Need To Know About Cliche Headlines</h3>
+      <p>	Cliche headlines are undoubtedly among the most discussed topics when talking about BuzzFeed. Around 32% of all the article headlines began with a numerical list (e.g. 49 Things You Probably Did not Know about Melbourne). These are then refined with a pinch of <a href="https://en.wikipedia.org/wiki/Fomo" target="_blank" alt="FOMO"><code>FOMO</code></a>. Typically, the headlines suggest that we missed something or do not know something. Sometimes the headlines simply point out "this and that" we should know about a topic. An interactive overview below gives a good overview of the most frequently used cliche headlines by Buzzfeed. </p>
+      </div>
       <div class="col-xs-2 col-md-2"></div>
     </div>
 
 
     <div class="row">
       <div class="col-xs-2 col-md-2"></div>
-      <div class="col-xs-8 col-md-8"></div>
+      <div class="col-xs-8 col-md-8">
+      <h3>Things You Probably Didn't Know About GIFs</h3>
+      <p>This is how a GIF Porn week on BuzzFeed looks like. Approximately 20.5% (n = 665) of all items were promoted with a GIF. The following gallery shows not the whole month but only the first week of data. A presentation of all the data collected throughout the whole month would lead to significant delays in loading the GIFs. This one-week’s worth of data still includes a whopping 190 GIFs. I ask you, at this point, to be patient when loading the images ... it's worth it.</p>
+      </div>
       <div class="col-xs-2 col-md-2"></div>
     </div>
 
@@ -120,7 +138,7 @@
     <script src="js/highcharts.js"></script>
     <script src="js/heatmap.js"></script>
     <script src="js/exporting.js"></script>
-    <script src="vis/highchart_heatmap.js"></script>
+    <script src="vis/highchart_heatmap_viceUS.js"></script>
 
 
     <!-- Piwik -->
