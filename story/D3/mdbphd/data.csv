@@ -1,0 +1,621 @@
+nachname,partei,start_year,group,vorname,total_amount
+Ackermann,FDP,Nein,fdp,Jens,1
+Ahrendt,FDP,Nein,fdp,Christian,1
+Aigner,CDU/CSU,Nein,cdu,Ilse,1
+Aken,DIE LINKE,Nein,linke,Jan van,1
+Alpers,DIE LINKE,Nein,linke,Agnes,1
+Altmaier,CDU/CSU,Nein,cdu,Peter,1
+Andreae,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Kerstin,1
+Arndt-Brauer,SPD,Nein,spd,Ingrid,1
+Arnold,SPD,Nein,spd,Rainer,1
+Aschenberg-Dugnus,FDP,Nein,fdp,Christine,1
+Aumer,CDU/CSU,Nein,cdu,Peter,1
+Bahr (Münster),FDP,Nein,fdp,Daniel,1
+Bär,CDU/CSU,Nein,cdu,Dorothee,1
+Barchmann,SPD,Nein,spd,Heinz-Joachim,1
+Bareiß,CDU/CSU,Nein,cdu,Thomas,1
+Barnett,SPD,Nein,spd,Doris,1
+Bartels,SPD,Ja,spd,Dr. Hans-Peter,1
+Barthel,SPD,Nein,spd,Klaus,1
+Barthle,CDU/CSU,Nein,cdu,Norbert,1
+Bartol,SPD,Nein,spd,Sören,1
+Bartsch,DIE LINKE,Ja,linke,Dr. Dietmar,1
+Bas,SPD,Nein,spd,Bärbel,1
+Bätzing-Lichtenthäler,SPD,Nein,spd,Sabine,1
+Baumann,CDU/CSU,Nein,cdu,Günter,1
+Beck (Reutlingen),CDU/CSU,Nein,cdu,Ernst-Reinhard,1
+Beck (Bremen),BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Marieluise,1
+Beck (Köln),BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Volker,1
+Becker,SPD,Nein,spd,Dirk,1
+Beckmeyer,SPD,Nein,spd,Uwe,1
+Behm,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Cornelia,1
+Behrens,DIE LINKE,Nein,linke,Herbert,1
+Behrens,CDU/CSU,Nein,cdu,Manfred,1
+Bellmann,CDU/CSU,Nein,cdu,Veronika,1
+Bender,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Birgitt,1
+Bergner,CDU/CSU,Ja,cdu,Dr. Christoph,1
+Bernschneider,FDP,Nein,fdp,Florian,1
+Beyer,CDU/CSU,Nein,cdu,Peter,1
+Bilger,CDU/CSU,Nein,cdu,Steffen,1
+Binder,DIE LINKE,Nein,linke,Karin,1
+Binding (Heidelberg),SPD,Nein,spd,Lothar,1
+Binninger,CDU/CSU,Nein,cdu,Clemens,1
+Birkwald,DIE LINKE,Nein,linke,Matthias W.,1
+Bleser,CDU/CSU,Nein,cdu,Peter,1
+Bluhm,DIE LINKE,Nein,linke,Heidrun,1
+Blumenthal,FDP,Nein,fdp,Sebastian,1
+Bockhahn,DIE LINKE,Nein,linke,Steffen,1
+Bögel,FDP,Nein,fdp,Claudia,1
+Böhmer,CDU/CSU,Ja,cdu,Dr. Maria,1
+Bollmann,SPD,Nein,spd,Gerd,1
+Börnsen (Bönstrup),CDU/CSU,Nein,cdu,Wolfgang,1
+Bosbach,CDU/CSU,Nein,cdu,Wolfgang,1
+Bracht-Bendt,FDP,Nein,fdp,Nicole,1
+Brackmann,CDU/CSU,Nein,cdu,Norbert,1
+Brähmig,CDU/CSU,Nein,cdu,Klaus,1
+Brand,CDU/CSU,Nein,cdu,Michael,1
+Brandl,CDU/CSU,Ja,cdu,Dr. Reinhard,1
+Brandner,SPD,Nein,spd,Klaus,1
+Brandt,CDU/CSU,Nein,cdu,Helmut,1
+Brase,SPD,Nein,spd,Willi,1
+Brauksiepe,CDU/CSU,Ja,cdu,Dr. Ralf,1
+Braun,CDU/CSU,Ja,cdu,Dr. Helge,1
+Brehmer,CDU/CSU,Nein,cdu,Heike,1
+Breil,FDP,Nein,fdp,Klaus,1
+Brinkhaus,CDU/CSU,Nein,cdu,Ralph,1
+Brinkmann (Hildesheim),SPD,Nein,spd,Bernhard,1
+Brüderle,FDP,Nein,fdp,Rainer,1
+Brugger,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Agnes,1
+Brunkhorst,FDP,Nein,fdp,Angelika,1
+Buchholz,DIE LINKE,Nein,linke,Christine,1
+Bulling-Schröter,DIE LINKE,Nein,linke,Eva,1
+Bulmahn,SPD,Nein,spd,Edelgard,1
+Bülow,SPD,Nein,spd,Marco,1
+Bunge,DIE LINKE,Ja,linke,Dr. Martina,1
+Burchardt,SPD,Nein,spd,Ulla,1
+Burgbacher,FDP,Nein,fdp,Ernst,1
+Burkert,SPD,Nein,spd,Martin,1
+Buschmann,FDP,Nein,fdp,Marco,1
+Caesar,CDU/CSU,Nein,cdu,Cajus,1
+Canel,FDP,Nein,fdp,Sylvia,1
+Claus,DIE LINKE,Nein,linke,Roland,1
+Connemann,CDU/CSU,Nein,cdu,Gitta,1
+Cramon-Taubadel,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Viola von,1
+Crone,SPD,Nein,spd,Petra,1
+Danckert,SPD,Ja,spd,Prof. Dr. Peter,1
+Daub,FDP,Nein,fdp,Helga,1
+Dağdelen,DIE LINKE,Nein,linke,Sevim,1
+Dehm,DIE LINKE,Ja,linke,Dr. Diether,1
+Deligöz,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Ekin,1
+Deutschmann,FDP,Nein,fdp,Reiner,1
+Dittrich,DIE LINKE,Nein,linke,Heidrun,1
+Djir-Sarai,FDP,Nein,fdp,Bijan,1
+Dobrindt,CDU/CSU,Nein,cdu,Alexander,1
+Dörflinger,CDU/CSU,Nein,cdu,Thomas,1
+Döring,FDP,Nein,fdp,Patrick,1
+Dörmann,SPD,Nein,spd,Martin,1
+Dörner,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Katja,1
+Dött,CDU/CSU,Nein,cdu,Marie-Luise,1
+Dreibus,DIE LINKE,Nein,linke,Werner,1
+Drobinski-Weiß,SPD,Nein,spd,Elvira,1
+Dyckmans,FDP,Nein,fdp,Mechthild,1
+Ebner,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Harald,1
+Edathy,SPD,Nein,spd,Sebastian,1
+Egloff,SPD,Nein,spd,Ingo,1
+Ehrenberg,FDP,Nein,fdp,Hans-Werner,1
+Ehrmann,SPD,Nein,spd,Siegmund,1
+Enkelmann,DIE LINKE,Ja,linke,Dr. Dagmar,1
+Erdel,FDP,Nein,fdp,Rainer,1
+Erler,SPD,Ja,spd,Dr. h.c. Gernot,1
+Ernst,DIE LINKE,Nein,linke,Klaus,1
+Ernstberger,SPD,Nein,spd,Petra,1
+Essen,FDP,Nein,fdp,Jörg van,1
+Evers-Meyer,SPD,Nein,spd,Karin,1
+Feist,CDU/CSU,Ja,cdu,Dr. Thomas,1
+Fell,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Hans-Josef,1
+Ferlemann,CDU/CSU,Nein,cdu,Enak,1
+Ferner,SPD,Nein,spd,Elke,1
+Fischbach,CDU/CSU,Nein,cdu,Ingrid,1
+Fischer (Karlsruhe-Land),CDU/CSU,Nein,cdu,Axel E.,1
+Fischer (Hamburg),CDU/CSU,Nein,cdu,Dirk,1
+Fischer (Göttingen),CDU/CSU,Nein,cdu,Hartwig,1
+Flach,FDP,Nein,fdp,Ulrike,1
+Flachsbarth,CDU/CSU,Ja,cdu,Dr. Maria,1
+Flosbach,CDU/CSU,Nein,cdu,Klaus-Peter,1
+Fograscher,SPD,Nein,spd,Gabriele,1
+Franke,SPD,Ja,spd,Dr. Edgar,1
+Frankenhauser,CDU/CSU,Nein,cdu,Herbert,1
+Freitag,SPD,Nein,spd,Dagmar,1
+Fricke,FDP,Nein,fdp,Otto,1
+Friedrich (Hof),CDU/CSU,Ja,cdu,Dr. Hans-Peter,1
+Frieser,CDU/CSU,Nein,cdu,Michael,1
+Fritz,CDU/CSU,Nein,cdu,Erich G.,1
+Fuchs,CDU/CSU,Ja,cdu,Dr. Michael,1
+Fuchtel,CDU/CSU,Nein,cdu,Hans-Joachim,1
+Funk,CDU/CSU,Nein,cdu,Alexander,1
+Gabriel,SPD,Nein,spd,Sigmar,1
+Gädechens,CDU/CSU,Nein,cdu,Ingo,1
+Gambke,BÜNDNIS 90/DIE GRÜNEN,Ja,gruene,Dr. Thomas,1
+Gauweiler,CDU/CSU,Ja,cdu,Dr. Peter,1
+Gebhart,CDU/CSU,Ja,cdu,Dr. Thomas,1
+Gehrcke,DIE LINKE,Nein,linke,Wolfgang,1
+Gehring,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Kai,1
+Geis,CDU/CSU,Nein,cdu,Norbert,1
+Geisen,FDP,Ja,fdp,Dr. Edmund Peter,1
+Gerdes,SPD,Nein,spd,Michael,1
+Gerhardt,FDP,Ja,fdp,Dr. Wolfgang,1
+Gerig,CDU/CSU,Nein,cdu,Alois,1
+Gerster,SPD,Nein,spd,Martin,1
+Gienger,CDU/CSU,Nein,cdu,Eberhard,1
+Gleicke,SPD,Nein,spd,Iris,1
+Glos,CDU/CSU,Nein,cdu,Michael,1
+Gloser,SPD,Nein,spd,Günter,1
+Gohlke,DIE LINKE,Nein,linke,Nicole,1
+Goldmann,FDP,Nein,fdp,Hans-Michael,1
+Golombeck,FDP,Nein,fdp,Heinz,1
+Golze,DIE LINKE,Nein,linke,Diana,1
+Göppel,CDU/CSU,Nein,cdu,Josef,1
+Göring-Eckardt,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Katrin,1
+Gottschalck,SPD,Nein,spd,Ulrike,1
+Götz,CDU/CSU,Nein,cdu,Peter,1
+Götzer,CDU/CSU,Ja,cdu,Dr. Wolfgang,1
+Graf (Rosenheim),SPD,Nein,spd,Angelika,1
+Granold,CDU/CSU,Nein,cdu,Ute,1
+Griese,SPD,Nein,spd,Kerstin,1
+Grindel,CDU/CSU,Nein,cdu,Reinhard,1
+Gröhe,CDU/CSU,Nein,cdu,Hermann,1
+Groneberg,SPD,Nein,spd,Gabriele,1
+Groß,SPD,Nein,spd,Michael Peter,1
+Grosse-Brömer,CDU/CSU,Nein,cdu,Michael,1
+Groth,DIE LINKE,Nein,linke,Annette,1
+Grübel,CDU/CSU,Nein,cdu,Markus,1
+Grund,CDU/CSU,Nein,cdu,Manfred,1
+Gruß,FDP,Nein,fdp,Miriam,1
+Grütters,CDU/CSU,Nein,cdu,Monika,1
+Gunkel,SPD,Nein,spd,Wolfgang,1
+Günther (Plauen),FDP,Nein,fdp,Joachim,1
+Gutting,CDU/CSU,Nein,cdu,Olav,1
+Gysi,DIE LINKE,Ja,linke,Dr. Gregor,1
+Hacker,SPD,Nein,spd,Hans-Joachim,1
+Hagedorn,SPD,Nein,spd,Bettina,1
+Hagemann,SPD,Nein,spd,Klaus,1
+Hahn,CDU/CSU,Nein,cdu,Florian,1
+Hänsel,DIE LINKE,Nein,linke,Heike,1
+Happach-Kasan,FDP,Ja,fdp,Dr. Christel,1
+Harbarth,CDU/CSU,Ja,cdu,Dr. Stephan,1
+Hardt,CDU/CSU,Nein,cdu,Jürgen,1
+Hartmann (Wackernheim),SPD,Nein,spd,Michael,1
+Hasselfeldt,CDU/CSU,Nein,cdu,Gerda,1
+Haßelmann,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Britta,1
+Haustein,FDP,Nein,fdp,Heinz-Peter,1
+Heider,CDU/CSU,Ja,cdu,Dr. Matthias,1
+Heiderich,CDU/CSU,Nein,cdu,Helmut,1
+Heil (Peine),SPD,Nein,spd,Hubertus,1
+Heil,CDU/CSU,Nein,cdu,Mechthild,1
+Hein,DIE LINKE,Ja,linke,Dr. Rosemarie,1
+Heinen-Esser,CDU/CSU,Nein,cdu,Ursula,1
+Heinrich,CDU/CSU,Nein,cdu,Frank,1
+Hellmich,SPD,Nein,spd,Wolfgang,1
+Hempelmann,SPD,Nein,spd,Rolf,1
+Hendricks,SPD,Ja,spd,Dr. Barbara,1
+Henke,CDU/CSU,Nein,cdu,Rudolf,1
+Hennrich,CDU/CSU,Nein,cdu,Michael,1
+Herlitzius,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Bettina,1
+Herrmann,CDU/CSU,Nein,cdu,Jürgen,1
+Herzog,SPD,Nein,spd,Gustav,1
+Heveling,CDU/CSU,Nein,cdu,Ansgar,1
+Hiller-Ohm,SPD,Nein,spd,Gabriele,1
+Hinsken,CDU/CSU,Nein,cdu,Ernst,1
+Hintze,CDU/CSU,Nein,cdu,Peter,1
+Hinz (Essen),SPD,Nein,spd,Petra,1
+Hinz (Herborn),BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Priska,1
+Hirte,CDU/CSU,Nein,cdu,Christian,1
+Hochbaum,CDU/CSU,Nein,cdu,Robert,1
+Höferlin,FDP,Nein,fdp,Manuel,1
+Hoff,FDP,Nein,fdp,Elke,1
+Hofmann (Volkach),SPD,Nein,spd,Frank,1
+Hofreiter,BÜNDNIS 90/DIE GRÜNEN,Ja,gruene,Dr. Anton,1
+Höger,DIE LINKE,Nein,linke,Inge,1
+Högl,SPD,Ja,spd,Dr. Eva,1
+Höhn,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Bärbel,1
+Höll,DIE LINKE,Ja,linke,Dr. Barbara,1
+Holmeier,CDU/CSU,Nein,cdu,Karl,1
+Holzenkamp,CDU/CSU,Nein,cdu,Franz-Josef,1
+Homburger,FDP,Nein,fdp,Birgit,1
+Hönlinger,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Ingrid,1
+Hoppe,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Thilo,1
+Hörster,CDU/CSU,Nein,cdu,Joachim,1
+Hübinger,CDU/CSU,Nein,cdu,Anette,1
+Humme,SPD,Nein,spd,Christel,1
+Hunko,DIE LINKE,Nein,linke,Andrej,1
+Jarzombek,CDU/CSU,Nein,cdu,Thomas,1
+Jasper,CDU/CSU,Nein,cdu,Dieter,1
+Jelpke,DIE LINKE,Nein,linke,Ulla,1
+Jochimsen,DIE LINKE,Ja,linke,Dr. Lukrezia,1
+Jung (Konstanz),CDU/CSU,Nein,cdu,Andreas,1
+Jung,CDU/CSU,Ja,cdu,Dr. Franz Josef,1
+Juratovic,SPD,Nein,spd,Josip,1
+Jüttner,CDU/CSU,Ja,cdu,Dr. Egon,1
+Kaczmarek,SPD,Nein,spd,Oliver,1
+Kahrs,SPD,Nein,spd,Johannes,1
+Kalb,CDU/CSU,Nein,cdu,Bartholomäus,1
+Kammer,CDU/CSU,Nein,cdu,Hans-Werner,1
+Kamp,FDP,Nein,fdp,Heiner,1
+Kampeter,CDU/CSU,Nein,cdu,Steffen,1
+Karl,CDU/CSU,Nein,cdu,Alois,1
+Kaster,CDU/CSU,Nein,cdu,Bernhard,1
+Kastner,SPD,Ja,spd,Dr. h. c. Susanne,1
+Kauch,FDP,Nein,fdp,Michael,1
+Kauder (Villingen-Schwenningen),CDU/CSU,Nein,cdu,Siegfried,1
+Kauder,CDU/CSU,Nein,cdu,Volker,1
+Kaufmann,CDU/CSU,Ja,cdu,Dr. Stefan,1
+Kekeritz,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Uwe,1
+Kelber,SPD,Nein,spd,Ulrich,1
+Keul,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Katja,1
+Kiesewetter,CDU/CSU,Nein,cdu,Roderich,1
+Kilic,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Memet,1
+Kindler,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Sven-Christian,1
+Kipping,DIE LINKE,Nein,linke,Katja,1
+Klaeden,CDU/CSU,Nein,cdu,Eckart von,1
+Klamt,CDU/CSU,Nein,cdu,Ewa,1
+Klein,CDU/CSU,Nein,cdu,Volkmar,1
+Klein-Schmeink,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Maria,1
+Klimke,CDU/CSU,Nein,cdu,Jürgen,1
+Klingbeil,SPD,Nein,spd,Lars,1
+Klose,SPD,Nein,spd,Hans-Ulrich,1
+Knoerig,CDU/CSU,Nein,cdu,Axel,1
+Knopek,FDP,Ja,fdp,Dr. Lutz,1
+Kober,FDP,Nein,fdp,Pascal,1
+Koch,DIE LINKE,Nein,linke,Harald,1
+Koczy,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Ute,1
+Koenigs,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Tom,1
+Koeppen,CDU/CSU,Nein,cdu,Jens,1
+Kofler,SPD,Ja,spd,Dr. Bärbel,1
+Kolb,FDP,Ja,fdp,Dr. Heinrich Leonhard,1
+Kolbe,SPD,Nein,spd,Daniela,1
+Kolbe,CDU/CSU,Nein,cdu,Manfred,1
+Kopp,FDP,Nein,fdp,Gudrun,1
+Koppelin,FDP,Ja,fdp,Dr. h.c. Jürgen,1
+Körber,FDP,Nein,fdp,Sebastian,1
+Körper,SPD,Nein,spd,Fritz Rudolf,1
+Korte,DIE LINKE,Nein,linke,Jan,1
+Koschorrek,CDU/CSU,Ja,cdu,Dr. Rolf,1
+Koschyk,CDU/CSU,Nein,cdu,Hartmut,1
+Kossendey,CDU/CSU,Nein,cdu,Thomas,1
+Kotting-Uhl,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Sylvia,1
+Kramme,SPD,Nein,spd,Anette,1
+Krellmann,DIE LINKE,Nein,linke,Jutta,1
+Krestel,FDP,Nein,fdp,Holger,1
+Kretschmer,CDU/CSU,Nein,cdu,Michael,1
+Krichbaum,CDU/CSU,Nein,cdu,Gunther,1
+Krings,CDU/CSU,Ja,cdu,Dr. Günter,1
+Krischer,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Oliver,1
+Krüger-Leißner,SPD,Nein,spd,Angelika,1
+Krumwiede,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Agnes,1
+Kruse,CDU/CSU,Nein,cdu,Rüdiger,1
+Kudla,CDU/CSU,Nein,cdu,Bettina,1
+Kues,CDU/CSU,Ja,cdu,Dr. Hermann,1
+Kuhn,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Fritz,1
+Kühn,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Stephan,1
+Kumpf,SPD,Nein,spd,Ute,1
+Künast,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Renate,1
+Kunert,DIE LINKE,Nein,linke,Katrin,1
+Kurth,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Markus,1
+Kurth,FDP,Nein,fdp,Patrick,1
+Kurth (Quedlinburg),BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Undine,1
+Lach,CDU/CSU,Nein,cdu,Günter,1
+Lambrecht,SPD,Nein,spd,Christine,1
+Lamers (Heidelberg),CDU/CSU,Ja,cdu,Dr. Dr. h.c. Karl A.,1
+Lämmel,CDU/CSU,Nein,cdu,Andreas G.,1
+Lammert,CDU/CSU,Ja,cdu,Prof. Dr. Norbert,1
+Landgraf,CDU/CSU,Nein,cdu,Katharina,1
+Lanfermann,FDP,Nein,fdp,Heinz,1
+Lange (Backnang),SPD,Nein,spd,Christian,1
+Lange,CDU/CSU,Nein,cdu,Ulrich,1
+Laurischk,FDP,Nein,fdp,Sibylle,1
+Lauterbach,SPD,Ja,spd,Dr. Karl,1
+Lay,DIE LINKE,Nein,linke,Caren,1
+Lazar,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Monika,1
+Lehmer,CDU/CSU,Ja,cdu,Dr. Max,1
+Lehrieder,CDU/CSU,Nein,cdu,Paul,1
+Leibrecht,FDP,Nein,fdp,Harald,1
+Leidig,DIE LINKE,Nein,linke,Sabine,1
+Lemme,SPD,Nein,spd,Steffen-Claudio,1
+Lenkert,DIE LINKE,Nein,linke,Ralph,1
+Leutert,DIE LINKE,Nein,linke,Michael,1
+Leutheusser-Schnarrenberger,FDP,Nein,fdp,Sabine,1
+Leyen,CDU/CSU,Ja,cdu,Dr. Ursula von der,1
+Liebich,DIE LINKE,Nein,linke,Stefan,1
+Liebing,CDU/CSU,Nein,cdu,Ingbert,1
+Lietz,CDU/CSU,Nein,cdu,Matthias,1
+Lindemann,FDP,Nein,fdp,Lars,1
+Lindner,FDP,Ja,fdp,Dr. Martin,1
+Lindner,BÜNDNIS 90/DIE GRÜNEN,Ja,gruene,Dr. Tobias,1
+Link (Heilbronn),FDP,Nein,fdp,Michael,1
+Linnemann,CDU/CSU,Ja,cdu,Dr. Carsten,1
+Lips,CDU/CSU,Nein,cdu,Patricia,1
+Lischka,SPD,Nein,spd,Burkhard,1
+Lösekrug-Möller,SPD,Nein,spd,Gabriele,1
+Lotter,FDP,Ja,fdp,Dr. Erwin,1
+Lötzer,DIE LINKE,Nein,linke,Ulla,1
+Lötzsch,DIE LINKE,Ja,linke,Dr. Gesine,1
+Luczak,CDU/CSU,Ja,cdu,Dr. Jan-Marco,1
+Ludwig,CDU/CSU,Nein,cdu,Daniela,1
+Lühmann,SPD,Nein,spd,Kirsten,1
+Luksic,FDP,Nein,fdp,Oliver,1
+Luther,CDU/CSU,Ja,cdu,Dr. Michael,1
+Lutze,DIE LINKE,Nein,linke,Thomas,1
+Maag,CDU/CSU,Nein,cdu,Karin,1
+Maisch,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Nicole,1
+Maizière,CDU/CSU,Ja,cdu,Dr. Thomas de,1
+Marks,SPD,Nein,spd,Caren,1
+Marwitz,CDU/CSU,Nein,cdu,Hans-Georg von der,1
+Mast,SPD,Nein,spd,Katja,1
+Mattfeldt,CDU/CSU,Nein,cdu,Andreas,1
+Mattheis,SPD,Nein,spd,Hilde,1
+Maurer,DIE LINKE,Nein,linke,Ulrich,1
+Mayer (Altötting),CDU/CSU,Nein,cdu,Stephan,1
+Meierhofer,FDP,Nein,fdp,Horst,1
+Meinhardt,FDP,Nein,fdp,Patrick,1
+Meister,CDU/CSU,Ja,cdu,Dr. Michael,1
+Menzner,DIE LINKE,Nein,linke,Dorothée,1
+Merkel,CDU/CSU,Ja,cdu,Dr. Angela,1
+Merkel (Berlin),SPD,Nein,spd,Petra,1
+Meßmer,SPD,Nein,spd,Ullrich,1
+Michalk,CDU/CSU,Nein,cdu,Maria,1
+Michelbach,CDU/CSU,Ja,cdu,Dr. h. c. Hans,1
+Middelberg,CDU/CSU,Ja,cdu,Dr. Mathias,1
+Miersch,SPD,Ja,spd,Dr. Matthias,1
+Mißfelder,CDU/CSU,Nein,cdu,Philipp,1
+Möhring,DIE LINKE,Nein,linke,Cornelia,1
+Molitor,FDP,Nein,fdp,Gabriele,1
+Möller,DIE LINKE,Nein,linke,Kornelia,1
+Monstadt,CDU/CSU,Nein,cdu,Dietrich,1
+Montag,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Jerzy,1
+Mortler,CDU/CSU,Nein,cdu,Marlene,1
+Movassat,DIE LINKE,Nein,linke,Niema,1
+Mücke,FDP,Nein,fdp,Jan,1
+Müller,CDU/CSU,Ja,cdu,Dr. Gerd,1
+Müller (Köln),BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Kerstin,1
+Müller,FDP,Nein,fdp,Petra,1
+Müller (Erlangen),CDU/CSU,Nein,cdu,Stefan,1
+Müller-Gemmeke,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Beate,1
+Müller-Sönksen,FDP,Nein,fdp,Burkhardt,1
+Müntefering,SPD,Nein,spd,Franz,1
+Murmann,CDU/CSU,Ja,cdu,Dr. Philipp,1
+Mützenich,SPD,Ja,spd,Dr. Rolf,1
+Nahles,SPD,Nein,spd,Andrea,1
+Neumann (Bremen),CDU/CSU,Nein,cdu,Bernd,1
+Neumann,FDP,Ja,fdp,Dr. Martin,1
+Nešković,DIE LINKE,Nein,linke,Wolfgang,1
+Niebel,FDP,Nein,fdp,Dirk,1
+Nietan,SPD,Nein,spd,Dietmar,1
+Nink,SPD,Nein,spd,Manfred,1
+Noll,CDU/CSU,Nein,cdu,Michaela,1
+Nord,DIE LINKE,Nein,linke,Thomas,1
+Notz,BÜNDNIS 90/DIE GRÜNEN,Ja,gruene,Dr. Konstantin von,1
+Nouripour,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Omid,1
+Nüßlein,CDU/CSU,Ja,cdu,Dr. Georg,1
+Obermeier,CDU/CSU,Nein,cdu,Franz,1
+Oppermann,SPD,Nein,spd,Thomas,1
+Ortel,SPD,Nein,spd,Holger,1
+Ostendorff,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Friedrich,1
+Oswald,CDU/CSU,Nein,cdu,Eduard,1
+Ott,BÜNDNIS 90/DIE GRÜNEN,Ja,gruene,Dr. Hermann E.,1
+Otte,CDU/CSU,Nein,cdu,Henning,1
+Otto (Frankfurt),FDP,Nein,fdp,Hans-Joachim,1
+Özoğuz,SPD,Nein,spd,Aydan,1
+Pau,DIE LINKE,Nein,linke,Petra,1
+Paul,CDU/CSU,Ja,cdu,Dr. Michael,1
+Paula,SPD,Nein,spd,Heinz,1
+Paus,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Lisa,1
+Pawelski,CDU/CSU,Nein,cdu,Rita,1
+Petermann,DIE LINKE,Nein,linke,Jens,1
+Petzold,CDU/CSU,Nein,cdu,Ulrich,1
+Pfeiffer,CDU/CSU,Ja,cdu,Dr. Joachim,1
+Pfeiffer,CDU/CSU,Nein,cdu,Sibylle,1
+Pflug,SPD,Nein,spd,Johannes,1
+Philipp,CDU/CSU,Nein,cdu,Beatrix,1
+Pieper,FDP,Nein,fdp,Cornelia,1
+Piltz,FDP,Nein,fdp,Gisela,1
+Pitterle,DIE LINKE,Nein,linke,Richard,1
+Ploetz,DIE LINKE,Nein,linke,Yvonne,1
+Pofalla,CDU/CSU,Nein,cdu,Ronald,1
+Poland,CDU/CSU,Nein,cdu,Christoph,1
+Polenz,CDU/CSU,Nein,cdu,Ruprecht,1
+Polheim,FDP,Nein,fdp,Jörg von,1
+Pols,CDU/CSU,Nein,cdu,Eckhard,1
+Poß,SPD,Nein,spd,Joachim,1
+Pothmer,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Brigitte,1
+Priesmeier,SPD,Ja,spd,Dr. Wilhelm,1
+Pronold,SPD,Nein,spd,Florian,1
+Raabe,SPD,Ja,spd,Dr. Sascha,1
+Rachel,CDU/CSU,Nein,cdu,Thomas,1
+Ramsauer,CDU/CSU,Ja,cdu,Dr. Peter,1
+Ratjen-Damerau,FDP,Ja,fdp,Dr. Christiane,1
+Rawert,SPD,Nein,spd,Mechthild,1
+Rebmann,SPD,Nein,spd,Stefan,1
+Rehberg,CDU/CSU,Nein,cdu,Eckhardt,1
+Reiche (Potsdam),CDU/CSU,Nein,cdu,Katherina,1
+Reichenbach,SPD,Nein,spd,Gerold,1
+Reimann,SPD,Ja,spd,Dr. Carola,1
+Reinemund,FDP,Ja,fdp,Dr. Birgit,1
+Remmers,DIE LINKE,Nein,linke,Ingrid Lieselotte,1
+Riebsamen,CDU/CSU,Nein,cdu,Lothar,1
+Rief,CDU/CSU,Nein,cdu,Josef,1
+Riegert,CDU/CSU,Nein,cdu,Klaus,1
+Riesenhuber,CDU/CSU,Ja,cdu,Dr. Heinz,1
+Rix,SPD,Nein,spd,Sönke,1
+Röhlinger,FDP,Ja,fdp,Dr. Peter,1
+Röring,CDU/CSU,Nein,cdu,Johannes,1
+Röspel,SPD,Nein,spd,René,1
+Rossmann,SPD,Ja,spd,Dr. Ernst Dieter,1
+Rößner,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Tabea,1
+Roth (Augsburg),BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Claudia,1
+Roth (Esslingen),SPD,Nein,spd,Karin,1
+Roth (Heringen),SPD,Nein,spd,Michael,1
+Röttgen,CDU/CSU,Ja,cdu,Dr. Norbert,1
+Ruck,CDU/CSU,Ja,cdu,Dr. Christian,1
+Rüddel,CDU/CSU,Nein,cdu,Erwin,1
+Ruppert,FDP,Ja,fdp,Dr. Stefan,1
+Rupprecht (Weiden),CDU/CSU,Nein,cdu,Albert,1
+Rupprecht (Tuchenbach),SPD,Nein,spd,Marlene,1
+Sager,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Krista,1
+Sänger,FDP,Nein,fdp,Björn,1
+Sarrazin,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Manuel,1
+Sawade,SPD,Nein,spd,Annette,1
+Schaaf,SPD,Nein,spd,Anton,1
+Schäfer (Saalstadt),CDU/CSU,Nein,cdu,Anita,1
+Schäfer (Bochum),SPD,Nein,spd,Axel,1
+Schäfer (Köln),DIE LINKE,Nein,linke,Paul,1
+Schäffler,FDP,Nein,fdp,Frank,1
+Scharfenberg,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Elisabeth,1
+Schäuble,CDU/CSU,Ja,cdu,Dr. Wolfgang,1
+Schavan,CDU/CSU,Nein,cdu,Prof. Dr. Annette,1
+Scheelen,SPD,Nein,spd,Bernd,1
+Scheuer,CDU/CSU,Ja,cdu,Dr. Andreas,1
+Schick,BÜNDNIS 90/DIE GRÜNEN,Ja,gruene,Dr. Gerhard,1
+Schieder,SPD,Nein,spd,Marianne,1
+Schieder,SPD,Nein,spd,Werner,1
+Schiewerling,CDU/CSU,Nein,cdu,Karl,1
+Schindler,CDU/CSU,Nein,cdu,Norbert,1
+Schipanski,CDU/CSU,Nein,cdu,Tankred,1
+Schirmbeck,CDU/CSU,Nein,cdu,Georg,1
+Schlecht,DIE LINKE,Nein,linke,Michael,1
+Schmidt (Fürth),CDU/CSU,Nein,cdu,Christian,1
+Schmidt,BÜNDNIS 90/DIE GRÜNEN,Ja,gruene,Dr. Frithjof,1
+Schmidt (Eisleben),SPD,Nein,spd,Silvia,1
+Schmidt (Aachen),SPD,Nein,spd,Ulla,1
+Schneider (Erfurt),SPD,Nein,spd,Carsten,1
+Schneider,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Ulrich,1
+Schnieder,CDU/CSU,Nein,cdu,Patrick,1
+Schnurr,FDP,Nein,fdp,Christoph,1
+Schockenhoff,CDU/CSU,Ja,cdu,Dr. Andreas,1
+Schön,CDU/CSU,Nein,cdu,Nadine,1
+Schreiner,SPD,Nein,spd,Ottmar,1
+Schröder (Wiesbaden),CDU/CSU,Ja,cdu,Dr. Kristina,1
+Schröder,CDU/CSU,Ja,cdu,Dr. Ole,1
+Schulte-Drüggelte,CDU/CSU,Nein,cdu,Bernhard,1
+Schulz,FDP,Nein,fdp,Jimmy,1
+Schulz (Spandau),SPD,Nein,spd,Swen,1
+Schummer,CDU/CSU,Nein,cdu,Uwe,1
+Schurer,SPD,Nein,spd,Ewald,1
+Schuster,CDU/CSU,Nein,cdu,Armin,1
+Schuster,FDP,Nein,fdp,Marina,1
+Schwabe,SPD,Nein,spd,Frank,1
+Schwanholz,SPD,Ja,spd,Dr. Martin,1
+Schwanitz,SPD,Nein,spd,Rolf,1
+Schwartze,SPD,Nein,spd,Stefan,1
+Schwarzelühr-Sutter,SPD,Nein,spd,Rita,1
+Schweickert,FDP,Ja,fdp,Dr. Erik,1
+Seif,CDU/CSU,Nein,cdu,Detlef,1
+Seifert,DIE LINKE,Ja,linke,Dr. Ilja,1
+Selle,CDU/CSU,Nein,cdu,Johannes,1
+Sendker,CDU/CSU,Nein,cdu,Reinhold,1
+Senger-Schäfer,DIE LINKE,Nein,linke,Kathrin,1
+Sensburg,CDU/CSU,Ja,cdu,Dr. Patrick,1
+Sharma,DIE LINKE,Nein,linke,Raju,1
+Siebert,CDU/CSU,Nein,cdu,Bernd,1
+Sieling,SPD,Ja,spd,Dr. Carsten,1
+Silberhorn,CDU/CSU,Nein,cdu,Thomas,1
+Simmling,FDP,Nein,fdp,Werner,1
+Singhammer,CDU/CSU,Nein,cdu,Johannes,1
+Sitte,DIE LINKE,Ja,linke,Dr. Petra,1
+Skudelny,FDP,Nein,fdp,Judith,1
+Solms,FDP,Ja,fdp,Dr. Hermann Otto,1
+Spahn,CDU/CSU,Nein,cdu,Jens,1
+Spatz,FDP,Nein,fdp,Joachim,1
+Stadler,FDP,Ja,fdp,Dr. Max,1
+Staffeldt,FDP,Nein,fdp,Torsten,1
+Stauche,CDU/CSU,Nein,cdu,Carola,1
+Steffel,CDU/CSU,Ja,cdu,Dr. Frank,1
+Steffen,SPD,Nein,spd,Sonja Amalie,1
+Steinbach,CDU/CSU,Nein,cdu,Erika,1
+Steinbrück,SPD,Nein,spd,Peer,1
+Steiner,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Dorothea,1
+Steinke,DIE LINKE,Nein,linke,Kersten,1
+Steinmeier,SPD,Ja,spd,Dr. Frank-Walter,1
+Stetten,CDU/CSU,Nein,cdu,Christian Freiherr von,1
+Stier,CDU/CSU,Nein,cdu,Dieter,1
+Stinner,FDP,Ja,fdp,Dr. Rainer,1
+Storjohann,CDU/CSU,Nein,cdu,Gero,1
+Stracke,CDU/CSU,Nein,cdu,Stephan,1
+Strässer,SPD,Nein,spd,Christoph,1
+Straubinger,CDU/CSU,Nein,cdu,Max,1
+Strengmann-Kuhn,BÜNDNIS 90/DIE GRÜNEN,Ja,gruene,Dr. Wolfgang,1
+Strenz,CDU/CSU,Nein,cdu,Karin,1
+Ströbele,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Hans-Christian,1
+Strobl (Heilbronn),CDU/CSU,Nein,cdu,Thomas,1
+Strothmann,CDU/CSU,Nein,cdu,Lena,1
+Stüber,DIE LINKE,Nein,linke,Sabine Ursula,1
+Stübgen,CDU/CSU,Nein,cdu,Michael,1
+Süßmair,DIE LINKE,Nein,linke,Alexander,1
+Tack,SPD,Nein,spd,Kerstin,1
+Tackmann,DIE LINKE,Ja,linke,Dr. Kirsten,1
+Tauber,CDU/CSU,Ja,cdu,Dr. Peter,1
+Tempel,DIE LINKE,Nein,linke,Frank,1
+Terpe,BÜNDNIS 90/DIE GRÜNEN,Ja,gruene,Dr. Harald,1
+Thierse,SPD,Ja,spd,Dr. h. c. Wolfgang,1
+Thomae,FDP,Nein,fdp,Stephan,1
+Thönnes,SPD,Nein,spd,Franz,1
+Tiefensee,SPD,Nein,spd,Wolfgang,1
+Tillmann,CDU/CSU,Nein,cdu,Antje,1
+Todtenhausen,FDP,Nein,fdp,Manfred,1
+Toncar,FDP,Nein,fdp,Florian,1
+Tören,FDP,Nein,fdp,Serkan,1
+Tressel,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Markus,1
+Trittin,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Jürgen,1
+Troost,DIE LINKE,Ja,linke,Dr. Axel,1
+Uhl,CDU/CSU,Ja,cdu,Dr. Hans-Peter,1
+Ulrich,DIE LINKE,Nein,linke,Alexander,1
+Vaatz,CDU/CSU,Nein,cdu,Arnold,1
+Veit,SPD,Nein,spd,Rüdiger,1
+Vogel,FDP,Nein,fdp,Johannes,1
+Vogel,CDU/CSU,Nein,cdu,Volkmar,1
+Vogelsang,CDU/CSU,Nein,cdu,Stefanie,1
+Vogler,DIE LINKE,Nein,linke,Kathrin,1
+Vogt,SPD,Nein,spd,Ute,1
+Volk,FDP,Ja,fdp,Dr. Daniel,1
+Volkmer,SPD,Ja,spd,Dr. Marlies,1
+Voß,DIE LINKE,Nein,linke,Johanna,1
+Voßhoff,CDU/CSU,Nein,cdu,Andrea Astrid,1
+Wadephul,CDU/CSU,Ja,cdu,Dr. Johann,1
+Wagenknecht,DIE LINKE,Nein,linke,Sahra,1
+Wagner (Schleswig),BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Arfst,1
+Wagner,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Daniela,1
+Walter-Rosenheimer,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Beate,1
+Wanderwitz,CDU/CSU,Nein,cdu,Marco,1
+Wawzyniak,DIE LINKE,Nein,linke,Halina,1
+Wegner,CDU/CSU,Nein,cdu,Kai,1
+Weinberg,DIE LINKE,Nein,linke,Harald,1
+Weinberg,CDU/CSU,Nein,cdu,Marcus,1
+Weiß (Emmendingen),CDU/CSU,Nein,cdu,Peter,1
+Weiss,CDU/CSU,Nein,cdu,Sabine,1
+Wellenreuther,CDU/CSU,Nein,cdu,Ingo,1
+Wellmann,CDU/CSU,Nein,cdu,Karl-Georg,1
+Werner,DIE LINKE,Nein,linke,Katrin,1
+Westerwelle,FDP,Ja,fdp,Dr. Guido,1
+Wichtel,CDU/CSU,Nein,cdu,Heinz Peter,1
+Wicklein,SPD,Nein,spd,Andrea,1
+Widmann-Mauz,CDU/CSU,Nein,cdu,Annette,1
+Wieczorek-Zeul,SPD,Nein,spd,Heidemarie,1
+Wiefelspütz,SPD,Ja,spd,Dr. Dieter,1
+Wieland,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Wolfgang,1
+Willsch,CDU/CSU,Nein,cdu,Klaus-Peter,1
+Wilms,BÜNDNIS 90/DIE GRÜNEN,Ja,gruene,Dr. Valerie,1
+Winkelmeier-Becker,CDU/CSU,Nein,cdu,Elisabeth,1
+Winkler,BÜNDNIS 90/DIE GRÜNEN,Nein,gruene,Josef Philip,1
+Winterstein,FDP,Ja,fdp,Dr. Claudia,1
+Wissing,FDP,Ja,fdp,Dr. Volker,1
+Wöhrl,CDU/CSU,Nein,cdu,Dagmar G.,1
+Wolff (Rems-Murr),FDP,Nein,fdp,Hartfrid,1
+Wolff (Wolmirstedt),SPD,Nein,spd,Waltraud,1
+Wunderlich,DIE LINKE,Nein,linke,Jörn,1
+Zapf,SPD,Nein,spd,Uta,1
+Ziegler,SPD,Nein,spd,Dagmar,1
+Zimmer,CDU/CSU,Ja,cdu,Dr. Matthias,1
+Zimmermann,DIE LINKE,Nein,linke,Sabine,1
+Zöller,CDU/CSU,Nein,cdu,Wolfgang,1
+Zöllmer,SPD,Nein,spd,Manfred Helmut,1
+Zylajew,CDU/CSU,Nein,cdu,Willi,1
+Zypries,SPD,Nein,spd,Brigitte,1

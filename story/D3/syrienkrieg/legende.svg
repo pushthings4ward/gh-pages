@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="680px" height="162px"
+	 viewBox="0 0 680 162" enable-background="new 0 0 680 162" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="130.833" width="664.548" x="104.633" y="189.367" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<rect x="10.133" y="16.299" fill="#FF2841" width="20" height="20"/>
+<rect x="10.133" y="44.008" fill="#D5D341" width="20" height="20"/>
+<rect x="10.133" y="71.716" fill="#FFA900" width="20" height="20"/>
+<rect x="10.133" y="99.424" fill="#A8D6FF" width="20" height="20"/>
+<rect x="10.133" y="127.133" fill="#929292" width="20" height="20"/>
+<text transform="matrix(1 0 0 1 39.1313 30.0337)" font-family="'ArialMT'" font-size="14">Explosion</text>
+<text transform="matrix(1 0 0 1 39.1313 113.1582)" font-family="'ArialMT'" font-size="14">Warplane shelling</text>
+<text transform="matrix(1 0 0 1 39.1313 85.4492)" font-family="'ArialMT'" font-size="14">Detention - Execution</text>
+<text transform="matrix(1 0 0 1 39.1313 57.7412)" font-family="'ArialMT'" font-size="14">Kidnapping - Execution</text>
+<text transform="matrix(1 0 0 1 39.1313 140.8652)" font-family="'ArialMT'" font-size="14">Other/Unknown</text>
+<rect x="237.606" y="16.966" fill="#FF4F79" width="20" height="20"/>
+<rect x="237.606" y="44.675" fill="#A9A742" width="20" height="20"/>
+<rect x="237.606" y="72.383" fill="#FF7C00" width="20" height="20"/>
+<rect x="237.606" y="100.091" fill="#00AAD6" width="20" height="20"/>
+<text transform="matrix(1 0 0 1 266.604 30.7007)" font-family="'ArialMT'" font-size="14">Shelling</text>
+<text transform="matrix(1 0 0 1 266.604 113.8252)" font-family="'ArialMT'" font-size="14">Shooting</text>
+<text transform="matrix(1 0 0 1 266.604 86.1162)" font-family="'ArialMT'" font-size="14">Detention - Torture</text>
+<text transform="matrix(1 0 0 1 266.604 58.4082)" font-family="'ArialMT'" font-size="14">Kidnapping - Torture</text>
+<rect x="444.133" y="16.633" fill="#D780D6" width="20" height="20"/>
+<rect x="444.133" y="44.342" fill="#797700" width="20" height="20"/>
+<rect x="444.133" y="72.049" fill="#D84800" width="20" height="20"/>
+<rect x="444.133" y="99.758" fill="#007AAA" width="20" height="20"/>
+<text transform="matrix(1 0 0 1 473.1309 30.3672)" font-family="'ArialMT'" font-size="14">Field Execution</text>
+<text transform="matrix(1 0 0 1 473.1309 113.4922)" font-family="'ArialMT'" font-size="14">Un-allowed to seek Medical help</text>
+<text transform="matrix(1 0 0 1 473.1309 85.7832)" font-family="'ArialMT'" font-size="14">Detention - Torture - Execution</text>
+<text transform="matrix(1 0 0 1 473.1309 58.0742)" font-family="'ArialMT'" font-size="14">Kidnapping - Torture - Execution</text>
+</svg>
