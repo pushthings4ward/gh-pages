@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facets>
+	
+	<!-- Jahr -->
+	<facet>
+		<type>nominal</type>
+		<label>Jahr</label>
+		<name>Jahr</name>
+	</facet>
+
+	<!-- Medikament -->
+	<facet>
+		<type>nominal</type>
+		<label>Medikament</label>
+		<name>Medikament</name>
+	</facet>
+
+	<!-- Wirkstoff -->
+	<facet>
+		<type>nominal</type>
+		<label>Wirkstoff</label>
+		<name>Wirkstoff</name>
+	</facet>
+
+	<!-- Pharmaunternehmen -->
+	<facet>
+		<type>nominal</type>
+		<label>Pharmaunternehmen</label>
+		<name>Pharmaunternehmen</name>
+	</facet>
+	
+	
+</facets>
