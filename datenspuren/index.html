@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Twitterpolitik: Renate Künast geht mit Twitter ins Bett">
+    <meta name="description" content="Twitterpolitik: Bundestagsabgeordnete unter der Datenlupe">
     <meta name="author" content="@pushthings4ward">
-    <meta property="og:url" content="http://www.pushthings4ward.com/twitterpolitik" />
-    <meta property="og:description" content="Twitterpolitik: Renate Künast geht mit Twitter ins Bett" />
+    <meta property="og:url" content="http://www.pushthings4ward.com/datenspuren" />
+    <meta property="og:description" content="Twitterpolitik: Bundestagsabgeordnete unter der Datenlupe" />
     <meta property="og:locale" content="de_DE" />
     <meta property="article:published_time" content="2015-09-02T15:05:06+00:00" />
     <meta property="article:modified_time" content="2015-09-02T15:05:06+00:00" />
     <!--<link rel="icon" href="../../favicon.ico">-->
 
-    <title>Twitterpolitik: Renate Künast geht mit Twitter ins Bett</title>
+    <title>Twitterpolitik: Bundestagsabgeordnete unter der Datenlupe</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -73,13 +73,21 @@
       <h3>Twitterpolitik: Bundestagsabgeordnete unter der Datenlupe</h3>
       <p><code>#Twitterpolitik</code> ist hip und angesat. Die Kommunikation und Interaktion über Twitter und Co. ist inzwischen für etliche Bundestagsabgeordnete kein Neuland mehr. Doch welchen Stellenwert nimmt Twitter im Alltag der Politiker mittlerweile ein? Ein Nine to Five Job oder mehr? Diesen Fragen will ich anhand ihrer digitalen Datenspuren nachgehen - zumindest für Twitter.</p>
       
-      <h5>Der Plan für mein #OneDayProject</h5>
-      <p>Da ich nur 24 Stunden Zeit für das Projekt habe, werde ich mich ausschließlich auf die Top 25 Bundestagsabgeordneten mit den meisten Followern konzentrieren.<br>
-      <br>
+      
+      <p><b>Der Plan für mein #OneDayProject:</b> Da ich nur 24 Stunden Zeit für das Projekt habe, werde ich mich ausschließlich auf die Top 25 Bundestagsabgeordneten mit den meisten Followern konzentrieren.<br>
+      
+      <ol>
       <b>1. Schritt:</b> Mit <code><a href="https://github.com/sferik/t" target="_blank">t</a></code> scrape ich die letzten 3.000 Tweets von jeder Twitter-Timeline. Dabei fällt auf, dass einige Politiker zwar viele Follower haben, jedoch kaum Tweets abgesetzt haben. <a href="https://twitter.com/oezoguz" target="_blank">Aydan Özoğuz</a> (SPD) hat über 9.200 Follower aber nur knapp 160 Tweets verfasst. </p>
       <b>2. Schritt:</b> Mit <code><a href="http://openrefine.org/download.html" target="_blank">OpenRefine</a></code> analysiere ich anschließend die Daten. Dabei untersuche ich hauptsächlich den Zeitstempel jeder Nachricht. </p>
       <b>3. Schritt:</b> Im Anschluss werden die Daten mit <code><a href="http://www.highcharts.com/" target="_blank">Highcharts</a></code> visualisiert. </p>
-       
+      </ol> 
+
+      <h3>Ein Five to Nine Job</h3>
+      <p>Twitter ist kein Nine to Five Job - eher ein Five to Nine Job, wenn man sich die Heatmap näher anschaut. Die ersten Tweets werden gegen 5:00 Uhr morgens abgesetzt. Gegen 21:00 Uhr verringert sich die Aktivität. Besonders mitteilungsfreudig sind <a href="https://twitter.com/RenateKuenast" target="_blank">Renate Künast</a> (GRÜNE), <a href="https://twitter.com/Volker_Beck" target="_blank">Volker Beck</a> (GRÜNE) und <a href="https://twitter.com/FlorianPronold" target="_blank">Florian Pronold</a> (SPD). Sie setzen gelegentlich auch noch gegen Mitternacht Tweets ab. 
+      </p>
+
+      <p>Meine Datenanalyse kann nicht alle Fragen lückenlos beantworten und das beansprucht sie auch nicht. Vielmehr ist das der Versuch, anhand von öffentlich zugänglichen Datenspuren ein Handlungsmuster sichtbar zu machen.</p>
+
       </div>
       <div class="col-xs-2 col-md-2"></div>
     </div>
@@ -98,24 +106,6 @@
     <div id="container" style="height: 500px; min-width: 310px; max-width: 700px; margin: 0 auto"></div>
     <!-- /highchart heatmap -->
 
-
-    <div class="row">
-      <div class="col-xs-2 col-md-2"></div>
-      <div class="col-xs-8 col-md-8">
-      	
-      <h3>Renate Künast geht mit Twitter ins Bett</h3>
-      <p>Twitter ist kein Nine to Five Job - eher ein Five to Nine Job, wenn man sich die Heatmap näher anschaut. Die ersten Tweets werden gegen 5:00 Uhr morgens abgesetzt. Gegen 21:00 Uhr verringert sich die Aktivität. Besonders mitteilungsfreudig sind <a href="https://twitter.com/RenateKuenast" target="_blank">Renate Künast</a> (GRÜNE), <a href="https://twitter.com/Volker_Beck" target="_blank">Volker Beck</a> (GRÜNE) und <a href="https://twitter.com/FlorianPronold" target="_blank">Florian Pronold</a> (SPD). Sie setzen ihre letzten Tweets gegen 1:00 Uhr in der Nacht ab. 
-      </p>
-      <p>Meine Datenanalyse kann nicht alle Fragen lückenlos beantworten und das beansprucht sie auch nicht. Vielmehr ist das der Versuch, anhand von öffentlich zugänglichen Datenspuren, ein Handlungsmuster sichtbar zu machen.</p>
-
-      </div>
-      <div class="col-xs-2 col-md-2"></div>
-    </div>
-
-
-    
-
-
     </div> <!-- /container -->
 
 
@@ -128,6 +118,7 @@
     <script src="js/heatmap.js"></script>
     <script src="js/exporting.js"></script>
     <script src="vis/highchart_heatmap.js"></script>
+    <script src="vis/highchart_heatmap_vbeck.js"></script>
 
 
     <!-- Piwik -->
