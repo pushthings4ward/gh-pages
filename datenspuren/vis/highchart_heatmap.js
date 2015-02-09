@@ -19,7 +19,7 @@ $(function () {
 
         yAxis: {
             categories: [               '<b>Aydan Özoğuz</b> (SPD)', 
-            							'<b>Dr. Sahra Wagenknecht</b> (LINKE)', 
+            							'<b>Dr. Sahra Wagenknecht</b>', 
             							'<b>Philipp Mißfelder</b> (CDU/CSU)', 
                             			'<b>Peer Steinbrück</b> (SPD)', 
                             			'<b>Hermann Gröhe</b> (CDU/CSU)', 
@@ -39,7 +39,7 @@ $(function () {
                             			'<b>Renate Künast</b> (GRÜNE)', 
                             			'<b>Lars Klingbeil</b> (SPD)',
                             			'<b>Bärbel Höhn</b> (GRÜNE)', 
-                            			'<b>Dr. Peter Tauber</b> (CDU/CSU) ', 
+                            			'<b>Dr. Peter Tauber</b> (CDU/CSU)', 
                             			'<b>Dorothee Bär</b> (CDU/CSU)', 
                             			'<b>Steffi Lemke</b> (GRÜNE)',
                             			'<b>Peter Altmaier</b> (CDU/CSU)'],
