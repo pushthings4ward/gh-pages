@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Google Chrome Scraper Tutorial: Datentabellen aus Webseiten exportieren">
+    <meta name="author" content="@pushthings4ward">
+    <meta property="og:url" content="http://www.pushthings4ward.com/tutorials" />
+    <meta property="og:description" content="Google Chrome Scraper Tutorial: Datentabellen aus Webseiten exportieren" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="article:published_time" content="2015-03-03T15:05:06+00:00" />
+    <meta property="article:modified_time" content="2015-03-03T15:05:06+00:00" />
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Google Chrome Scraper Tutorial: Datentabellen aus Webseiten exportieren</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> -->
+          <a class="navbar-brand" href="#"></a><p class="navbar-text"> <i class="fa fa-code fa-lg"></i> <b>Google Chrome Scraper Tutorial: Datentabellen aus Webseiten exportieren</b></p>
+        </div>
+          
+      </div>
+    </div>
+    <!-- /Fixed navbar -->
+
+    <div class="container">
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+      <div class="col-xs-1 col-md-2"></div>
+      <div class="col-xs-12 col-md-7">
+
+    <p></p>
+
+      <a href="https://twitter.com/pushthings4ward" class="twitter-follow-button" data-show-count="true" data-size="small">@pushthings4ward</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+          </script>
+		<br>
+		<span class="label label-info">Published: 30. März, 2012</span> <span class="label label-warning">CONTENT NUTZUNG: CC BY-NC-SA 3.0</span>
+
+      	<p></p>
+		 
+        Datentabellen, die in <code>HTML</code> auf Webseiten eingebunden sind, lassen sich nicht immer problemlos durch <code>Copy &amp; Paste</code> in ein neues Dokument überführen. Oft werden <code>HTML</code> Fragmente übernommen, die die Tabellenstruktur zerstören. Bis vor wenigen Monaten konnte man den mächtigen Service von Needlebase für diese Aufgabe in Anspruch nehmen. Derzeit wird Needlebase in die Google Produktfamilie integriert – hoffentlich in OpenRefine. Bis dahin setze ich momentan auf <code><a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd" target="_blank">Scraper</a> – eine Google Chrome Extension</code>, die brauchbare Ergebnisse liefert. Prima an der Extension ist die direkte Exportfunktion in ein Google Spreadsheet, d.h. man benötigt ein Google Account.</p>
+      <p>Und so einfach kommt man an die Datentabelle: Zunächst muss die Google Chrome Extension Scraper installiert werden. Für die Demonstration habe ich mir die aktuelle Übersicht der bisherigen <a href="https://de.wikipedia.org/wiki/Bundespr%C3%A4sident_%28Deutschland%29" target="_blank">Bundespräsidenten der Bundesrepublik Deutschland auf Wikipedia</a> ausgesucht. Ich markiere die ersten vier Zeilen der Tabelle und klicke auf die rechte Maustaste. Dort wähle ich aus dem Menü die Option <code>Scrape similar</code> aus. Scraper selektiert nun automatisch alle nachfolgenden Zeilen, die zur Tabelle gehören.</p>
+      <p><img class="img-responsive" src="../img/2012/03/OpenRefine_Tutorial_014.png" alt="OpenRefine" /></p>
+      <p>Und so sieht das Ergebnis aus. Sollte das Ausgabefenster leer sein, genügt ein Klick auf die rechte Maustaste und die Auswahl der Option <code>Neu laden</code>, um das Ergebnis sichtbar zu machen. Ein abschließender Klick auf <code>Export to Google Docs</code> leitet uns auf die Webseite von Google weiter, falls wir nicht schon eingeloggt waren. Dort erscheint nun die Tabelle in einem Google Spreadsheet.</p>
+      <p><img  class="img-responsive" src="../img/2012/03/OpenRefine_Tutorial_015.png" alt="OpenRefine" /></p>
+
+        <br>  
+
+
+      </div>
+      <div class="col-xs-1 col-md-3"></div>
+    </div>
+
+    
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+
+
+    <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.pushthings4ward.com/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://piwik.pushthings4ward.com/piwik/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+<!-- Piwik Image Tracker-->
+<img src="http://piwik.pushthings4ward.com/piwik/piwik.php?idsite=2&rec=1" style="border:0" alt="" />
+<!-- End Piwik -->
+
+  </body>
+</html>
