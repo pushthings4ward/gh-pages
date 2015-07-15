@@ -86,13 +86,13 @@
 
        <img  class="img-responsive" src="../img/2012/09/google_refine_how_to_2.png" alt="OpenRefine" />
 
-    <b>Die einzelnen Schritte</b>: Ich öffne in OpenRefine den <code>Datensatz 1</code>, der in den folgenden Ausführungen als <code>D1</code> bezeichnet wird. Dort wähle ich zunächst aus dem <code>Dropdown Menü</code> der Spalte <code>“Vorname”</code> die Option <code>Edit column</code> aus und klicke anschließend auf die Option <code>Add column based on this column</code>.
+    <b>Die einzelnen Schritte</b>: Ich öffne in OpenRefine den <code>Datensatz 1</code>, der in den folgenden Ausführungen als <code>D1</code> bezeichnet wird. Dort wähle ich zunächst aus dem <code>Dropdown Menü</code> der Spalte <code>"Vorname"</code> die Option <code>Edit column</code> aus und klicke anschließend auf die Option <code>Add column based on this column</code>.
 
     <img  class="img-responsive" src="../img/2012/09/google_refine_how_to_3.png" alt="OpenRefine" />
 
-    Eine neue Eingabemaske öffnet sich. Aus dem <code>Datensatz 2</code> aka. <code>D2</code> soll die Datenspalte <code>“Beruf”</code> nach <code>D1</code> kopiert werden. Als erstes definiere ich den Spaltnamen <code>“Beruf“</code>. Dann nutze ich die GREL Syntax, um den Datenfusionsprozess zu definieren.
+    Eine neue Eingabemaske öffnet sich. Aus dem <code>Datensatz 2</code> aka. <code>D2</code> soll die Datenspalte <code>"Beruf"</code> nach <code>D1</code> kopiert werden. Als erstes definiere ich den Spaltnamen <code>"Beruf"</code>. Dann nutze ich die GREL Syntax, um den Datenfusionsprozess zu definieren.
 
-    <br><br><b>GREL syntax:</b>  <code>cell.cross(“D2“,”Vorname“).cells["Beruf“].value[0]</code><br><br>
+    <br><br><b>GREL syntax:</b>  <code>cell.cross("D2","Vorname").cells["Beruf"].value[0]</code><br><br>
 
     <img  class="img-responsive" src="../img/2012/09/google_refine_how_to_4.png" alt="OpenRefine" />
     <br>In der Voransicht lässt sich das Ergebnis der Datenfusion begutachten. Wenn das Ergebnis korrekt ist, genügt ein abschließender Klick auf <code>OK</code>, um die Transformation abzuschließen. Was genau habe ich mit der GREL Syntax gemacht? Ich öffne zuerst den Datensatz <code>D2</code>. Dann definiere ich die Orientierungsgrundlage für die Datenfusion – die Spalte <code>“Vorname“</code>. Abschließend lege ich die zu kopierende Spalte fest – <code>“Beruf“</code>.
